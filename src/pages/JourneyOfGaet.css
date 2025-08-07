@@ -1,0 +1,150 @@
+.old-school-photo{height: 100vh; background-size: cover !important; position: relative;}
+/* .old-school-photo::before{content: ''; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: radial-gradient(59.09% 59.09% at 50% 50%, rgba(59, 43, 44, 0.6) 0%, rgba(59, 43, 44, 0) 100%);} */
+.old-school-photo .center-content{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.old-school-photo .center-content h2{font-size: 68px; line-height: 76px; color: #fff; font-family:'Esperanza Headline Roman'; margin: 0; max-width: 920px; text-align: center;}
+
+.old369-school-photo{height: 100vh; background-size: cover !important; position: relative;}
+/* .old369-school-photo::before{content: ''; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: radial-gradient(59.09% 59.09% at 50% 50%, rgba(59, 43, 44, 0.6) 0%, rgba(59, 43, 44, 0) 100%);} */
+.old369-school-photo .center-content{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.old369-school-photo .center-content h2{font-size: 68px; line-height: 76px; color: #fff; font-family:'Esperanza Headline Roman'; margin: 0; max-width: 920px; text-align: center;}
+
+.gaet-story{padding: 150px 0;}
+.gaet-story .container{width: 100%; max-width: 100%; padding: 0 140px; }
+.gaet-story .content-blue-part{max-width: 900px; background: #124066; border-radius: 0 80px 0 0; padding: 100px 100px 65px 100px; border-bottom: #27A3C4 70px solid;}
+.gaet-story .content-blue-part h2{font-size: 38px; line-height: 45px; color: #fff; font-family:'Esperanza Headline Roman'; margin: 0 0 40px 0;}
+.gaet-story .content-blue-part p{font-size: 24px; line-height: 28px; color: #fff; font-family: "Anek Devanagari", sans-serif; font-weight: 400; margin: 0 0 80px 0; max-width: 450px;}
+
+.gaet-story .content-blue-part .btn-more{font-size: 28px; line-height: 109%; position: relative; color:#27A3C4; font-family: "Anek Devanagari", sans-serif; text-decoration: none;}
+.gaet-story .content-blue-part .btn-more::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 0%; background: #27A3C4; height: 1px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.gaet-story .content-blue-part .btn-more:hover::before{width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+
+.school-list-style-two{padding: 0px 0 2px 0; background: #fff;}
+.school-list-style-two .container{width: 100%; max-width: 100%; padding: 0 140px; position: relative; display: flex; justify-content: space-between; align-items: center; padding-bottom: 40px;}
+.school-list-style-two h2{font-family:'Esperanza Headline Roman'; font-size: 68px; line-height: 109%; color: var(--blue-color); margin: 0px; max-width: 740px;}
+.school-list-style-two .btn-more{font-size: 28px; line-height: 109%; position: relative; color: var(--blue-color); font-family: "Anek Devanagari", sans-serif; text-decoration: none;}
+.school-list-style-two .btn-more::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 0%; background: var(--blue-color); height: 1px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.school-list-style-two .btn-more:hover::before{width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.school-list-style-two ul.school-list{margin: 0px; padding: 0px; list-style: none; display: flex;}
+.school-list-style-two ul.school-list li .school-img-block{width: 100%; height: 100%; position: relative; overflow: hidden; display: flex; justify-content: center;}
+.school-list-style-two ul.school-list li .school-img-block video{width: 85%; height: 100%; position: relative; overflow: hidden;}
+
+/* .school-list-style-two ul.school-list li{width: 16.66%; min-height: 780px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease; padding: 0 1px;} */
+/* .school-list-style-two ul.school-list li .school-img-block img{position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover; width: 100%; height: 100%;}
+.school-list-style-two ul.school-list li .school-img-block::before{content: ''; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; z-index: 1; opacity: 0.5; mix-blend-mode:color}
+.school-list-style-two ul.school-list li:hover{transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease; width: 60%;}
+.school-list-style-two ul.school-list li:nth-of-type(1) .school-img-block::before{background: #78519E;}
+.school-list-style-two ul.school-list li:nth-of-type(2) .school-img-block::before{background: #821A4E;}
+.school-list-style-two ul.school-list li:nth-of-type(3) .school-img-block::before{background: #108E8E;}
+.school-list-style-two ul.school-list li:nth-of-type(4) .school-img-block::before{background: #CB651E;}
+.school-list-style-two ul.school-list li:nth-of-type(5) .school-img-block::before{background: #68924A;}
+.school-list-style-two ul.school-list li:nth-of-type(6) .school-img-block::before{background: #CB651E;} */
+
+
+.project-underway-area{position: relative; background: #fff; overflow: hidden; padding-top: 80px;}
+.project-underway-area::before{content: ''; width: 76px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 0px; z-index: 1;}
+.project-underway-area::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 74px;}
+.project-underway-area img{width: 100%;}
+.project-underway-area .container{width: 100%; max-width: 100%; padding: 0 140px; position: absolute; top: 80px; left: 0px; z-index: 1;}
+.project-underway-area h2{font-family:'Esperanza Headline Roman'; font-size: 68px; line-height: 109%; color: var(--blue-color); margin: 0px 0px 20px 0px; max-width: 740px;}
+.project-underway-area p{font-size: 24px; line-height: 117%; color:var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 400; margin: 0 0 30px 0; max-width: 466px;}
+.project-underway-area ul li{font-size: 24px; line-height: 117%; color:var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 300; }
+
+.hidetitle .social-initiatives-area h2{display: none;}
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .old-school-photo .center-content h2{font-size: 48px; line-height: 56px; max-width: 680px;} 
+    .old369-school-photo .center-content h2{font-size: 48px; line-height: 56px; max-width: 680px;} 
+    .gaet-story{padding: 100px 0;}
+    .gaet-story .container{padding: 0 50px;}
+    .gaet-story .content-blue-part{padding: 60px; max-width: 780px; border-bottom: #27A3C4 44px solid;}
+    .gaet-story .content-blue-part h2{font-size: 28px; line-height: 35px; margin: 0 0 30px 0;}
+    .gaet-story .content-blue-part p{font-size: 20px; line-height: 26px; max-width: 320px; margin: 0 0 40px 0;}
+    .gaet-story .content-blue-part .btn-more {font-size: 22px;}
+
+    .school-list-style-two{padding: 0px 0 2px 0;}
+    .school-list-style-two .container{padding: 0 50px; padding-bottom: 30px;}
+    .school-list-style-two h2{font-size: 40px; max-width: 750px;}
+    .school-list-style-two ul.school-list li{min-height: 580px;}
+
+    .project-underway-area .container{padding: 0 50px;}
+    .project-underway-area h2{font-size: 40px;}
+    .project-underway-area p {font-size: 20px; margin: 0 0 20px 0;}
+    .project-underway-area ul li {font-size: 20px;}
+
+    .social-initiatives-area{padding: 40px 30px}
+    .social-initiatives-area .photo-block{min-height: 580px;}
+    .social-initiatives-area .photo-block .bottom-content {bottom: 35px; left: 35px;}
+    .social-initiatives-area .photo-block .bottom-content h3 {font-size: 36px; line-height: 46px; min-height: 92px;}
+    .social-initiatives-area .photo-block .bottom-content .btn-more{font-size: 20px;}
+
+    .project-underway-area::before{content: ''; width: 50px; height: 50px; top: 0px;}
+    .project-underway-area::after{top: 0px; left: 50px; height: 50px;}
+    .school-list-style-two ul.school-list li .school-img-block video{width: 80%;}
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {
+
+}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .gaet-story{padding: 70px 0;}
+    .gaet-story .container{padding: 0 30px;}
+    .gaet-story .content-blue-part {padding: 42px;}
+    .school-list-style-two{padding: 40px 0 2px 0;}
+    .school-list-style-two h2 {font-size: 30px; max-width: 500px;}
+    .school-list-style-two .btn-more {font-size: 22px;}
+    .school-list-style-two ul.school-list li{ min-height: 260px;}
+    .project-underway-area .container{padding: 0 50px;}
+    .project-underway-area h2{font-size: 30px; }
+    .social-initiatives-area{padding: 40px 10px 20px 10px;}
+    .social-initiatives-area h2{padding: 0 30px; font-size: 38px; line-height: 44px; margin: 0 0 18px 0;}
+    .social-initiatives-area .d-flex{flex-wrap: wrap;}
+    .social-initiatives-area .half-block{width: 100%; margin-bottom: 20px;}
+    .social-initiatives-area .photo-block{min-height: 480px;}
+    .social-initiatives-area .photo-block .bottom-content h3{font-size: 26px; line-height: 36px; min-height: auto; margin: 0 0 30px 0;}
+        .school-list-style-two ul.school-list li .school-img-block video{width: 100%;}
+    
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+    .old-school-photo{height: 480px;}
+    .old-school-photo .center-content h2 {font-size: 30px; line-height: 36px;}
+
+    .old369-school-photo{height: 480px;}
+    .old369-school-photo .center-content h2 {font-size: 30px; line-height: 36px;}
+
+    .gaet-story{padding: 330px 0 15px 0;}
+    .gaet-story .container{padding: 0 15px; margin-top: -200px;}
+    .gaet-story .content-blue-part{padding: 22px; border-bottom: #27A3C4 24px solid;}
+    .gaet-story .content-blue-part h2{font-size: 18px; line-height: 28px; margin: 0 0 20px 0;}
+    .gaet-story .content-blue-part p{font-size: 16px; line-height: 24px; margin: 0 0 20px 0;}
+    .gaet-story .content-blue-part .btn-more{font-size: 18px;}
+
+    .school-list-style-two .container{padding: 0 15px; display: block;}
+    .school-list-style-two h2{font-size: 24px; margin: 0 0 10px 0;}
+    .school-list-style-two ul.school-list{margin-top: 20px;}
+    .school-list-style-two ul.school-list li{width: 100%;min-height: 230px;}
+    .school-list-style-two ul.school-list li:hover{width: 100%;}
+
+    .project-underway-area .container{position: relative;}
+    .project-underway-area h2{font-size: 24px;}
+    .project-underway-area p{font-size: 16px; margin: 0 0 15px 0;}
+    .project-underway-area ul{margin: 0px; padding: 0px 0px 0px 15px;}
+    .project-underway-area ul li {font-size: 16px;}
+
+    .social-initiatives-area .photo-block .bottom-content{bottom: 15px; left: 15px;}
+    .social-initiatives-area .photo-block .bottom-content h3{font-size: 20px; line-height: 26px;}
+}
+
+@media (min-width: 390px) and (max-width: 402px) {
+    .school-list-style-two h2 {
+        font-size: 25px; /* Adjust as needed */
+        white-space: normal; /* Allows text to wrap */
+        word-break: break-word; /* Breaks long words if necessary */
+        line-height: 1.5; /* Adjust spacing between lines */
+    }
+}

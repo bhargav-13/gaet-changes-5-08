@@ -1,0 +1,131 @@
+
+.main-header{position: absolute; top: 0px; left: 0px; width: 100%; z-index: 10; padding: 20px 0; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+.main-header .container{width: 100%; max-width: 100%; padding: 0 140px; display: flex; align-items: center; justify-content: space-between;}
+.main-header .logo{width: 250px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+.main-header .logo img{width: 100%;}
+.main-header .white-logo{display: none;}
+.main-header .rightside{display: flex; align-items: center;}
+.main-header .btn-contact{background: #fff; font-size: 18px; font-weight: 400; text-transform: uppercase; padding: 13px 35px 7px 35px; line-height: 20px; color: #09213A; text-decoration: none; font-family: "Anek Devanagari", sans-serif;}
+.main-header .btn-admission{background: #27A3C4; font-size: 18px; font-weight: 400; text-transform: uppercase; padding: 13px 35px 7px 35px; line-height: 20px; color: #fff; text-decoration: none; font-family: "Anek Devanagari", sans-serif;}
+.main-header .btn-menu {width: 22px; height: 22px; border: none; background: transparent; position: relative; padding: 0px; transition: all .5s ease; margin-left: 60px;}
+.main-header .btn-menu span {width: 100%; height: 2px; background: var(--blue-color); display: block; transition: all .5s ease;}
+.main-header.scrolled .btn-menu span { background: #fff; }
+.main-header .btn-menu span:nth-of-type(3n+1) {position: absolute; top: 0px; left: 0px; transition: all .5s ease;}
+.main-header .btn-menu span:nth-of-type(3n+2) {position: absolute; top: 10px; left: 0px; transition: all .5s ease;}
+.main-header .btn-menu span:nth-of-type(3n+3){position: absolute; bottom: 0px; left: 0px; transition: all .5s ease;}
+
+.main-header.scrolled{ transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; }
+.main-header.white-header .logo{display: none;}
+.main-header.white-header .white-logo{width: 250px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; display: block;}
+.main-header.white-header .white-logo img{width: 100%;}
+.main-header.white-header .logo{display: none;}
+.main-header.white-header .btn-contact{background: transparent; color: #fff;}
+.main-header.white-header .btn-menu span{background: #fff;}
+.main-header.white-header.scrolled{background: var(--blue-color);}
+.main-header.white-header.scrolled .white-logo{width: 250px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+
+.main-header.fixed-header{position: fixed;}
+.main-header.scrolled .logo{display: none;}
+.main-header.scrolled .white-logo{width: 250px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; display: block;}
+.main-header.scrolled .white-logo img{width: 100%;}
+/* .main-header.scrolled.fixed-header .btn-contact{background: transparent; color: #fff;} */
+.main-header.scrolled.fixed-header .btn-menu span{background: #fff;}
+
+.full-menu-area{position: fixed; top: 0px; right: -100%; width: 100%; height: 100vh; background: #124066; z-index: 999; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+.full-menu-area.open{right: 0px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+.full-menu-area .topbar{width: 100%; z-index: 10; padding: 20px 0; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; position: absolute; top: 0px; left: 0px; width: 100%;}
+.full-menu-area .topbar .container{width: 100%; max-width: 100%; padding: 0 140px; display: flex; align-items: center; justify-content: space-between;}
+.full-menu-area .topbar .logo{width: 250px; transition: all .5s ease; -webkit-transition: all .5s ease; -moz-transition: all .5s ease;}
+.full-menu-area .topbar .logo img{width: 100%;}
+.full-menu-area .topbar .rightside{display: flex; align-items: center;}
+.full-menu-area .topbar .btn-contact{background: transparent; font-size: 18px; font-weight: 400; text-transform: uppercase; padding: 13px 35px 7px 35px; line-height: 20px; color: #fff; text-decoration: none; font-family: "Anek Devanagari", sans-serif;}
+.full-menu-area .topbar .btn-admission{background: #27A3C4; font-size: 18px; font-weight: 400; text-transform: uppercase; padding: 13px 35px 7px 35px; line-height: 20px; color: #fff; text-decoration: none; font-family: "Anek Devanagari", sans-serif;}
+.full-menu-area .topbar .btn-close{background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e"); margin-left: 60px;}
+.full-menu-area .inner-flex{display: flex; height: 100%; padding-top: 112px;}
+.full-menu-area .inner-flex .rightpart{width: 50%; background: var(--light-blue-color); border-radius: 70px 0px 0 0; position: relative; overflow: hidden;}
+.full-menu-area .inner-flex .rightpart img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover;}
+.full-menu-area .inner-flex .leftpart{width: 50%; background: var(--blue-color); border-radius: 0 70px 0 0; padding: 100px 140px 70px 140px; display: flex;
+flex-direction: column; justify-content: space-between;}
+.full-menu-area .inner-flex .leftpart .menu-area{display: flex; margin: 0 0 50px 0;}
+.full-menu-area .inner-flex .leftpart .menu-area .nav-pills{width: 50%;}
+.full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link{background: transparent; color: #fff; font-size: 38px; line-height: 64px; margin-bottom: 15px; font-family:'Esperanza Headline Roman'; padding: 0px;}
+.full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link.active{color: #27A3C4;}
+.full-menu-area .inner-flex .leftpart .menu-area .tab-content{width: 50%; padding-left: 60px;}
+.full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu{margin: 0px; padding: 0px; list-style: none;}
+.full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li{margin-bottom: 20px;}
+.full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a{font-size: 24px; line-height: 28px; color: #fff; font-weight: 300; font-family: "Anek Devanagari", sans-serif; text-decoration: none;}
+.full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a:hover{color: #27A3C4;}
+.full-menu-area .inner-flex .leftpart ul.link{margin: 0px 0px 50px 0px; padding: 0px; list-style: none; display: flex;}
+.full-menu-area .inner-flex .leftpart ul.link li{margin-right: 30px;}
+.full-menu-area .inner-flex .leftpart ul.link li a{font-family: "Anek Devanagari", sans-serif; color: #27A3C4; text-decoration: none; font-size: 18px; line-height: 26px;}
+.full-menu-area .inner-flex .leftpart ul.social{margin: 0px; padding: 0px; list-style: none; display: flex; align-items: center;}
+.full-menu-area .inner-flex .leftpart ul.social li{margin-right: 80px;}
+
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .main-header .container{padding: 0 50px;}
+    .main-header .logo {width: 250px;}
+    .full-menu-area .topbar .logo{width: 260px;}
+    .full-menu-area .topbar .container{padding: 0 50px;}
+    .full-menu-area .inner-flex{padding-top: 112px;}
+    .full-menu-area .inner-flex .leftpart{padding: 50px;}
+    .full-menu-area .inner-flex .leftpart .menu-area .nav-pills{width: 40%;}
+    .full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link{font-size: 28px; line-height: 46px;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content {width: 60%;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li{margin-bottom: 12px;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a{font-size: 18px; line-height: 22px;}
+    .full-menu-area .inner-flex .leftpart ul.link{margin: 0px 0px 30px 0px;}
+    .full-menu-area .inner-flex .leftpart ul.link li{margin-right: 20px;}
+    .full-menu-area .inner-flex .leftpart ul.link li a{font-size: 18px; line-height: 22px; display: block;}
+    .full-menu-area .inner-flex .leftpart ul.social li{margin-right: 30px;}
+    .full-menu-area .inner-flex .leftpart ul.social li a{width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;}
+    .full-menu-area .inner-flex .leftpart ul.social li a img { max-width: 100%; max-height: 100%; object-fit: contain; margin: auto;}
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {
+  
+}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .main-header .container{padding: 0 30px;}
+    .main-header.scrolled .white-logo,
+    .main-header .logo{width: 180px;}
+    .full-menu-area .inner-flex .leftpart{padding: 30px;}
+    .full-menu-area .inner-flex .leftpart .menu-area{display: block;}
+    .full-menu-area .inner-flex .leftpart .menu-area .nav-pills {width: 100%;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content{width: 100%; padding: 0px;}
+    .full-menu-area .topbar .logo{width: 180px;}
+    .main-header.white-header .white-logo{width: 180px;}
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+
+    .main-header,
+    .main-header.scrolled{padding: 15px 0;}
+    .main-header .container {padding: 0 20px;}
+    .main-header .btn-contact,
+    .main-header .btn-admission{display: none;}
+    .main-header .logo,
+    .main-header.scrolled .logo{width: 180px;}
+
+    .full-menu-area{overflow-x: scroll;}
+    .full-menu-area .topbar{padding: 15px 0;}
+    .full-menu-area .topbar .container{padding: 0 20px;}
+    .full-menu-area .topbar .logo{width: 180px;}
+    .full-menu-area .topbar .btn-contact,
+    .full-menu-area .topbar .btn-admission{display: none;}
+    .full-menu-area .inner-flex{padding-top: 82px; display: block; }
+    .full-menu-area .inner-flex .leftpart .menu-area{margin: 0 0 30px 0;}
+    .full-menu-area .inner-flex .leftpart{width: 100%; padding: 20px;}
+    .full-menu-area .inner-flex .rightpart{width: 100%; height: 300px; border-radius: 0;}
+    .full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link{font-size: 22px; line-height: 24px;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li{margin-bottom: 5px;}
+    .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a {font-size: 16px; line-height: 22px}
+    .full-menu-area .inner-flex .leftpart ul.link{flex-wrap: wrap;}
+    .full-menu-area .inner-flex .leftpart ul.social li a {width: 20px; height: 20px;}
+
+}

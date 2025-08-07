@@ -1,0 +1,432 @@
+.footer-area {
+    background: var(--blue-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.footer-area .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 140px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.footer-area .inner-flex {
+    display: flex;
+    height: 100%;
+    gap: 50px;
+}
+
+.footer-area .inner-flex .leftside {
+    width: 50%;
+    padding: 112px 0 134px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-area .inner-flex .rightside {
+    width: 50%;
+    padding: 112px 0 134px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-area .inner-flex .rightside .toppart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-area .inner-flex .rightside .inner-part {
+    width: 33.33%;
+}
+
+.footer-area .inner-flex .rightside .last-part {
+    width: 24%;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.footer-area .inner-flex .rightside h3 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 24px;
+    line-height: 109%;
+    color: #27A3C4;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.footer-area .inner-flex .rightside p {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 24px;
+    line-height: 109%;
+    color: #fff;
+}
+
+.footer-area .inner-flex .rightside p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-area .inner-flex .rightside ul.link {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer-area .inner-flex .rightside ul.link li a {
+    color: #27A3C4;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 153%;
+}
+
+.footer-area .inner-flex .rightside ul.social {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.footer-area .inner-flex .rightside ul.social li {
+    margin-right: 80px;
+}
+
+.footer-area .inner-flex .rightside .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.footer-area .inner-flex .rightside .copyright p {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 109%;
+}
+
+.footer-area .inner-flex .rightside .copyright a {
+    margin: 0px 0px 0px 50px;
+    font-size: 18px;
+    line-height: 109%;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.footer-area::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+    height: 86px;
+    border-radius: 0 70px 0 0;
+    background: #124066;
+    z-index: 5;
+}
+
+.footer-area::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    height: 86px;
+    border-radius: 70px 0 0 0;
+    background: #124066;
+    z-index: 5;
+}
+
+.footer-area .middlepart {
+    /* margin: 50px 0 90px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h3 {
+        font-family: "Anek Devanagari", sans-serif;
+        font-size: 24px;
+        line-height: 109%;
+        color: #27A3C4;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        font-family: "Anek Devanagari", sans-serif;
+        font-size: 24px;
+        line-height: 109%;
+        color: #fff;
+    }
+}
+
+.footer-area .rays {
+    width: 4103px;
+    height: 4122px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2051.5px;
+    margin-top: -2078px;
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0.5;
+    display: block;
+}
+
+.footer-area .rays img {
+    width: 100%;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.footer-area img {
+    width: 100%;
+}
+
+.middlePart-separator {
+    height: 220px;
+}
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+
+    .footer-area .inner-flex .leftside,
+    .footer-area .inner-flex .rightside {
+        /* padding: 50px 0 90px 0; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-area .container {
+        padding: 0 50px;
+    }
+
+    .footer-area .inner-flex .leftside .logo {
+        width: 400px;
+    }
+
+    .footer-area .inner-flex .leftside .logo img {
+        width: 100%;
+    }
+
+    .footer-area .inner-flex .rightside p {
+        font-size: 18px;
+        line-height: 124%;
+    }
+
+    .footer-area .inner-flex .rightside ul.link li a {
+        font-size: 18px;
+    }
+
+    .footer-area .inner-flex .rightside ul.social li {
+        margin-right: 30px;
+    }
+
+    .footer-area .inner-flex .rightside ul.social li a {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-area .inner-flex .rightside ul.social li a img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .footer-area .inner-flex .rightside .copyright {
+        margin-top: 40px;
+    }
+
+    .footer-area .middlepart {
+        p {
+            font-size: 18px;
+            line-height: 124%;
+        }
+    }
+
+    .footer-area::before,
+    .footer-area::after {
+        height: 54px;
+    }
+
+    .footer-area .box3 {
+        top: 226px;
+    }
+
+    .footer-area .box6 {
+        top: 260px;
+    }
+}
+
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .footer-area {
+        height: auto;
+    }
+
+    .footer-area .inner-flex .leftside .logo {
+        width: 320px;
+    }
+
+    .footer-area .inner-flex {
+        display: block;
+    }
+
+    .footer-area .inner-flex .leftside {
+        width: 100%;
+        padding: 40px 0 0 0;
+    }
+
+    .footer-area .inner-flex .rightside {
+        width: 100%;
+        padding: 40px 0 80px 0;
+    }
+
+    .footer-area .rays {
+        display: block;
+    }
+
+    .footer-area .bg-img {
+        display: none;
+    }
+
+    .footer-area .middlepart {
+        margin: 40px 0 60px;
+    }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+    .footer-area {
+        padding: 40px 0 60px 0;
+    }
+
+    .footer-area::after {
+        height: 40px;
+    }
+
+    .footer-area::before {
+        height: 40px;
+    }
+
+    .footer-area .container {
+        padding: 0 20px;
+    }
+
+    .footer-area .inner-flex .leftside .logo {
+        width: 260px;
+    }
+
+    .footer-area .inner-flex .rightside {
+        padding: 30px 0 0 0;
+    }
+
+    .footer-area .inner-flex .rightside .toppart {
+        display: block;
+    }
+
+    .footer-area .inner-flex .rightside .inner-part {
+        width: 100%;
+    }
+
+    .footer-area .inner-flex .rightside .last-part {
+        width: 100%;
+    }
+
+    .footer-area .inner-flex .rightside .bottompart {
+        margin-top: 20px;
+    }
+
+    .footer-area .inner-flex .rightside h3 {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+    }
+
+    .footer-area .inner-flex .rightside p {
+        font-size: 15px;
+    }
+
+    .footer-area .inner-flex .rightside ul.link li {
+        margin-right: 8px;
+    }
+
+    .footer-area .inner-flex .rightside ul.link li a {
+        font-size: 16px;
+    }
+
+    .footer-area .inner-flex .rightside ul.link {
+        display: flex;
+    }
+
+    .footer-area .inner-flex .rightside ul.social li a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-area .inner-flex .rightside .copyright {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .footer-area .inner-flex .rightside .copyright p {
+        font-size: 14px;
+        margin: 0 0 5px 0;
+    }
+
+    .footer-area .inner-flex .rightside .copyright a {
+        margin: 0 20px 0 0;
+        font-size: 14px;
+    }
+
+    .footer-area .rays {
+        margin-top: -2000px;
+    }
+
+    .footer-area .middlepart {
+        margin: 30px 0;
+
+        h3 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 150%;
+            color: #fff;
+        }
+    }
+
+    .middlePart-separator {
+        height: 0px;
+    }
+}

@@ -1,0 +1,30 @@
+.inner-content-wapper { padding-top: 75px; background-color: #fff; }
+.school-apart-section{padding: 240px 0 120px 0px; position: relative; overflow: hidden; background: #fff; }
+.school-apart-section h2{font-size: 42px; line-height: 108%; color:var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 600; margin: 0px 0 70px 140px;}
+.school-apart-section::before{content: ''; width: 76px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 120px; left: 0px;}
+.school-apart-section::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 120px; left: 74px;}
+.school-apart-section .swiper-slide{width: auto; padding-bottom: 80px;}
+.school-apart-section .swiper-slide .photo-area{width: auto; height: 530px; margin-bottom: 24px; }
+.school-apart-section .swiper-slide .photo-area img{height: 100%; opacity: 0.3;}
+.school-apart-section .swiper-slide .sub{font-size: 28px; line-height: 108%; color:var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 500; opacity: 0;}
+.school-apart-section .swiper-slide.swiper-slide-active .photo-area img,
+.school-apart-section .swiper-slide.swiper-slide-next .photo-area img,
+.school-apart-section .swiper-slide.swiper-slide-active .sub,
+.school-apart-section .swiper-slide.swiper-slide-next .sub{opacity: 1;}
+.school-apart-section .swiper-slide.swiper-slide-active .photo-area{background: #E0B453;}
+.school-apart-section .swiper-slide.swiper-slide-active .photo-area img{border-radius: 0 150px 0 0;}
+
+.school-apart-section .swiper-pagination{display: flex; justify-content: center; }
+.school-apart-section .swiper-pagination .swiper-pagination-bullet {width: 220px; height: 3px; display: inline-block; border-radius: 0px; background: var(--blue-color); margin: 0px 3px;}
+
+.school-apart-section .swiper-button-prev{color: var(--blue-color) !important; top: 250px; left: 30px;}
+.school-apart-section .swiper-button-next{ color: var(--blue-color) !important; top: 250px; right: 30px;}
+
+
+@media only screen and (max-width: 767px) 
+{
+    .slider-style-two-section .innerside-area .right-color-part{width: 100%; height: unset; display: none; position: relative;}
+    .slider-style-two-section .innerside-area .left-photo{position: relative;}
+    .slider-style-two-section .innerside-area .left-photo::before{content: ''; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4);}
+    .slider-style-two-section .innerside-area {height: 480px;}
+}

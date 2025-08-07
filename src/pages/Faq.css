@@ -1,0 +1,109 @@
+.top-title-bar{background: var(--blue-color); min-height: 780px; position: relative; overflow: hidden; display: flex; align-items: end; padding-bottom: 160px; justify-content: center; }
+.top-title-bar h1{font-size: 78px; line-height: 93px; color: #fff; font-family:'Esperanza Headline Roman'; text-align: center; position: relative; z-index: 2;}
+.top-title-bar .rays{width: 4103px; height: 4122px; position: absolute; left: 50%; margin-left:-2051.5px; top: -1300px; z-index: 1;  animation-duration: 350s; animation-iteration-count: infinite; animation-name: rotate; animation-timing-function: linear; opacity: 0.5;}
+.top-title-bar .rays img{width: 100%;}
+.top-title-bar::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 50%; height: 70px; border-radius: 0 70px 0 0; background: #fff; z-index: 3;} 
+.top-title-bar::after{content: ''; position: absolute; bottom: 0px; right: 0px; width: 50%; height: 70px; border-radius: 70px 0 0 0; background: #fff; z-index: 3;}  
+
+.faq-page{padding: 50px 0 100px 0;}
+.faq-page .accordion-button{padding: 60px 260px; font-size: 32px; line-height: 34px; font-family: 'Esperanza Headline Roman'; color: var(--light-blue-color) !important; background-color: transparent !important; z-index: 2;}
+.faq-page .accordion-button:focus{background: transparent; box-shadow: none;}
+.faq-page .accordion-item{border: none !important; position: relative;}
+.faq-page .accordion-header{position: relative; overflow: hidden;}
+.faq-page .accordion-header::before{content: ''; width: 204px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 0px; z-index: 1;}
+.faq-page .accordion-header::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 202px;}
+.faq-page .accordion-button:not(.collapsed){background-color: transparent !important; box-shadow: none !important;}
+.faq-page .accordion-item:first-of-type > .accordion-header .accordion-button{border-radius: 0px;}
+.faq-page .accordion-item:first-of-type > .accordion-header .accordion-button {border-top-left-radius: 0px !important; border-top-right-radius: 0px !important;}
+.faq-page .accordion-item:last-of-type{border-bottom-right-radius:0px !important; border-bottom-left-radius:0px !important;}
+.faq-page .accordion-body{padding: 0 260px 40px 260px;}
+.faq-page .accordion-body .inner-block{margin: 0 0 70px 0;}
+.faq-page .accordion-body p{font-size: 24px; line-height: 28px; color: var(--blue-color); font-weight: 300; font-family: "Anek Devanagari", sans-serif; margin: 0 0 30px 0;}
+.faq-page .accordion-body p strong{font-weight: 500;}
+.faq-page .accordion-body ul{margin: 0px; padding: 0px; list-style: none; max-width: 660px;}
+.faq-page .accordion-body ul li{font-size: 24px; line-height: 28px; color: var(--blue-color); font-weight: 300; font-family: "Anek Devanagari", sans-serif; display: flex; justify-content: space-between}
+.faq-page .accordion-body ul li a{color: var(--blue-color);}
+
+
+/* content page css */
+
+.faq-page .content-block .content{padding: 60px 260px 0; position: relative; overflow: hidden;}
+.faq-page .content-block .content::before{content: ''; width: 204px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 0px; z-index: 1;}
+.faq-page .content-block .content::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 0px; left: 202px;}
+.faq-page .content-block h2{font-size: 32px; line-height: 34px; font-family: 'Esperanza Headline Roman'; color: var(--light-blue-color) !important; background-color: transparent !important; z-index: 2; position: relative; margin-bottom: 30px;}
+.faq-page .content-block p,
+.faq-page .content-block ul li{font-size: 22px; line-height: 28px; color: var(--blue-color); font-weight: 300; font-family: "Anek Devanagari", sans-serif;}
+.faq-page .content-block p strong{font-weight: 500;}
+
+
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .top-title-bar{min-height: 100vh;}
+    .top-title-bar h1{font-size: 48px; line-height: 62px;}
+    .top-title-bar::before,
+    .top-title-bar::after{height: 50px;}
+
+    .faq-page{padding: 50px 0;}
+    .faq-page .accordion-header::before {height: 50px; width: 60px;}
+    .faq-page .accordion-header::after {height: 50px; left: 58px;}
+    .faq-page .accordion-button{padding: 40px 100px; font-size: 26px;}
+    .faq-page .accordion-body{padding: 0 100px 20px 100px;}
+    .faq-page .accordion-body .inner-block{margin: 0 0 30px 0;}
+    .faq-page .accordion-body p{font-size: 18px; line-height: 24px; margin: 0 0 10px 0;}
+    .faq-page .accordion-body ul li{font-size: 18px; line-height: 24px;}
+
+
+    /* content page css */
+    
+    .faq-page  .content-block .content{padding: 40px 100px 0; position: relative; overflow: hidden;}
+    .faq-page  .content-block .content::before {height: 50px; width: 60px;}
+    .faq-page  .content-block .content::after {height: 50px; left: 58px;}
+
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {
+  
+}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+
+    .top-title-bar{min-height: 600px; padding-bottom: 120px;}
+    .top-title-bar h1{font-size: 42px; line-height: 52px; }
+
+    /* content page css */
+
+    .faq-page .content-block h2{font-size: 28px; line-height: 32px;}
+    .faq-page .content-block p,
+    .faq-page .content-block ul li{font-size: 18px; line-height: 24px;}
+
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+    .top-title-bar{min-height: 600px; padding-bottom: 80px;}
+    .top-title-bar h1{font-size: 30px; line-height: 40px; }
+    .top-title-bar .rays{top: -1475px;}
+
+    .faq-page .accordion-header::before{height: 20px; width: 20px;}
+    .faq-page .accordion-header::after{height: 20px; left: 18px;}
+    .faq-page .accordion-button{padding: 28px 20px 20px 22px; font-size: 22px;}
+    .faq-page .accordion-body{padding: 0 20px 20px 20px;}
+
+
+    /* content page css */
+
+    .faq-page .content-block .content{padding: 28px 20px 0px }
+    .faq-page .content-block .content::before{height: 20px; width: 20px;}
+    .faq-page .content-block .content::after{height: 20px; left: 18px;}
+    .faq-page .content-block h2{font-size: 22px; line-height: 28px;}
+
+}

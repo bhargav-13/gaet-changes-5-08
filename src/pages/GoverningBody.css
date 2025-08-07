@@ -1,0 +1,842 @@
+.chairperson-area {
+    padding: 170px 0 240px 0;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.chairperson-area::before {
+    content: '';
+    width: 76px;
+    height: 70px;
+    border-radius: 0 70px 0 0;
+    border-top: var(--light-blue-color) 2px solid;
+    border-right: var(--light-blue-color) 2px solid;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+}
+
+.chairperson-area::after {
+    content: '';
+    width: 100%;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    border-top: var(--light-blue-color) 2px solid;
+    border-left: var(--light-blue-color) 2px solid;
+    position: absolute;
+    top: 56px;
+    left: 74px;
+}
+
+.chairperson-area .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 140px;
+}
+
+.chairperson-area .inner-flex {
+    display: flex;
+}
+
+.chairperson-area .inner-flex h2 {
+    font-size: 58px;
+    line-height: 63px;
+    color: var(--light-blue-color);
+    font-family: 'Esperanza Headline Roman';
+    width: 36%;
+    padding-right: 160px;
+    margin: 0 0;
+}
+
+.chairperson-area .inner-flex .rightside {
+    width: 64%;
+    display: flex;
+    align-items: end;
+}
+
+.chairperson-area .inner-flex .photo-area {
+    width: 30%;
+    position: relative;
+}
+
+.chairperson-area .inner-flex .photo-area .gray-bg {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 332px;
+    background: #DDDDDD;
+    overflow: hidden;
+}
+
+.chairperson-area .inner-flex .photo-area .gray-bg .rays {
+    width: 4103px;
+    height: 4122px;
+    position: absolute;
+    left: 50%;
+    margin-left: -2051.5px;
+    margin-top: -1720px;
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0.2;
+}
+
+.chairperson-area .inner-flex .photo-area .gray-bg .rays img {
+    width: 100%;
+}
+
+.chairperson-area .inner-flex .photo-area img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.chairperson-area .inner-flex .content-part {
+    width: 100%;
+}
+
+.chairperson-area .inner-flex .content-part h3 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--light-blue-color);
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.chairperson-area .inner-flex .content-part p {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--blue-color);
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.chairperson-area .inner-flex .content-part p:last-child {
+    margin: 0px;
+}
+
+
+.board-area {
+    padding: 110px 0 118px 0;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.board-area::before {
+    content: '';
+    width: 76px;
+    height: 70px;
+    border-radius: 0 70px 0 0;
+    border-top: var(--light-blue-color) 2px solid;
+    border-right: var(--light-blue-color) 2px solid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.board-area::after {
+    content: '';
+    width: 100%;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    border-top: var(--light-blue-color) 2px solid;
+    border-left: var(--light-blue-color) 2px solid;
+    position: absolute;
+    top: 0px;
+    left: 74px;
+}
+
+.board-area .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 140px;
+}
+
+.board-area .inner-flex {
+    display: flex;
+}
+
+.board-area .inner-flex h2 {
+    font-size: 58px;
+    line-height: 63px;
+    color: var(--light-blue-color);
+    font-family: 'Esperanza Headline Roman';
+    width: 36%;
+    padding-right: 160px;
+}
+
+.board-area .inner-flex .rightside {
+    width: 64%;
+    display: flex;
+}
+
+.board-area .inner-flex ul.member-list-three {
+    margin: 0px -15px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.board-area .inner-flex ul.member-list-three li {
+    width: 33.33%;
+    height: max-content;
+    padding: 0 15px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.board-area .inner-flex ul.member-list-three li .photo-area {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.board-area .inner-flex ul.member-list-three li .photo-area .gray-bg {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 332px;
+    background: #DDDDDD;
+    overflow: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-three li .photo-area .gray-bg .rays {
+    width: 3000px;
+    height: 3000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1500px;
+    margin-top: -1240px;
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.board-area .inner-flex ul.member-list-three li .photo-area .gray-bg .rays img {
+    width: 100%;
+}
+
+.board-area .inner-flex ul.member-list-three li:hover .photo-area .gray-bg {
+    background: #124066;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-three li:hover .photo-area .gray-bg .rays {
+    opacity: 0.2;
+}
+
+.board-area .inner-flex ul.member-list-three li .photo-area img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.board-area .inner-flex ul.member-list-three li h3 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--light-blue-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-about {
+    position: absolute;
+    bottom: -60px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #09213A;
+    font-family: "Anek Devanagari", sans-serif;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-position {
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #09213A;
+    font-family: "Anek Devanagari", sans-serif;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-about {
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #09213A;
+    font-family: "Anek Devanagari", sans-serif;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-position {
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #09213A;
+    font-family: "Anek Devanagari", sans-serif;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-about::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    background: var(--blue-color);
+    height: 1px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-three li .more-about:hover::before {
+    width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-three li:hover .more-about {
+    opacity: 1;
+}
+
+.board-area .inner-flex ul.member-list-four {
+    margin: 0px -15px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.board-area .inner-flex ul.member-list-four li {
+    width: 25%;
+    height: max-content;
+    padding: 0 15px;
+    position: relative;
+}
+
+.board-area .inner-flex ul.member-list-four li .photo-area {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.board-area .inner-flex ul.member-list-four li .photo-area .gray-bg {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 250px;
+    background: #DDDDDD;
+    overflow: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-four li .photo-area .gray-bg .rays {
+    width: 3000px;
+    height: 3000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1500px;
+    margin-top: -1240px;
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.board-area .inner-flex ul.member-list-four li .photo-area .gray-bg .rays img {
+    width: 100%;
+}
+
+.board-area .inner-flex ul.member-list-four li .photo-area img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.board-area .inner-flex ul.member-list-four li:hover .photo-area .gray-bg {
+    background: #124066;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-four li:hover .photo-area .gray-bg .rays {
+    opacity: 0.2;
+}
+
+.board-area .inner-flex ul.member-list-four li h3 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--light-blue-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.board-area .inner-flex ul.member-list-four li h3 strong {
+    display: block;
+}
+
+.board-area .inner-flex ul.member-list-four li .more-about {
+    position: absolute;
+    bottom: -34px;
+    left: 0px;
+    font-size: 19px;
+    line-height: 22px;
+    color: #09213A;
+    font-family: "Anek Devanagari", sans-serif;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.board-area .inner-flex ul.member-list-four li .more-about::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    background: var(--blue-color);
+    height: 1px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-four li .more-about:hover::before {
+    width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.board-area .inner-flex ul.member-list-four li:hover .more-about {
+    opacity: 1;
+}
+
+.about-detail-area {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.about-detail-area.open {
+    right: 0px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.about-detail-area .inside-area {
+    background: #EBEBEB;
+    width: 68%;
+    margin-left: 32%;
+    height: 100%;
+    padding: 56px 84px;
+    overflow-y: scroll;
+}
+
+.about-detail-area .inside-area .titlebar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #09213A 1px solid;
+    align-items: center;
+    padding-bottom: 14px;
+    margin-bottom: 60px;
+}
+
+.about-detail-area .inside-area .titlebar h4 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 18px;
+    line-height: 126%;
+    font-weight: 500;
+    color: #09213A;
+    text-transform: uppercase;
+    letter-spacing: 0.39em;
+    margin: 0px;
+}
+
+.about-detail-area .inside-area .leftside {
+    width: 100%;
+    padding-right: 100px;
+    height: 100%;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.about-detail-area .inside-area .leftside .name {
+    font-size: 50px;
+    line-height: 50px;
+    color: #1C6791;
+    font-family: 'Esperanza Headline Roman';
+    margin: 0 0 20px 0;
+}
+
+.about-detail-area .inside-area .leftside .position {
+    font-size: 30px;
+    line-height: 36px;
+    color: #09213A;
+    font-weight: 400;
+    font-family: "Anek Devanagari", sans-serif;
+    margin: 0 0 40px 0;
+}
+
+.about-detail-area .inside-area .leftside p {
+    font-size: 20px;
+    line-height: 26px;
+    color: #09213A;
+    font-weight: 400;
+    font-family: "Anek Devanagari", sans-serif;
+    margin: 0 0 24px 0;
+}
+
+.about-detail-area .inside-area .leftside p strong {
+    color: #1C6791;
+}
+
+.about-detail-area .inside-area .photo-area {
+    width: 41%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-detail-area .inside-area .photo-area img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: cover;
+}
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .chairperson-area {
+        padding: 150px 0 100px 0;
+    }
+
+    .chairperson-area::before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        top: 50px;
+    }
+
+    .chairperson-area::after {
+        top: 50px;
+        left: 50px;
+        height: 50px;
+    }
+
+    .chairperson-area .container {
+        padding: 0 50px;
+    }
+
+    .chairperson-area .inner-flex h2 {
+        font-size: 38px;
+        line-height: 48px;
+        width: 30%;
+        padding-right: 100px;
+        margin: 0 0;
+    }
+
+    .chairperson-area .inner-flex .rightside {
+        width: 70%;
+    }
+
+    .chairperson-area .inner-flex .content-part p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 15px 0;
+    }
+
+    .board-area {
+        padding: 100px 0 70px 0;
+    }
+
+    .board-area::before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        top: 0px;
+    }
+
+    .board-area::after {
+        top: 0px;
+        left: 50px;
+        height: 50px;
+    }
+
+    .board-area .container {
+        padding: 0 50px;
+    }
+
+    .board-area .inner-flex h2 {
+        font-size: 38px;
+        line-height: 48px;
+        width: 30%;
+        padding-right: 100px;
+    }
+
+    .board-area .inner-flex .rightside {
+        width: 70%;
+    }
+
+    .board-area .inner-flex ul.member-list-three {
+        margin: 0 -10px;
+    }
+
+    .board-area .inner-flex ul.member-list-three li {
+        padding: 0 10px;
+    }
+
+    .board-area .inner-flex ul.member-list-three li .photo-area .gray-bg {
+        height: 300px;
+    }
+
+    .board-area .inner-flex ul.member-list-three li h3 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .board-area .inner-flex ul.member-list-four li {
+        margin-bottom: 70px;
+    }
+
+    .board-area .inner-flex ul.member-list-four li h3 strong {
+        font-size: 18px;
+    }
+
+    .board-area .inner-flex ul.member-list-three li .more-about {
+        left: 0px;
+    }
+
+    .board-area .inner-flex ul.member-list-four li .more-about {
+        left: 0px;
+    }
+
+    .about-detail-area .inside-area .photo-area {
+        height: 300px
+    }
+
+    .about-detail-area .inside-area .leftside {
+        padding-right: 50px
+    }
+
+    .about-detail-area .inside-area .leftside .name {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .about-detail-area .inside-area .leftside .position {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0 0 20px 0
+    }
+
+    .about-detail-area .inside-area .leftside p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .chairperson-area .container {
+        padding: 0 30px;
+    }
+
+    .chairperson-area .inner-flex {
+        display: block;
+    }
+
+    .chairperson-area .inner-flex h2 {
+        width: 100%;
+    }
+
+    .chairperson-area .inner-flex .rightside {
+        width: 100%;
+    }
+
+    .chairperson-area .inner-flex .photo-area {
+        width: 40%;
+    }
+
+    .chairperson-area .inner-flex .content-part {
+        margin-top: 40px;
+    }
+
+    .board-area .container {
+        padding: 0 30px;
+    }
+
+    .board-area .inner-flex {
+        display: block;
+    }
+
+    .board-area .inner-flex h2 {
+        width: 100%;
+    }
+
+    .board-area .inner-flex .rightside {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .board-area .inner-flex ul.member-list-four li {
+        width: 33.33%;
+    }
+
+    .about-detail-area .inside-area {
+        width: 100%;
+        margin: 0px;
+        padding: 26px 34px;
+    }
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+
+    .chairperson-area {
+        padding: 130px 0 50px 0;
+    }
+
+    .chairperson-area .inner-flex h2 {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .chairperson-area .inner-flex .rightside {
+        display: block;
+    }
+
+    .chairperson-area .inner-flex .photo-area {
+        width: 100%;
+    }
+
+    .chairperson-area .inner-flex .content-part {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin-top: 20px;
+    }
+
+    .chairperson-area .inner-flex .content-part h3 {
+        margin: 0 0 15px 0;
+    }
+
+    .board-area .inner-flex ul.member-list-three li .more-about {
+        left: 0px;
+        opacity: 1;
+        bottom: -50px;
+    }
+
+    .board-area .inner-flex ul.member-list-four li .more-about {
+        left: 0px;
+        opacity: 1;
+        bottom: -30px;
+    }
+
+    .board-area .inner-flex h2 {
+        font-size: 30px;
+        line-height: 30px;
+        width: 100%;
+        padding-right: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .board-area .inner-flex ul.member-list-three {
+        display: block;
+    }
+
+    .board-area .inner-flex ul.member-list-three li {
+        width: 100%;
+    }
+
+    .board-area .inner-flex ul.member-list-four li {
+        width: 100%;
+    }
+
+    .board-area .inner-flex ul.member-list-three li .photo-area .gray-bg {
+        background: #103E64;
+    }
+
+    .about-detail-area .inside-area {
+        padding: 25px
+    }
+
+    .about-detail-area .inside-area .titlebar {
+        margin-bottom: 20px;
+    }
+
+    .about-detail-area .inside-area .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .about-detail-area .inside-area .leftside {
+        width: 100%;
+        padding: 0px
+    }
+
+    .about-detail-area .inside-area .photo-area {
+        width: 100%;
+        height: 240px;
+        margin: 0 0 20px 0
+    }
+
+    .about-detail-area .inside-area .leftside .name {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+}

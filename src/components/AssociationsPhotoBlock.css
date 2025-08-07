@@ -1,0 +1,27 @@
+.social-initiatives-area{padding: 60px 120px 60px 120px; background: #fff;}
+.social-initiatives-area h2{font-size: 68px; line-height: 74px; color: var(--blue-color); font-weight: 400; margin: 0 0 68px 0; font-family:'Esperanza Headline Roman'; padding: 0 20px;}
+.social-initiatives-area h2 span{color: var(--light-blue-color);}
+.social-initiatives-area .half-block{width: 50%; padding: 0 20px;}
+.social-initiatives-area .photo-block{width: 100%; min-height: 780px; position: relative; overflow: hidden; }
+.social-initiatives-area .photo-block img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover;  transition:all .5s ease}
+.social-initiatives-area .photo-block::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 100%; height: 100%; z-index: 1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) -6.81%, #1C6791 112.95%);}
+.social-initiatives-area .photo-block .bottom-content{position: absolute; bottom: 45px; left: 85px; max-width: 500px; z-index: 2;  transition:all .5s ease}
+.social-initiatives-area .photo-block .bottom-content h3{font-size: 48px; line-height: 56px; color:#fff; font-weight: 400; margin: 0 0 68px 0; font-family:'Esperanza Headline Roman'; min-height: 168px;}
+.social-initiatives-area .photo-block .bottom-content .btn-more{font-size: 28px; line-height: 109%; position: relative; color:#fff; font-family: "Anek Devanagari", sans-serif; text-decoration: none;}
+.social-initiatives-area .photo-block .bottom-content .btn-more::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 0%; background: #fff; height: 1px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.social-initiatives-area .photo-block .bottom-content .btn-more:hover::before{width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.social-initiatives-area .photo-block.yellow::before{background: linear-gradient(180deg, rgba(0, 0, 0, 0) -6.81%, #E0B453 112.95%);}
+.social-initiatives-area .photo-block:hover img{transform:scale(1.05); transition:all .5s ease}
+.social-initiatives-area .photo-block:hover .bottom-content{bottom: 60px; transition:all .5s ease}
+
+
+@media only screen and (max-width: 1640px) {
+    .social-initiatives-area .photo-block .bottom-content {left: 35px;}
+    .social-initiatives-area .photo-block .bottom-content h3 {font-size: 40px;}
+    .social-initiatives-area h2{margin: 0 0 38px 0; }
+}
+
+@media only screen and (max-width: 576px) {
+   .social-initiatives-area {padding: 40px 20px 40px 20px;}
+   .social-initiatives-area .photo-block .bottom-content{left: 20px !important;}
+}

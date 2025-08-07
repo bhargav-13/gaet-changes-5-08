@@ -1,0 +1,55 @@
+.review-slider-section{padding: 160px 0;}
+.review-slider-section .container{width: 100%; max-width: 100%; padding: 0 140px; position: relative;}
+.review-slider-section h2{font-family:'Esperanza Headline Roman'; font-size: 68px; line-height: 109%; color: var(--blue-color); margin: 0 0 60px 0;} 
+.review-slider-section .swiper-slide{opacity: 0.3;}
+.review-slider-section .swiper-slide.swiper-slide-active{opacity: 1;}
+.review-slider-section .review-block{padding: 0 0 62px 0; margin-bottom: 80px;}
+.review-slider-section .review-block .msg-block{background: #F9F9F9; padding: 100px 100px 90px 100px;}
+.review-slider-section .review-block .msg-block p{font-size: 24px; line-height: 109%; color: var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 400; margin: 0; min-height: 234px;}
+.review-slider-section .review-block .msg-block .name{font-size: 24px; line-height: 109%; color: var(--blue-color); font-family: "Anek Devanagari", sans-serif; font-weight: 500;}
+.review-slider-section .review-block .msg-block .name span{display: block; font-weight: 200;}
+.review-slider-section .swiper-pagination{display: flex; justify-content: center; }
+.review-slider-section .swiper-pagination .swiper-pagination-bullet {width: 220px; height: 3px; display: inline-block; border-radius: 0px; background: var(--blue-color); margin: 0px 4px;}
+
+.review-slider-section .review-block .shape-row{display: flex; position: relative;}
+.review-slider-section .review-block .shape-row .shape-box{width: calc(50% + 1px); height: 50px; position: relative;}
+.review-slider-section .review-block .shape-row .shape-box:first-child{border-top-right-radius: 30px;}
+.review-slider-section .review-block .shape-row .shape-box:last-child {position: absolute; right: 0; top: 0; border-top-left-radius: 30px;}
+ 
+.review-slider-section .swiper-slide-active .review-block .msg-block p{animation:fadeInUp 1s ease backwards;}
+.review-slider-section .swiper-slide-active .review-block .msg-block .name{animation:fadeInUp 2s ease backwards;}
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .review-slider-section{padding: 60px 0;}
+    .review-slider-section .container{padding: 0 50px;}
+    .review-slider-section h2{font-size: 36px;}
+    .review-slider-section .review-block .msg-block{padding: 50px;}
+    .review-slider-section .review-block .msg-block p {font-size: 18px; line-height: 128%; min-height: 188px;}
+    .review-slider-section .review-block {padding: 0 0 40px 0; margin-bottom: 50px;}
+    .review-slider-section .review-block .msg-block .name {font-size: 20px;}
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {
+  
+}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .review-slider-section{padding: 50px 0;}
+    .review-slider-section h2{font-size: 36px; margin: 0 0 40px 0;}
+    .review-slider-section .review-block .msg-block p{font-size: 16px; line-height: 120%;}
+    .review-slider-section .review-block .msg-block{padding: 40px;}
+    .review-slider-section .review-block .msg-block .name{font-size: 18px;}
+    .review-slider-section .review-block{padding: 0 0 32px 0; margin-bottom: 40px;}
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+    .review-slider-section{padding: 30px 0;}
+    .review-slider-section .container{padding: 0 20px;}
+    .review-slider-section h2{font-size: 24px; margin: 0 0 20px 0;}
+    .review-slider-section .swiper {width: 100%;padding: 0 20px;}
+    .review-slider-section .review-block .shape-row .shape-box {height: 30px;}
+}

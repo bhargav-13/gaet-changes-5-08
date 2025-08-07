@@ -1,0 +1,12 @@
+.popupmsg{position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.5); z-index: 111;}
+.popupmsg .popup-content{max-width: 350px; background-color: #EBEBEB; padding: 35px;}
+.popupmsg .popup-content h2{font-size: 32px; margin: 0 0 35px 0; font-family:'Anek Devanagari'; color: var(--blue-color);}
+.popupmsg .popup-content p{font-size: 16px; font-family:'Anek Devanagari'; color: #000; line-height: 22px; margin: 0 0 25px 0;}
+.popupmsg .popup-content .close-button{background: #27A3C4; border: none;  font-size: 18px; font-weight: 400; text-transform: uppercase; padding: 13px 35px 7px 35px; line-height: 20px; color: #fff; text-decoration: none; font-family: "Anek Devanagari", sans-serif;}
+
+
+@media only screen and (max-width: 767px) {
+    .popupmsg{padding: 10px;}
+    .popupmsg .popup-content h2{font-size: 22px; margin: 0 0 25px 0;}
+    .popupmsg .popup-content p{font-size: 14px; margin-bottom: 20px; line-height: 22px;}
+}

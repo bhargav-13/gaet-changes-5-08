@@ -1,0 +1,165 @@
+.empowering-section{padding: 0px; position: relative; overflow: hidden; background-color: #09213A; padding-bottom: 50px;}
+.empowering-section img{width: 100%;}
+.empowering-section .cloud-img{width: 340px; position: absolute; z-index: 1; left: 11%; bottom: 52%; animation: linear infinite; animation-name: run; animation-duration: 8s;}
+@keyframes run {
+    0% {
+      left: 5%;
+    }
+    50% { 
+      left: 15%; 
+     }
+    100% {
+      left: 5%;     
+    }
+  }
+.empowering-section .content-block{position: relative; top: 60px; left: 0px; width: 100%; text-align: center; z-index: 3;}
+.empowering-section .content-block h2{font-family:'Esperanza Headline Roman'; font-size: 68px; line-height: 130%; color: #C1C1C1; margin: 0 0 50px 0;} 
+.empowering-section .content-block h2 span{font-family:'Esperanza Headline Roman'; font-size: 68px; line-height: 109%; color: #27A3C4; margin: 0 0 50px 0;}
+.empowering-section .content-block h2 span{display: block; color: var(--light-blue-color);}
+.empowering-section .content-block .btn-more{font-size: 40px; position: relative; color: #C1C1C1; font-family: "Anek Devanagari", sans-serif;}
+.empowering-section .content-block .btn-more::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 0%; background: var(--blue-color); height: 1px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.empowering-section .content-block .btn-more:hover::before{width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.empowering-section ul.box-layout{margin: 0px; padding: 0px; list-style: none; display: flex; min-height: 730px; gap: 15px; }
+.empowering-section ul.box-layout li{position: relative;}
+.empowering-section ul.box-layout li.line-1,
+.empowering-section ul.box-layout li.line-6{width: 21.2%;}
+.empowering-section ul.box-layout li.line-1 .block-1{width: 100%; height: 32%; position: absolute; bottom: 0; left: 0px; border-radius: 0 30px 0 0;z-index: 1;}
+.empowering-section ul.box-layout li.line-1 .block-1 img{position: absolute;bottom: 0px; width: 87%; left: 4%; }
+.empowering-section ul.box-layout li.line-1 .block-2{width: 100%; height: 16%; position: absolute; bottom: 34%; left: 0px; border-radius: 0 102px 0 0; overflow: hidden;}
+.empowering-section ul.box-layout li.line-1 .block-1 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+
+
+
+@keyframes animName {
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(360deg);
+      }
+   }
+
+.empowering-section ul.box-layout li.line-2,
+.empowering-section ul.box-layout li.line-5{width: 15.2%;}
+.empowering-section ul.box-layout li.line-2 .block-1{width: 100%; height: 15.7%; position: absolute; bottom: 34%; left: 0px; border-radius: 0 80px 0 0;z-index: 2; overflow: hidden;}
+.empowering-section ul.box-layout li.line-2 .block-1 .rays{width: 900px; position: absolute; top: -338px; left: -454px; animation: animName 350s linear infinite;}
+.empowering-section ul.box-layout li.line-2 .block-2{width: 100%; height: 32%; position: absolute; bottom: 0px; left: 0px;  z-index: 1;}
+.empowering-section ul.box-layout li.line-2 .block-3{width: 100%; height: 23%; position: absolute; bottom: 59%; left: 0px; border-radius: 0 30px 0 0; }
+.empowering-section ul.box-layout li.line-2 .block-3 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+
+.empowering-section ul.box-layout li.line-3{width: 12.1%;}
+.empowering-section ul.box-layout li.line-3 .block-1{width: 100%; height: 32%; position: absolute; bottom: 0; left: 0px; border-radius: 0 120px 0 0;z-index: 2; overflow: hidden;}
+.empowering-section ul.box-layout li.line-3 .block-1 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+.empowering-section ul.box-layout li.line-3 .block-2{width: 100%; height: 16.8%; position: absolute; bottom: 42.5%; left: 0px; border-radius: 0 30px 0 0; overflow: hidden;}
+.empowering-section ul.box-layout li.line-3 .block-2 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+.empowering-section ul.box-layout li.line-6 .block-1{width: 100%; height: 32%; position: absolute; bottom: 0; left: 0px; border-radius: 0 30px 0 0;z-index: 1;}
+.empowering-section ul.box-layout li.line-6 .block-1 img{position: absolute;bottom: 0px; width: 87%; left: 4%; }
+.empowering-section ul.box-layout li.line-6 .block-2{width: 100%; height: 16%; position: absolute; bottom: 34%; left: 0px; border-radius: 0 102px 0 0; overflow: hidden;}
+.empowering-section ul.box-layout li.line-6 .block-1 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+
+
+.empowering-section ul.box-layout li.line-4{width: 12.1%;}
+.empowering-section ul.box-layout li.line-4 .block-1{width: 100%; height: 32%; position: absolute; bottom: 0; left: 0px; border-radius: 120px 0 0 0;z-index: 2; overflow: hidden;}
+.empowering-section ul.box-layout li.line-4 .block-1 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+.empowering-section ul.box-layout li.line-4 .block-2{width: 100%; height: 25%; position: absolute; bottom: 17.5%; left: 0px; border-radius: 0 30px 0 0;}
+.empowering-section ul.box-layout li.line-5 .block-1{width: 100%; height: 15.7%; position: absolute; bottom: 34%; left: 0px; border-radius: 80px 0 0 0;z-index: 2; overflow: hidden;}
+.empowering-section ul.box-layout li.line-5 .block-2{width: 100%; height: 32%; position: absolute; bottom: 0px; left: 0px;  z-index: 1;}
+.empowering-section ul.box-layout li.line-5 .block-2 img{width: 100%; height: 100%; position: absolute; top: 0px; right: 0px; left:0px; bottom: 0px; object-fit: cover;}
+
+.blue{background: #124066; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.blue:hover{background: #261C35 !important; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.light-blue{background: #27A3C4; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.light-blue:hover{background: #78519E !important; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.medium-blue{background: #1C6791; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
+.medium-blue:hover{background: #431f66 !important; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease; }
+
+
+
+@-webkit-keyframes bluecolor {
+  0%     {background-color:#124066;}
+  50.0%  {background-color:#261C35;}
+  100.0%  {background-color:#124066;}
+}
+
+@keyframes bluecolor {
+  0%     {background-color:#124066;}
+  50.0%  {background-color:#261C35;}
+  100.0%  {background-color:#124066;}
+}
+@-webkit-keyframes lightbluecolor {
+  0%     {background-color:#27A3C4;}
+  50.0%  {background-color:#78519E;}
+  100.0%  {background-color:#27A3C4;}
+}
+
+@keyframes lightbluecolor {
+  0%     {background-color:#27A3C4;}
+  50.0%  {background-color:#78519E;}
+  100.0%  {background-color:#27A3C4;}
+}
+@-webkit-keyframes mediumbluecolor {
+  0%     {background-color:#1C6791;}
+  50.0%  {background-color:#431f66;}
+  100.0%  {background-color:#1C6791;}
+}
+
+@keyframes mediumbluecolor {
+  0%     {background-color:#1C6791;}
+  50.0%  {background-color:#431f66;}
+  100.0%  {background-color:#1C6791;}
+}
+
+
+/* Medium Desktop */
+@media only screen and (max-width: 1640px) {
+    .empowering-section .content-block{top: 60px;}
+    .empowering-section .content-block h2{font-size: 36px; margin: 0 0 20px 0;}
+    .empowering-section .content-block .btn-more{font-size: 22px;}
+    .empowering-section ul.box-layout{min-height: 540px;}
+}
+
+/* Small Laptop */
+@media only screen and (max-width: 1280px) {
+  
+}
+
+/* Tablet (Landscape) */
+@media only screen and (max-width: 1024px) {
+    .empowering-section .content-block{top: 30px;}
+    .empowering-section .content-block h2 {font-size: 36px; margin: 0 0 10px 0;}
+    .empowering-section .content-block .btn-more {font-size: 18px;}
+    .empowering-section ul.box-layout {min-height: 320px;}
+    .empowering-section ul.box-layout li.line-8 .block-2 .plane-girl{right: -30px;}
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 767px) {
+    .empowering-section .content-block {top: 0; position: relative; padding-top: 30px;}
+    .empowering-section .content-block h2{font-size: 24px;}
+    .empowering-section .cloud-img{display: none;}
+    .blue{
+    animation-name: bluecolor;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
+    animation-play-state: running;}
+    .light-blue{animation-name: lightbluecolor;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;    
+      animation-play-state: running;}
+    .medium-blue{animation-name: mediumbluecolor;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;    
+        animation-play-state: running;}
+}
+@media only screen and (max-width: 620px) {
+    .empowering-section ul.box-layout{min-height: 340px;}
+}
+@media only screen and (max-width: 520px) {
+    .empowering-section ul.box-layout{min-height: 240px;}
+}
+@media only screen and (max-width: 420px) {
+.empowering-section ul.box-layout{min-height: 160px;}
+}
