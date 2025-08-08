@@ -3,72 +3,173 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import { fetchData } from "./Api";
 import "./Empowering.css";
+import imgOne from "../assets/one.png";
+import imgTwo from "../assets/two.jpg";
+import imgThree from "../assets/three.jpg";
+import imgFour from "../assets/four.jpg";
+import imgFive from "../assets/five.png";
+import imgSix from "../assets/six.png";
 
 function Empowering() {
+  const [aboutUsData, setAboutUsData] = useState(null);
+  const [error, setError] = useState(null);
 
-    const [aboutUsData, setAboutUsData] = useState(null);
-    const [error, setError] = useState(null);
+  // COLORS
+  const [boxColors, setBoxColors] = useState([
+    "#79519F",
+    "#189090",
+    "#1C6791",
+    "#124066",
+    "#cc6728",
+    "#69934A",
+  ]);
+  const colorOptions = ["#189090", "#79519F", "#CC6728", "#69934A"];
 
-    useEffect(() => {
-        const getAboutUsData = async () => {
-            try {
-                const response = await fetchData();
-                if (response && response.data && response.data.about_us_list && response.data.about_us_list.length > 0) {
-                    setAboutUsData(response.data.about_us_list[0]);
-                } else {
-                    console.error("about_us_list is missing or empty");
-                }
-            } catch (error) {
-                setError(error.message);
-                console.error("Error fetching About Us data:", error);
-            }
-        };
+  // IMAGES
+  const [boxImages, setBoxImages] = useState([
+    "../assets/one.png",
+    "../assets/two.jpg",
+    "../assets/three.jpg",
+    "../assets/four.jpg",
+    "../assets/five.png",
+    "../assets/six.png",
+  ]);
+  const imageOptions = [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix];
 
-        getAboutUsData();
-    }, []);
+  // FETCH API DATA
+  useEffect(() => {
+    const getAboutUsData = async () => {
+      try {
+        const response = await fetchData();
+        if (response?.data?.about_us_list?.length > 0) {
+          setAboutUsData(response.data.about_us_list[0]);
+        }
+      } catch (error) {
+        setError(error.message);
+      }
+    };
 
-    if (error) return <div>Error: {error}</div>;
+    getAboutUsData();
+  }, []);
 
-    if (!aboutUsData) return null;
+  // RANDOM COLOR CHANGER
+  useEffect(() => {
+    let lastBoxIndex = -1;
 
-    return (
-        <>
-            <div className='empowering-section'>
-                <div className='content-block'>
-                    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-                        <div dangerouslySetInnerHTML={{ __html: aboutUsData.title }} />
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={2}>
-                        <Link to={aboutUsData.link} className='btn-more'>About Us</Link>
-                    </ScrollAnimation>
+    const interval = setInterval(() => {
+      let randomBox;
+      do {
+        randomBox = Math.floor(Math.random() * boxColors.length);
+      } while (randomBox === lastBoxIndex);
 
-                </div>
-                <ul className='box-layout'>
-                    <li className='line-1'>
-                        <div className='block-1 '><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group.png"} alt="logo" /></div>
-                        <div className='block-2 blue' style={{ backgroundColor: '#79519F' }}></div>
-                    </li>
-                    <li className='line-2'>
-                        <div className='block-1'><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group (1).png"} alt="logo" /></div>
-                        <div className='block-2 blue' style={{ backgroundColor: '#189090' }}></div>
-                    </li>
-                    <li className='line-3'>
-                        <div className='block-1'><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group (2).png"} alt="logo" /></div>
-                    </li>
-                    <li className='line-4'>
-                        <div className='block-1'><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group (3).png"} alt="logo" /></div>
-                    </li>
-                    <li className='line-5'>
-                        <div className='block-1'><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group (4).png"} alt="logo" /></div>
-                        <div className='block-2 blue' style={{ backgroundColor: '#cc6728' }}></div>
-                    </li>
-                    <li className='line-6'>
-                        <div className='block-1 '><img src={aboutUsData.image_one || process.env.PUBLIC_URL + "/images/Mask group (5).png"} alt="logo" /></div>
-                        <div className='block-2 blue' style={{ backgroundColor: '#69934A' }}></div>
-                    </li>
-                </ul>
-            </div>
-        </>
-    );
+      lastBoxIndex = randomBox;
+
+      const randomColor =
+        colorOptions[Math.floor(Math.random() * colorOptions.length)];
+
+      setBoxColors((prevColors) =>
+        prevColors.map((color, index) =>
+          index === randomBox ? randomColor : color
+        )
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // RANDOM IMAGE CHANGER
+  useEffect(() => {
+    let lastImageIndex = -1;
+
+    const interval = setInterval(() => {
+      let randomBox;
+      do {
+        randomBox = Math.floor(Math.random() * boxImages.length);
+      } while (randomBox === lastImageIndex);
+
+      lastImageIndex = randomBox;
+
+      const currentImage = boxImages[randomBox];
+      let newImage;
+      do {
+        newImage =
+          imageOptions[Math.floor(Math.random() * imageOptions.length)];
+      } while (newImage === currentImage);
+
+      setBoxImages((prevImages) =>
+        prevImages.map((img, index) => (index === randomBox ? newImage : img))
+      );
+    }, 3000); // every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [boxImages]);
+
+  if (error) return <div>Error: {error}</div>;
+  if (!aboutUsData) return null;
+
+  return (
+    <div className="empowering-section">
+      <div className="content-block">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+          <div dangerouslySetInnerHTML={{ __html: aboutUsData.title }} />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={2}>
+          <Link to={aboutUsData.link} className="btn-more">
+            About Us
+          </Link>
+        </ScrollAnimation>
+      </div>
+
+      <ul className="box-layout">
+        <li className="line-1">
+          <div className="block-1">
+            <img src={boxImages[0]} alt="logo" />
+          </div>
+          <div
+            className="block-2"
+            style={{ backgroundColor: boxColors[0] }}
+          ></div>
+        </li>
+        <li className="line-2">
+          <div className="block-1">
+            <img src={boxImages[1]} alt="logo" />
+          </div>
+          <div
+            className="block-2"
+            style={{ backgroundColor: boxColors[1] }}
+          ></div>
+        </li>
+        <li className="line-3">
+          <div className="block-1">
+            <img src={boxImages[2]} alt="logo" />
+          </div>
+        </li>
+        <li className="line-4">
+          <div className="block-1">
+            <img src={boxImages[3]} alt="logo" />
+          </div>
+        </li>
+        <li className="line-5">
+          <div className="block-1">
+            <img src={boxImages[4]} alt="logo" />
+          </div>
+          <div
+            className="block-2"
+            style={{ backgroundColor: boxColors[4] }}
+          ></div>
+        </li>
+        <li className="line-6">
+          <div className="block-1">
+            <img src={boxImages[5]} alt="logo" />
+          </div>
+          <div
+            className="block-2"
+            style={{ backgroundColor: boxColors[5] }}
+          ></div>
+        </li>
+      </ul>
+    </div>
+  );
 }
+
 export default Empowering;

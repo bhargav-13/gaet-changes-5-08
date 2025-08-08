@@ -203,7 +203,7 @@
 }
 
 .middlePart-separator {
-    height: 220px;
+    height: 180px;
 }
 
 /* Medium Desktop */
@@ -211,7 +211,7 @@
 
     .footer-area .inner-flex .leftside,
     .footer-area .inner-flex .rightside {
-        /* padding: 50px 0 90px 0; */
+        padding: 50px 0 115px 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

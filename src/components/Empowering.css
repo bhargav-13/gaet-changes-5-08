@@ -72,7 +72,9 @@
 .light-blue:hover{background: #78519E !important; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
 .medium-blue{background: #1C6791; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
 .medium-blue:hover{background: #431f66 !important; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease; }
-
+.box-layout .block-2 {
+    transition: background-color 1s ease-in-out;
+}
 
 
 @-webkit-keyframes bluecolor {
