@@ -13,6 +13,7 @@ import imgSix from "../assets/six.png";
 function Empowering() {
   const [aboutUsData, setAboutUsData] = useState(null);
   const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // COLORS
   const [boxColors, setBoxColors] = useState([
@@ -25,16 +26,14 @@ function Empowering() {
   ]);
   const colorOptions = ["#189090", "#79519F", "#CC6728", "#69934A"];
 
-  // IMAGES
-  const [boxImages, setBoxImages] = useState([
-    "../assets/one.png",
-    "../assets/two.jpg",
-    "../assets/three.jpg",
-    "../assets/four.jpg",
-    "../assets/five.png",
-    "../assets/six.png",
-  ]);
+  // IMAGES 
   const imageOptions = [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix];
+  const [boxImages, setBoxImages] = useState([...imageOptions]); // Initialize with actual images
+
+  // Add transition states for smooth animations
+  const [imageTransitions, setImageTransitions] = useState([
+    false, false, false, false, false, false
+  ]);
 
   // FETCH API DATA
   useEffect(() => {
@@ -46,16 +45,20 @@ function Empowering() {
         }
       } catch (error) {
         setError(error.message);
+      } finally {
+        // Set loaded to true after data fetch attempt
+        setIsLoaded(true);
       }
     };
 
     getAboutUsData();
   }, []);
 
-  // RANDOM COLOR CHANGER
+  // RANDOM COLOR CHANGER with smooth transitions
   useEffect(() => {
-    let lastBoxIndex = -1;
+    if (!isLoaded) return;
 
+    let lastBoxIndex = -1;
     const interval = setInterval(() => {
       let randomBox;
       do {
@@ -63,9 +66,7 @@ function Empowering() {
       } while (randomBox === lastBoxIndex);
 
       lastBoxIndex = randomBox;
-
-      const randomColor =
-        colorOptions[Math.floor(Math.random() * colorOptions.length)];
+      const randomColor = colorOptions[Math.floor(Math.random() * colorOptions.length)];
 
       setBoxColors((prevColors) =>
         prevColors.map((color, index) =>
@@ -75,12 +76,13 @@ function Empowering() {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isLoaded]);
 
-  // RANDOM IMAGE CHANGER
+  // RANDOM IMAGE CHANGER with fade animation
   useEffect(() => {
-    let lastImageIndex = -1;
+    if (!isLoaded) return;
 
+    let lastImageIndex = -1;
     const interval = setInterval(() => {
       let randomBox;
       do {
@@ -88,21 +90,35 @@ function Empowering() {
       } while (randomBox === lastImageIndex);
 
       lastImageIndex = randomBox;
-
       const currentImage = boxImages[randomBox];
       let newImage;
       do {
-        newImage =
-          imageOptions[Math.floor(Math.random() * imageOptions.length)];
+        newImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
       } while (newImage === currentImage);
 
-      setBoxImages((prevImages) =>
-        prevImages.map((img, index) => (index === randomBox ? newImage : img))
+      // Start fade out animation
+      setImageTransitions(prev => 
+        prev.map((transition, index) => index === randomBox ? true : transition)
       );
-    }, 3000); // every 3 seconds
+
+      // After fade out, change image and fade in
+      setTimeout(() => {
+        setBoxImages(prevImages =>
+          prevImages.map((img, index) => (index === randomBox ? newImage : img))
+        );
+        
+        // Reset transition state after a short delay
+        setTimeout(() => {
+          setImageTransitions(prev => 
+            prev.map((transition, index) => index === randomBox ? false : transition)
+          );
+        }, 50);
+      }, 300); // Wait for fade out to complete
+
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, [boxImages]);
+  }, [boxImages, isLoaded]);
 
   if (error) return <div>Error: {error}</div>;
   if (!aboutUsData) return null;
@@ -113,7 +129,7 @@ function Empowering() {
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <div dangerouslySetInnerHTML={{ __html: aboutUsData.title }} />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={2}>
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
           <Link to={aboutUsData.link} className="btn-more">
             About Us
           </Link>
@@ -123,47 +139,71 @@ function Empowering() {
       <ul className="box-layout">
         <li className="line-1">
           <div className="block-1">
-            <img src={boxImages[0]} alt="logo" />
+            <img 
+              src={boxImages[0]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[0] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
           <div
-            className="block-2"
+            className="block-2 animated-bg"
             style={{ backgroundColor: boxColors[0] }}
           ></div>
         </li>
         <li className="line-2">
           <div className="block-1">
-            <img src={boxImages[1]} alt="logo" />
+            <img 
+              src={boxImages[1]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[1] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
           <div
-            className="block-2"
+            className="block-2 animated-bg"
             style={{ backgroundColor: boxColors[1] }}
           ></div>
         </li>
         <li className="line-3">
           <div className="block-1">
-            <img src={boxImages[2]} alt="logo" />
+            <img 
+              src={boxImages[2]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[2] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
         </li>
         <li className="line-4">
           <div className="block-1">
-            <img src={boxImages[3]} alt="logo" />
+            <img 
+              src={boxImages[3]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[3] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
         </li>
         <li className="line-5">
           <div className="block-1">
-            <img src={boxImages[4]} alt="logo" />
+            <img 
+              src={boxImages[4]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[4] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
           <div
-            className="block-2"
+            className="block-2 animated-bg"
             style={{ backgroundColor: boxColors[4] }}
           ></div>
         </li>
         <li className="line-6">
           <div className="block-1">
-            <img src={boxImages[5]} alt="logo" />
+            <img 
+              src={boxImages[5]} 
+              alt="educational content" 
+              className={`animated-image ${imageTransitions[5] ? 'fade-out' : 'fade-in'}`}
+            />
           </div>
           <div
-            className="block-2"
+            className="block-2 animated-bg"
             style={{ backgroundColor: boxColors[5] }}
           ></div>
         </li>
