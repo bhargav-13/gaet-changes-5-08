@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import { fetchData } from "./Api";
 import "./Empowering.css";
-import imgOne from "../assets/one.png";
+import imgOne from "../assets/one.jpg"
 import imgTwo from "../assets/two.jpg";
 import imgThree from "../assets/three.jpg";
 import imgFour from "../assets/four.jpg";
-import imgFive from "../assets/five.png";
-import imgSix from "../assets/six.png";
+import imgFive from "../assets/five.jpg";
+import imgSix from "../assets/six.jpg";
 
 function Empowering() {
   const [aboutUsData, setAboutUsData] = useState(null);
