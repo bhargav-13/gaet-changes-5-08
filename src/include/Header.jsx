@@ -6,7 +6,8 @@ import Tab from "react-bootstrap/Tab";
 import axios from "axios";
 import "./header.css";
 import ContactApi from "./ContactApi";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown} from "@fortawesome/free-solid-svg-icons";
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +34,7 @@ function Header() {
         "/our-school",
     ].includes(location.pathname);
 
+    // Handle scroll for header styling
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 150) {
@@ -46,6 +48,7 @@ function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Fetch menu data
     useEffect(() => {
         axios
             .post(
@@ -82,37 +85,84 @@ function Header() {
         setActiveTab(menuTitle);
     };
 
-    
-
     return (
         <>
-            <header className={`${isScrolled ? "main-header scrolled" : "main-header"} ${isWhiteHeader ? "white-header" : ""} ${isFixedHeader ? "fixed-header" : ""}`}>
-                <Container>
+            {/* Main Header */}
+            <header className={`main-header ${isScrolled ? "scrolled" : ""}`}>
+                <Container className="d-flex justify-content-between align-items-center">
+                    {/* Logo */}
                     <div className="logo">
                         <Link to="/">
                             <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo" />
                         </Link>
                     </div>
-                    <div className="white-logo">
-                        <Link to="/">
-                            <img src={process.env.PUBLIC_URL + "/images/white-logo.png"} alt="logo" />
-                            
-                            {/* normal logo */}
-                            {/* <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="logo" /> */}
+
+                    {/* Desktop Navigation - visible on large screens only */}
+                    <nav className="desktop-nav d-none d-lg-flex">
+                        {/* Schools with dropdown */}
+                        <div className="nav-item">
+                            <span className="nav-link">Schools <FontAwesomeIcon icon={faAngleDown} /></span>
+                            <ul className="submenu">
+                                {data?.data?.menu_list
+                                    ?.find((menu) => menu.title === "Schools")
+                                    ?.menu_item.map((submenu, subIndex) => (
+                                        <li key={`${submenu.id}-${subIndex}`}>
+                                            <Link to={submenu.menu_link}>{submenu.menu_name}</Link>
+                                        </li>
+                                    ))}
+                            </ul>
+                        </div>
+
+                        {/* About us with dropdown */}
+                        <div className="nav-item">
+                            <span className="nav-link">About us <FontAwesomeIcon icon={faAngleDown} /></span>
+                            <ul className="submenu">
+                                {data?.data?.menu_list
+                                    ?.find((menu) => menu.title.toLowerCase() === "about us")
+                                    ?.menu_item.map((submenu, subIndex) => (
+                                        <li key={`${submenu.id}-${subIndex}`}>
+                                            {submenu.id === 13 || submenu.id === 15 ? (
+                                                <a
+                                                    href={submenu.menu_link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    {submenu.menu_name}
+                                                </a>
+                                            ) : (
+                                                <Link to={submenu.menu_link}>{submenu.menu_name}</Link>
+                                            )}
+                                        </li>
+                                    ))}
+                            </ul>
+                        </div>
+
+                        {/* Other static links */}
+                        <Link to="/admission" className="nav-link">
+                            Admissions
                         </Link>
-                    </div>
-                    <div className="rightside">
-                        <Link to="/contact-us" className="btn-contact">Contact Us</Link>
-                        <Link to="/admission" className="btn-admission">ADMISSIONS</Link>
-                        <button className={isMenuOpen ? "btn-menu active" : "btn-menu"} onClick={toggleMenu}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
+                        <Link to="/associations" className="nav-link">
+                            Associations
+                        </Link>
+                        <Link to="#" className="nav-link">
+                            Why GAET
+                        </Link>
+                    </nav>
+
+
+                    {/* Hamburger menu for mobile (unchanged) */}
+                    <button
+                        className={isMenuOpen ? "btn-menu active d-lg-none" : "btn-menu d-lg-none"}
+                        onClick={toggleMenu}
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </Container>
             </header>
 
+            {/* Mobile Menu Overlay */}
             <div className={isMenuOpen ? "full-menu-area open" : "full-menu-area"}>
                 <div className="topbar">
                     <Container>
@@ -122,18 +172,18 @@ function Header() {
                             </Link>
                         </div>
                         <div className="rightside">
-                            <Link to="/contact-us" onClick={toggleMenu} className="btn-contact">Contact Us</Link>
-                            <Link to="/admission" onClick={toggleMenu} className="btn-admission">ADMISSIONS</Link>
+                            {/* Close button for mobile menu */}
                             <button className="btn-close" onClick={toggleMenu}></button>
                         </div>
                     </Container>
                 </div>
 
+                {/* Mobile Navigation Menu */}
                 <div className="inner-flex">
                     <div className="leftpart">
                         <div className="menu-area">
                             <Tab.Container activeKey={activeTab}>
-                                {/* Dynamic Navigation Menu */}
+                                {/* Dynamic Navigation Menu from fetched data */}
                                 <Nav variant="pills" className="flex-column">
                                     {data.data.menu_list.map((menu, index) => (
                                         <Nav.Item key={`${menu.id}-${index}`}>
@@ -147,13 +197,7 @@ function Header() {
                                         </Nav.Item>
                                     ))}
                                     <Nav.Item>
-                                        <Nav.Link
-                                            as={Link}
-                                            to="/contact-us"
-                                            onClick={() => {
-                                                toggleMenu();
-                                            }}
-                                        >
+                                        <Nav.Link as={Link} to="/contact-us" onClick={toggleMenu}>
                                             Contact
                                         </Nav.Link>
                                     </Nav.Item>
@@ -190,10 +234,10 @@ function Header() {
                                         </Tab.Pane>
                                     ))}
                                 </Tab.Content>
-
                             </Tab.Container>
                         </div>
 
+                        {/* Additional Links and ContactApi */}
                         <div className="bottompart">
                             <ul className="link">
                                 <li><Link to="/admission" onClick={toggleMenu}>Admissions</Link></li>
@@ -202,10 +246,10 @@ function Header() {
                                 <li><Link to="/faq" onClick={toggleMenu}>FAQ</Link></li>
                             </ul>
                             <ContactApi />
-
                         </div>
                     </div>
 
+                    {/* Right part: Image */}
                     <div className="rightpart">
                         <img src={activeImage || process.env.PUBLIC_URL + "/images/school-1.jpg"} className="photo1" alt="Menu Illustration" />
                     </div>

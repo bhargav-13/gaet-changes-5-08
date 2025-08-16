@@ -28,6 +28,8 @@ const OurSchool = React.lazy(() => import("./pages/ourSchool"));
 const GonekaAssociates = React.lazy(() => import("./pages/GonekaAssociates"));
 const PrivacyPage = React.lazy(() => import("./pages/Privacy"));
 const Accessibility = React.lazy(() => import("./pages/AccessibilityPage"));
+const Announcements = React.lazy(() => import("./pages/AnnouncementEvents"));
+
 
 function App() {
 
@@ -69,6 +71,7 @@ function App() {
                 <Route path="/faq" element={<FaqPage />} />
                 <Route path="/terms&policies" element={<PrivacyPage />} />
                 <Route path="/accessibility" element={<Accessibility />} />
+                <Route path="/contact-us" element={<ContactPage />} />
                 <Route path="/contact-us" element={<ContactPage />} />
                 <Route
                   path="/our-social-initiatives"

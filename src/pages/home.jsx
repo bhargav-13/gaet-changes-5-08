@@ -14,6 +14,7 @@ import Loader from '../components/Loader';
 import { Helmet } from "react-helmet-async";
 import './Home.css';
 import AdvSchoolSlider from './AdvSchoolSlider';
+import AnnouncementEvents from './AnnouncementEvents';
 
 
 
@@ -73,9 +74,10 @@ function HomePage() {
           </Container>
         </ScrollAnimation>
         <AdvSchoolSlider />
+        <AnnouncementEvents/>
       </div>
 
-      <ReviewSlider />
+      {/* <ReviewSlider /> */}
       <Footer />
     </>
   );
