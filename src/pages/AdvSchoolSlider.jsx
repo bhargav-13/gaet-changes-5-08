@@ -12,6 +12,14 @@ import rowTwoImageTwo from '../assets/Mask group (3).png';
 import rowTwoImageThree from '../assets/Mask group (4).png';
 import rowThreeImageOne from '../assets/Mask group (5).png';
 
+import educationOne from '../assets/educationone.png';
+import educationTwo from '../assets/educationtwo.png';
+import educationThree from '../assets/educationthree.png';
+import educationFour from '../assets/educationfour.png';
+import educationFive from '../assets/educationfive.png';
+import educationSix from '../assets/educationsix.png';
+
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -25,24 +33,32 @@ import { fetchData } from '../components/Api';
 
 function AdvSchoolSlider() {
 
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
+    // const [data, setData] = useState(null);
+    // const [error, setError] = useState(null);
 
-    useEffect(() => {
-        const loadSchoolData = async () => {
-            try {
-                const result = await fetchData();
-                setData(result.data);
-            } catch (err) {
-                setError(err.message || "Something went wrong");
-            }
-        };
+    // useEffect(() => {
+    //     const loadSchoolData = async () => {
+    //         try {
+    //             const result = await fetchData();
+    //             setData(result.data);
+    //         } catch (err) {
+    //             setError(err.message || "Something went wrong");
+    //         }
+    //     };
 
-        loadSchoolData();
-    }, []);
+    //     loadSchoolData();
+    // }, []);
 
-    if (error) return <div>Error: {error}</div>;
+    // if (error) return <div>Error: {error}</div>;
 
+    const highlights = [
+        { id: 1, description: "7 Schools, 3 Cities", image: educationOne },
+        { id: 2, description: "Educating 18,000+ students annually", image: educationTwo },
+        { id: 3, description: "Diverse Boards (CBSE, ICSE, ISC and IB)", image: educationThree },
+        { id: 4, description: "Tech-enabled learning", image: educationFour },
+        { id: 5, description: "Exceptional Sports Infrastructure", image: educationFive },
+        { id: 6, description: "Learning beyond books", image: educationSix }
+    ];
     return (
         <>
             {/* New Template: School Section*/}
@@ -157,28 +173,31 @@ function AdvSchoolSlider() {
             {/* Education with pupose section */}
             <section>
                 <div className='school-slider-sections'>
-                    {data?.school_list ? (
-                        <Swiper navigation={true} loop={true} pagination={{ clickable: true, }} effect={'fade'} modules={[Navigation, Pagination, Autoplay, EffectFade]} className="mySwiper" autoplay={{ delay: 5500, disableOnInteraction: false, }}>
-                            {data?.school_list?.map((school) => (
-                                <SwiperSlide key={school.id}>
-                                    <div className='school-block container'>
-                                        <div className='content-area'>
-                                            <h3>Educating with Purpose, Evolving Over Four Decades</h3>
-                                            <div className='bottombar'>
-                                                <div className='info'>Students: {school.student_count} | Staff: {school.staff_count}</div>
-                                            </div>
-                                        </div>
-                                        <div className='school-photo'>
-                                            <img src={school.image}
-                                                alt={school.name} />
+                    <Swiper
+                        navigation={true}
+                        loop={true}
+                        pagination={{ clickable: true }}
+                        effect={'fade'}
+                        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+                        className="mySwiper"
+                        autoplay={{ delay: 5500, disableOnInteraction: false }}
+                    >
+                        {highlights.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <div className='school-block container'>
+                                    <div className='content-area'>
+                                        <h3>Educating with Purpose, Evolving Over Four Decades</h3>
+                                        <div className='bottombar'>
+                                            <div className='info'>{item.description}</div>
                                         </div>
                                     </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    ) : (
-                        <div>Loading...</div>
-                    )}
+                                    <div className='school-photo'>
+                                        <img src={item.image} alt={item.description} />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </section>
         </>
