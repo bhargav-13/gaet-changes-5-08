@@ -1,237 +1,208 @@
 .left-panel {
-    width: 45%;
+    display: flex;
     background-color: #09213a;
     color: white;
     padding: 60px 50px 50px 141px;
-    position: sticky;
     top: 0;
     overflow-y: auto;
 }
 
 .right-panel {
-    width: 55%;
-    padding: 50px;
     background-color: #09213a;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    overflow-y: auto;
-    border-left: 1px solid white;
 }
 
-.project-underway{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+
+.desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.mobile-carousel {
+    display: none;
+}
+
+.project-underway {
     background-color: #09213a;
-    gap: 30px;
 }
 
 .project-card img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .left-panel h1 {
-    font-family:'Esperanza Headline Roman';
-    font-size: 68px;
+    font-family: 'Esperanza Headline Roman';
+    font-size: 4rem !important;
     font-weight: 400;
     line-height: 109%;
-    margin-bottom: 43.11px;
 }
 
 .left-panel p {
     font-family: "Anek Devanagari", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 109%;
+    font-size: 21px !important;
+    color: #FFFFFF !important;
+    line-height: 117% !important;
+    font-weight: 200 !important;
 }
 
 .project-card h2 {
-    margin-top: 35px;
-    margin-bottom: 40px;
-    font-size: 44.5px;
+    margin-top: 20px;
+    font-size: 24px;
     color: #FFFFFF;
     font-weight: 400;
-    line-height: 109%;
+    line-height: 120%;
     font-family: "Anek Devanagari";
-
 }
-/* Medium Desktop */
+
+
+
 @media only screen and (max-width: 1640px) {
     .left-panel h1 {
-        font-family:'Esperanza Headline Roman';
         font-size: 54px;
-        font-weight: 400;
-        line-height: 109%;
-        margin-bottom: 43.11px;
     }
-    
+
     .left-panel p {
-        font-family: "Anek Devanagari", sans-serif;
         font-size: 21px;
-        font-weight: 300;
-        line-height: 109%;
     }
-    
+
     .project-card h2 {
-        margin-top: 35px;
-        margin-bottom: 10px;
-        font-size: 38px;
-        color: #FFFFFF;
-        font-weight: 400;
-        line-height: 109%;
-        font-family: "Anek Devanagari";
-    
+        font-size: 20px;
     }
 }
-/* Mackbook View */
-@media (max-width: 1440px) {
-    .left-panel {
-        width: 45%;
-        background-color: #09213a;
-        color: white;
-        padding: 50px;
-        position: sticky;
-        top: 0;
-        overflow-y: auto;
-    }
-    
-    .right-panel {
-        width: 55%;
-        padding: 50px;
-        background-color: #09213a;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        overflow-y: auto;
-        border-left: 1px solid white;
-    }
-    
-    .project-underway{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: #09213a;
-        gap: 30px;
-    }
-    
-    .project-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 4px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .left-panel h1 {
-        font-family:'Esperanza Headline Roman';
-        font-size: 49px;
-        font-weight: 400;
-        line-height: 109%;
-        margin-bottom: 43.11px;
-    }
-    
-    .left-panel p {
-        font-family: "Anek Devanagari", sans-serif;
-        font-size: 19px;
-        font-weight: 300;
-        line-height: 109%;
-    }
-    
-    .project-card h2 {
-        margin-top: 35px;
-        margin-bottom: 30px;
-        font-size: 40px;
-        color: #FFFFFF;
-        font-weight: 400;
-        line-height: 109%;
-        font-family: "Anek Devanagari";
-    
-    }
-}
+
 /* Tablet View */
 @media (max-width: 1024px) {
     .project-underway {
         flex-direction: column;
     }
-    
+
     .left-panel {
         position: relative;
         width: 100%;
         padding: 30px 20px 0px 20px;
     }
-    
-    .right-panel {
-        width: 100%;
-        padding: 30px 20px;
-        border-left: none;
-        border-top: 1px solid white;
+
+    /* hide grid, show carousel */
+    .desktop-grid {
+        display: none;
     }
-    
+
+    .mobile-carousel {
+        display: block;
+        padding: 20px;
+    }
+
     .left-panel h1 {
         font-size: 48px;
         margin-bottom: 20px;
     }
-    
+
     .left-panel p {
         font-size: 22px;
     }
-    
+
     .project-card h2 {
-        font-size: 30px;
-        margin-top: 25px;
-        margin-bottom: 0px;
+        font-size: 18px;
+        margin-top: 15px;
     }
 }
-/* Mobile View */
+
+/*  Mobile View */
 @media (max-width: 768px) {
-    .project-underway {
-        flex-direction: column;
-    }
-    
     .left-panel {
-        width: 100%;
-        position: relative;
-        height: auto;
-        padding: 30px 20px 0px 20px;
-        top: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #09213a;
+        color: white;
+        top: 0;
+        overflow-y: auto;
     }
-    
-    .right-panel {
-        width: 100%;
-        padding: 30px 20px;
-        border-left: none;
-        border-top: 1px solid white;
+
+    .left-heading,
+    .left-content {
+        width: 100% !important;
     }
-    
+
     .left-panel h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+        font-size: 2.5rem !important;
     }
-    
+
     .left-panel p {
         font-size: 18px;
     }
-    
+
     .project-card h2 {
-        font-size: 1.5rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 1.25rem;
+        margin-top: 15px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 10px;
     }
 }
+
 /* Small Mobile View */
-@media (max-width: 480px) {
+@media (max-width: 506px) {
     .left-panel h1 {
         font-size: 35px;
     }
-    
+
     .project-card h2 {
-        font-size: 1.25rem;
+        font-size: 1rem;
+    }
+
+    /* Positioning */
+    .swiper-button-next {
+        right: 10px;
+        top: 7% !important;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+        top: 7% !important;
+        left: 85% !important;
+    }
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff !important;
+    top: 50%
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 22px !important;
+    color: #FFFFFF;
+}
+
+/* Positioning */
+.swiper-button-next {
+    right: 10px;
+    top: 7% !important;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    top: 7% !important;
+    left: 89% !important;
+}
+
+@media (min-width:375px) and (max-width: 425px) {
+    .swiper-button-prev {
+        left: 81% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .swiper-button-prev {
+        left: 75% !important;
     }
 }

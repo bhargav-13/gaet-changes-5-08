@@ -634,48 +634,6 @@
   }
 }
 
-/* Tablet (Portrait) */
-/* @media only screen and (max-width: 767px) {
-  .school-slider-sections {
-    padding: 30px 0 0 0;
-  }
-
-  .school-slider-sections .container {
-    padding: 0 30px 30px 20px;
-    display: block;
-  }
-
-  .school-slider-sections h2 {
-    font-size: 24px;
-  }
-
-  .school-slider-sections .btn-more {
-    font-size: 17px;
-  }
-
-  .school-block .leftbg {
-    width: 100%;
-  }
-
-  .school-block .content-area {
-    padding: 30px 20px 20px 20px;
-    width: 100%;
-    display: block;
-  }
-
-  .school-block .content-area h3 {
-    font-size: 24px;
-  }
-
-  .school-block .content-area .info {
-    font-size: 20px;
-  }
-
-  .school-block .content-area p {
-    margin: 0 0 6px 0;
-  }
-} */
-
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   .school-block .school-photo {
