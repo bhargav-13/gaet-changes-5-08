@@ -71,3 +71,28 @@
     .two-photo-area .right-part .photo-block{border-radius: 0px;}
 }
 
+.inner-top-content-block{padding: 167px 40px 10px 120px;}
+.inner-top-content-block::before{content: ''; width: 76px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 100px; left: 0px;}
+.inner-top-content-block::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 100px; left: 74px;}
+
+.admission-name{
+    font-family: 'Esperanza Headline Roman';
+}
+
+.click-here-btn{
+    background-color: rgba(28, 103, 145, 1);
+    border: none;
+    font-size: 15px;
+    padding: 4px 20px;
+    color: #fff;
+}
+
+.span-blue{
+    color: rgba(39, 163, 196, 1);
+}
+
+.click-here-btn-row{
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+}

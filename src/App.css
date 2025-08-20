@@ -47,26 +47,789 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
 .App{display: flex; flex-direction: column; min-height: 100vh;}
 main {flex: 1; /* Pushes footer to the bottom */}
 .scroll-to-top {z-index: 99 !important;   border-radius: 20px !important; transition: all 0.5s !important; right: 20px !important; bottom: 20px !important;}
 
-.inner-top-content-block{padding: 200px 0 150px 0; position: relative; overflow: hidden; background: #F9F9F9;}
+.inner-top-content-block{padding: 120px 0 80px 0; position: relative; overflow: hidden; background: #F9F9F9;}
 .inner-top-content-block .container{width: 100%; max-width: 100%; padding: 0 140px; }
 .inner-top-content-block::before{content: ''; width: 76px; height: 70px; border-radius: 0 70px 0 0; border-top: var(--light-blue-color) 2px solid; border-right: var(--light-blue-color) 2px solid; position: absolute; top: 100px; left: 0px;}
 .inner-top-content-block::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 100px; left: 74px;}
 .inner-top-content-block p{font-family: "Anek Devanagari", sans-serif; font-size: 28px; line-height: 120%; letter-spacing: 2%; color: var(--blue-color); font-weight: 300;}
 .inner-top-content-block p strong{font-weight: 600; color: var(--light-blue-color);}
 .inner-top-content-block p:last-child{margin: 0px;text-align: center;}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.our-core-values {
+          font-family: 'Georgia', serif;
+          font-weight: 400;
+          font-size: 2.5rem;
+          text-align: center;
+          margin-bottom: 3rem;
+          color: var(--blue-color);
+        }
+
+        .core-values {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .col-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+
+        .core-card {
+          padding: 40px 30px;
+          color: #fff;
+          min-height: 280px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+        }
+
+        .core-card h2 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-family: 'Georgia', serif;
+          line-height: 1.2;
+        }
+
+        .core-card p {
+          font-size: 0.95rem;
+          line-height: 1.5;
+          color: #fff !important;
+        }
+
+        /* Background colors and border radius */
+        .top-left {
+          background: #2b6c90;
+          border-top-right-radius: 100px;
+        }
+
+        .top-right {
+          background: #0b3d59;
+          border-top-left-radius: 100px;
+        }
+
+        .bottom-left {
+          background: #0a3552;
+        }
+
+        .bottom-right {
+          background: #1c6c8a;
+        }
+
+        /* Text alignment classes */
+        .about-text-align-end {
+          text-align: right;
+        }
+
+        .about-text-align-left {
+          text-align: left !important;
+          font-size: 16px !important;
+          color: #fff !important;
+        }
+
+        .about-text-align-right {
+          text-align: right !important;
+          font-size: 16px !important;
+          color: #fff !important;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+          .container {
+            padding: 0 40px;
+          }
+
+          .inner-top-content-block {
+            padding: 100px 0 60px 0;
+          }
+
+          .our-core-values {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+          }
+
+          .core-card {
+            padding: 35px 25px;
+            min-height: 250px;
+          }
+
+          .core-card h2 {
+            font-size: 1.6rem;
+          }
+
+          .about-text-align-right {
+            padding-left: 2rem;
+          }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 768px) {
+          .container {
+            padding: 0 20px;
+          }
+
+          .inner-top-content-block {
+            padding: 80px 0 50px 0;
+          }
+
+          .inner-top-content-block::before,
+          .inner-top-content-block::after {
+            top: 30px;
+            height: 50px;
+          }
+
+          .inner-top-content-block::before {
+            width: 50px;
+            border-radius: 0 50px 0 0;
+          }
+
+          .inner-top-content-block::after {
+            width: calc(100% - 48px);
+            left: 48px;
+            border-radius: 50px 0 0 0;
+          }
+
+          .our-core-values {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+
+          .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+
+          .core-card {
+            padding: 25px 20px;
+            min-height: 220px;
+          }
+
+          .core-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+          }
+
+          .core-card p,
+          .about-text-align-left,
+          .about-text-align-right {
+            font-size: 14px !important;
+          }
+
+          .about-text-align-right {
+            padding-left: 1rem;
+          }
+
+          .top-left {
+            border-top-right-radius: 60px;
+          }
+
+          .top-right {
+            border-top-left-radius: 60px;
+          }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 480px) {
+          .container {
+            padding: 0 15px;
+          }
+
+          .inner-top-content-block {
+            padding: 60px 0 40px 0;
+          }
+
+          .our-core-values {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+          }
+
+          .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+
+          .core-card {
+            padding: 20px 15px;
+            min-height: 160px;
+          }
+
+          .core-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.1;
+          }
+
+          .core-card p,
+          .about-text-align-left,
+          .about-text-align-right {
+            font-size: 12px !important;
+            line-height: 1.3;
+          }
+
+          .about-text-align-right {
+            padding-left: 0.5rem;
+          }
+
+          .top-left {
+            border-top-right-radius: 40px;
+          }
+
+          .top-right {
+            border-top-left-radius: 40px;
+          }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 375px) {
+          .inner-top-content-block {
+            padding: 50px 0 30px 0;
+          }
+
+          .our-core-values {
+            font-size: 1.5rem;
+          }
+
+          .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+
+          .core-card {
+            padding: 15px 12px;
+            min-height: 140px;
+          }
+
+          .core-card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+          }
+
+          .core-card p,
+          .about-text-align-left,
+          .about-text-align-right {
+            font-size: 11px !important;
+            line-height: 1.2;
+          }
+
+          .about-text-align-right {
+            padding-left: 0.3rem;
+          }
+
+          .top-left {
+            border-top-right-radius: 30px;
+          }
+
+          .top-right {
+            border-top-left-radius: 30px;
+          }
+}
+
+
+
+/* ----------------//-------------------- */
+.founders-section {
+          padding: 80px 0;
+          background-color: #f8f9fa;
+          position: relative;
+        }
+        .founders-title {
+          font-family: 'Georgia', serif;
+          font-size: 2.5rem;
+          font-weight: 400;
+          color: #2b6c90;
+          text-align: center;
+          margin-bottom: 4rem;
+          letter-spacing: 0.5px;
+        }
+
+        .founders-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0;
+          max-width: 1600px;
+          margin: 0 auto;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          overflow: hidden;
+        }
+
+        .founder-card {
+          position: relative;
+          background: #fff;
+        }
+
+        .founder-image-container {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .founder-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+          filter: grayscale(100%);
+          transition: filter 0.3s ease;
+        }
+
+        .founder-card:hover .founder-image {
+          filter: grayscale(0%);
+        }
+
+        .founder-info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 70%;
+          background: rgba(17, 65, 102, 1);
+          color: white;
+          padding: 30px 25px 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          transition: transform 0.3s ease;
+        }
+
+        .founder-card:nth-child(1) .founder-info {
+          border-top-right-radius: 50px;
+        }
+
+        .founder-card:nth-child(2) .founder-info {
+          border-top-left-radius: 50px;
+          left: auto;
+          right: 0;
+        }
+
+        .founder-name {
+          font-family: 'Esperanza Headline Roman';
+          font-size: 1.1rem;
+          font-weight: 300;
+          margin: 0 0 5px 0;
+          letter-spacing: 1px;
+          line-height: 1.3;
+        }
+
+        .founder-title {
+          font-family: 'Anek Devanagari';
+          font-size: 1rem;
+          font-weight: 200;
+          margin: 0;
+          opacity: 0.9;
+          letter-spacing: 0.5px;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+          .founders-section {
+            padding: 60px 0;
+          }
+
+          .founders-title {
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+          }
+
+          .founder-image-container {
+            height: 450px;
+          }
+
+          .founder-info {
+            padding: 25px 20px 20px;
+            width: 70%;
+          }
+
+          .founder-card:nth-child(1) .founder-info {
+            border-top-right-radius: 40px;
+          }
+
+          .founder-card:nth-child(2) .founder-info {
+            border-top-left-radius: 40px;
+            left: auto;
+            right: 0;
+          }
+
+          .founder-name {
+            font-size: 1rem;
+          }
+
+          .founder-title {
+            font-size: 0.85rem;
+          }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 768px) {
+          .founders-section {
+            padding: 50px 0;
+          }
+
+          .container {
+            padding: 0 15px;
+          }
+
+          .founders-title {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+          }
+
+          .founder-image-container {
+            height: 400px;
+          }
+
+          .founder-info {
+            padding: 20px 15px 15px;
+            min-height: 35%;
+          }
+
+          .founder-card:nth-child(1) .founder-info {
+            border-top-right-radius: 35px;
+          }
+
+          .founder-card:nth-child(2) .founder-info {
+            border-top-left-radius: 35px;
+          }
+
+          .founder-name {
+            font-size: 0.95rem;
+          }
+
+          .founder-title {
+            font-size: 0.8rem;
+          }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 480px) {
+          .founders-section {
+            padding: 40px 0;
+          }
+
+          .founders-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+          }
+
+          .founders-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+          }
+
+          .founder-image-container {
+            height: 350px;
+          }
+
+          .founder-info {
+            padding: 20px 20px 15px;
+            width: 70%;
+          }
+
+          .founder-card:nth-child(1) .founder-info {
+            border-top-right-radius: 30px;
+          }
+
+          .founder-card:nth-child(2) .founder-info {
+            border-top-left-radius: 30px;
+            left: auto;
+            right: 0;
+          }
+
+          .founder-name {
+            font-size: 1rem;
+            line-height: 1.2;
+          }
+
+          .founder-title {
+            font-size: 0.85rem;
+          }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 375px) {
+          .founders-section {
+            padding: 30px 0;
+          }
+
+          .founders-title {
+            font-size: 1.6rem;
+          }
+
+          .founders-grid {
+            max-width: 320px;
+          }
+
+          .founder-image-container {
+            height: 300px;
+          }
+
+          .founder-info {
+            padding: 15px 15px 12px;
+            width: 80%;
+            min-height: 30% !important;
+          }
+
+          .founder-card:nth-child(1) .founder-info {
+            border-top-right-radius: 25px;
+          }
+
+          .founder-card:nth-child(2) .founder-info {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 25px;
+            right: auto;
+            left: 0;
+          }
+
+          .founder-name {
+            font-size: 0.9rem;
+          }
+
+          .founder-title {
+            font-size: 0.75rem;
+          }
+        }
+
+
+
+/* ------------Core Belief --------------- */
+.core-belief-section {
+          padding: 80px 0;
+          background-color: #f8f9fa;
+          position: relative;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .section-title {
+          font-family: 'Georgia', serif;
+          font-size: 2.5rem;
+          font-weight: 400;
+          color: #2b6c90;
+          text-align: left;
+          margin-bottom: 3rem;
+          letter-spacing: 0.5px;
+          padding-left: 20px;
+        }
+
+        .belief-content {
+          position: relative;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .belief-image-container {
+          position: relative;
+          width: 100%;
+          height: 500px;
+          overflow: hidden;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .belief-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          transition: transform 0.3s ease;
+        }
+
+        .belief-image-container:hover .belief-image {
+          transform: scale(1.05);
+        }
+
+        .belief-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0.7) 100%
+          );
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .belief-text {
+          text-align: center;
+          color: white;
+          max-width: 600px;
+          padding: 0 30px;
+        }
+
+        .belief-heading {
+          font-family: 'Esperanza Headline Roman';
+          font-size: 2rem;
+          font-weight: 300;
+          margin: 0 0 15px 0;
+          letter-spacing: 1px;
+          line-height: 1.2;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .belief-subtitle {
+          font-family: 'Anek Devanagari';
+          font-size: 1rem;
+          font-weight: 300;
+          margin: 0;
+          opacity: 0.95;
+          letter-spacing: 0.5px;
+          line-height: 1.4;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+          .core-belief-section {
+            padding: 60px 0;
+          }
+
+          .container {
+            padding: 0 30px;
+          }
+
+          .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            padding-left: 15px;
+          }
+
+          .belief-image-container {
+            height: 450px;
+          }
+
+          .belief-heading {
+            font-size: 2.2rem;
+          }
+
+          .belief-subtitle {
+            font-size: 1rem;
+          }
+
+          .belief-text {
+            padding: 0 25px;
+          }
+        }
+
+        /* Mobile Landscape */
+        @media (max-width: 768px) {
+          .core-belief-section {
+            padding: 50px 0;
+          }
+
+          .container {
+            padding: 0 20px;
+          }
+
+          .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            padding-left: 10px;
+            text-align: center;
+          }
+
+          .belief-image-container {
+            height: 400px;
+          }
+
+          .belief-heading {
+            font-size: 1.8rem;
+          }
+
+          .belief-subtitle {
+            font-size: 0.95rem;
+          }
+
+          .belief-text {
+            padding: 0 20px;
+          }
+        }
+
+        /* Mobile Portrait */
+        @media (max-width: 480px) {
+          .core-belief-section {
+            padding: 40px 0;
+          }
+
+          .container {
+            padding: 0 15px;
+          }
+
+          .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-left: 0;
+          }
+
+          .belief-image-container {
+            height: 350px;
+          }
+
+          .belief-heading {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            line-height: 1.3;
+          }
+
+          .belief-subtitle {
+            font-size: 0.9rem;
+            line-height: 1.3;
+          }
+
+          .belief-text {
+            padding: 0 15px;
+          }
+        }
+
+        /* Small Mobile */
+        @media (max-width: 375px) {
+          .core-belief-section {
+            padding: 30px 0;
+          }
+
+          .section-title {
+            font-size: 1.6rem;
+          }
+
+          .belief-image-container {
+            height: 300px;
+          }
+
+          .belief-heading {
+            font-size: 1.3rem;
+          }
+
+          .belief-subtitle {
+            font-size: 0.85rem;
+          }
+
+          .belief-text {
+            padding: 0 10px;
+          }
+        }
+
+
+
 
 .schoolpage .school-slider-section{padding: 0px;}
 .schoolpage .school-slider-section .container{display: none;}
@@ -158,8 +921,8 @@ body.about-open {overflow: hidden;}
 
 /* Medium Desktop */
 @media only screen and (max-width: 1640px) {
-  .inner-top-content-block{padding: 150px 0 100px 0;}
-  .inner-top-content-block .container{padding: 0 50px;}
+  .inner-top-content-block{padding: 150px 40px 100px 40px}
+  .inner-top-content-block .container{padding: 0 15px;}
   .inner-top-content-block::before{content: ''; width: 50px; height: 50px; top: 50px;}
   .inner-top-content-block::after{top: 50px; left: 50px; height: 50px;}
   .inner-top-content-block p{font-size: 22px;}
