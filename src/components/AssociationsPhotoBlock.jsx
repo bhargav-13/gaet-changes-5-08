@@ -5,41 +5,57 @@ import './AssociationsPhotoBlock.css';
 import { useApi } from '../hooks/useApi';
 import { endpoints } from '../services/api';
 import Loader from '../components/Loader';
+import socialOne from '../assets/socialOne.png';
+import socialTwo from '../assets/socialTwo.png';
+
 
 function AssociationsPhotoBlock() {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
-    const { data, error, loading } = useApi(endpoints.journey);
-
-    if (error) return <div className="error-message">Error: {error.message}</div>;
-    if (!data) return null;
-    if (loading) return <div><Loader /></div>;
+  const initiatives = [
+    {
+      id: 1,
+      image: socialOne,
+      title: "Goenka & Associates Medical & Research Centre",
+      link: "#"
+    },
+    {
+      id: 2,
+      image:socialTwo,
+      title: "Goenka & Associates Social Welfare Trust",
+      link: "#"
+    }
+  ];
 
     return (
         <>
-            <div className='social-initiatives-area'>
-                <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
-                    <h2>Our <span>Social Initiatives</span></h2>
-                </ScrollAnimation>
-                <div className='d-flex flex-column flex-lg-row'>
-                    {data.social_section.map((social, index) => (
-                        <div className='half-block' key={index}>
-                            <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={400}>
-                                <div className={index % 2 === 0 ? 'photo-block' : 'photo-block yellow'}>
-                                    <img src={social.image} alt="" />
-                                    <div className='bottom-content'>
-                                        <h3><span dangerouslySetInnerHTML={{ __html: social.title || 'title' }} /></h3>
-
-                                        <Link to={social.link} className='btn-more'>Know More</Link>
-                                    </div>
-                                </div>
-                            </ScrollAnimation>
+            <div className="social-initiatives-wrapper">
+                <div className="container">
+                    <div className="content-grid">
+                        {/* Title Section */}
+                        <div className="title-section">
+                            <h1 className="main-title">
+                                Our Social Initiatives
+                            </h1>
                         </div>
-                    ))}
 
+                        {/* Initiatives Cards */}
+                        <div className="cards-section">
+                            <div className="cards-grid">
+                                 {initiatives.map((initiative) => (
+                                    <div key={initiative.id} className="initiative-card">
+                                        <div className="image-container">
+                                            <img src={initiative.image} alt={initiative.title} className="card-image" />
+                                        </div>
+                                        <div className="card-content">
+                                            <h3 className="card-title">{initiative.title}</h3>
+                                            <a href={initiative.link} className="learn-more-btn">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

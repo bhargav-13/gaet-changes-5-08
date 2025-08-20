@@ -1,27 +1,271 @@
-.social-initiatives-area{padding: 60px 120px 60px 120px; background: #fff;}
-.social-initiatives-area h2{font-size: 68px; line-height: 74px; color: var(--blue-color); font-weight: 400; margin: 0 0 68px 0; font-family:'Esperanza Headline Roman'; padding: 0 20px;}
-.social-initiatives-area h2 span{color: var(--light-blue-color);}
-.social-initiatives-area .half-block{width: 50%; padding: 0 20px;}
-.social-initiatives-area .photo-block{width: 100%; min-height: 780px; position: relative; overflow: hidden; }
-.social-initiatives-area .photo-block img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover;  transition:all .5s ease}
-.social-initiatives-area .photo-block::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 100%; height: 100%; z-index: 1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) -6.81%, #1C6791 112.95%);}
-.social-initiatives-area .photo-block .bottom-content{position: absolute; bottom: 45px; left: 85px; max-width: 500px; z-index: 2;  transition:all .5s ease}
-.social-initiatives-area .photo-block .bottom-content h3{font-size: 48px; line-height: 56px; color:#fff; font-weight: 400; margin: 0 0 68px 0; font-family:'Esperanza Headline Roman'; min-height: 168px;}
-.social-initiatives-area .photo-block .bottom-content .btn-more{font-size: 28px; line-height: 109%; position: relative; color:#fff; font-family: "Anek Devanagari", sans-serif; text-decoration: none;}
-.social-initiatives-area .photo-block .bottom-content .btn-more::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 0%; background: #fff; height: 1px; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
-.social-initiatives-area .photo-block .bottom-content .btn-more:hover::before{width: 100%; transition:all .5s ease; -webkit-transition:all .5s ease; -moz-transition:all .5s ease;}
-.social-initiatives-area .photo-block.yellow::before{background: linear-gradient(180deg, rgba(0, 0, 0, 0) -6.81%, #E0B453 112.95%);}
-.social-initiatives-area .photo-block:hover img{transform:scale(1.05); transition:all .5s ease}
-.social-initiatives-area .photo-block:hover .bottom-content{bottom: 60px; transition:all .5s ease}
-
-
-@media only screen and (max-width: 1640px) {
-    .social-initiatives-area .photo-block .bottom-content {left: 35px;}
-    .social-initiatives-area .photo-block .bottom-content h3 {font-size: 40px;}
-    .social-initiatives-area h2{margin: 0 0 38px 0; }
+.social-initiatives-wrapper {
+    background: #124066;
+    color: white;
+    padding: 60px 20px;
 }
 
-@media only screen and (max-width: 576px) {
-   .social-initiatives-area {padding: 40px 20px 40px 20px;}
-   .social-initiatives-area .photo-block .bottom-content{left: 20px !important;}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.title-section {
+    padding-right: 40px;
+}
+
+.main-title {
+    font-family: 'Esperanza Headline Roman';
+    font-size: 3.5rem;
+    word-spacing: 4.7rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.cards-section {
+    width: 100%;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.initiative-card {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.initiative-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.initiative-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card-title {
+    font-family: "Anek Devanagari", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 12px 0;
+    color: white;
+    min-height: 50px;
+}
+
+.learn-more-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.learn-more-btn:hover {
+    color: #e2e8f0;
+    border-bottom-color: #e2e8f0;
+    text-decoration: none;
+}
+
+/* Tablet Styles */
+@media (max-width: 1200px) {
+    .social-initiatives-wrapper {
+        padding: 50px 20px;
+    }
+
+    .content-grid {
+        gap: 40px;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+    }
+
+    .cards-grid {
+        gap: 16px;
+    }
+
+    /* .image-container {
+        height: 180px;
+    } */
+}
+
+@media (max-width: 992px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .title-section {
+        padding-right: 0;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .cards-grid {
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles - Updated to match your image exactly */
+@media (max-width: 768px) {
+    .social-initiatives-wrapper {
+        padding: 40px 20px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .title-section {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-title {
+        font-size: 2.25rem;
+        line-height: 1.2;
+        text-align: left;
+        font-weight: 400;
+        word-spacing: normal;
+    }
+
+    .cards-section {
+        width: 100%;
+    }
+
+    /* Keep 2-column grid on mobile as shown in your image */
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        max-width: 100%;
+        margin: 0;
+        justify-content: stretch;
+    }
+
+    .initiative-card {
+        width: 100%;
+    }
+
+    .image-container {
+        /* height: 160px; */
+        margin-bottom: 12px;
+    }
+
+    .card-content {
+        text-align: left;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+        line-height: 1.3;
+        margin: 0 0 10px 0;
+        min-height: auto;
+        font-weight: 400;
+    }
+
+    .learn-more-btn {
+        font-size: 0.85rem;
+        padding-bottom: 1px;
+        border-bottom-width: 1px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .social-initiatives-wrapper {
+        padding: 30px 15px;
+    }
+
+    .main-title {
+        font-size: 1.9rem;
+        line-height: 1.15;
+    }
+
+    .cards-grid {
+        gap: 12px;
+    }
+
+    .image-container {
+        /* height: 140px; */
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 0.85rem;
+        line-height: 1.25;
+        margin-bottom: 8px;
+        min-height: 60px;
+
+    }
+
+    .learn-more-btn {
+        font-size: 0.8rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .main-title {
+        font-size: 1.7rem;
+    }
+
+    .cards-grid {
+        gap: 10px;
+    }
+
+    /* .image-container {
+        height: 120px;
+    } */
+
+    .card-title {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .learn-more-btn {
+        font-size: 0.75rem;
+    }
 }

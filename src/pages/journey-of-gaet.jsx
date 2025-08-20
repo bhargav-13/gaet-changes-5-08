@@ -156,36 +156,8 @@ function JourneyGaetPage() {
                         </ScrollAnimation>
                     </div>
                 </section>
-
-                {/* {data.projects_underway.map((underway, index) => (
-
-                    <section>
-                        <div className='project-underway-area'>
-                            <Container>
-                                <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={700}>
-                                    <h2>{underway.title}</h2>
-                                </ScrollAnimation>
-                                <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={900}>
-                                    <strong
-                                        dangerouslySetInnerHTML={{
-                                            __html: underway.description || '',
-                                        }}
-                                    />
-                                </ScrollAnimation>
-                            </Container>
-                            <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={500}>
-                                <img src="/images/project-underway.png" alt="Project Underway" />
-                            </ScrollAnimation>
-                        </div>
-                    </section>
-
-                ))}     */}
-
                 <ProjectUnderWay />
-
                 <AssociationsPhotoBlock />
-
-
                 <ApplyEnrolBlock />
             </div>
             <Footer />

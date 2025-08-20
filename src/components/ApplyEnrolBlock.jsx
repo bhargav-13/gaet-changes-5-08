@@ -5,7 +5,7 @@ import './ApplyEnrol.css';
 import { useApi } from '../hooks/useApi';
 import { endpoints } from '../services/api';
 import Loader from '../components/Loader';
-
+import enrolTo from '../assets/applyToEnrol.png';
 
 function ApplyEnrolBlock() {
 
@@ -29,12 +29,13 @@ function ApplyEnrolBlock() {
                                 <span dangerouslySetInnerHTML={{ __html: data.enrol_section?.title || 'title' }} />
                             </h2>
                             <p><span dangerouslySetInnerHTML={{ __html: data.enrol_section?.description || 'description' }} /></p>
-                            <Link to={data.enrol_section.link} className='common-button-more cyan'>APPLY</Link>
+                            {/* <Link to={data.enrol_section.link} className='common-button-more cyan'>APPLY</Link> */}
+                            <Link to={data.enrol_section.link} className='btn-apply'>APPLY</Link>
                         </ScrollAnimation>
                     </div>
                     <div className='enrol-img'>
                         <ScrollAnimation animateIn="fadeInRight" animateOnce={true} delay={500}>
-                            <img src={data.enrol_section.main_img || process.env.PUBLIC_URL + "/images/enrol-img.png"} alt="vision" />
+                            <img src={enrolTo} alt="vision" />
                         </ScrollAnimation>
                     </div>
 
@@ -79,7 +80,7 @@ function ApplyEnrolBlock() {
                         <li className='line5'>
                             <div className='box1'></div>
                             <div className='box2'></div>
-                            <div className='box3'></div>
+                            {/* <div className='box3'></div> */}
                         </li>
                         <li className='line6'>
                             <div className='box1'></div>
