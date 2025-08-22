@@ -14,6 +14,7 @@ import './JourneyOfGaet.css';
 import ProjectUnderWay from './ProjectUnderWay';
 import { Helmet } from "react-helmet-async";
 import Footer from '../include/Footer';
+import LegacySpanning from '../components/LegacySpanning';
 
 function JourneyGaetPage() {
 
@@ -156,6 +157,7 @@ function JourneyGaetPage() {
                         </ScrollAnimation>
                     </div>
                 </section>
+                <LegacySpanning/>
                 <ProjectUnderWay />
                 <AssociationsPhotoBlock />
                 <ApplyEnrolBlock />

@@ -1,0 +1,310 @@
+.legacy-container {
+  background: rgba(18, 64, 102, 1);
+  color: white;
+  padding: 60px 40px;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.legacy-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mobile-description{
+    display: none;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.legacy-spanning-main-title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0 0 40px 0;
+  color: white;
+  font-family: "Esperanza Headline Roman";
+}
+
+.carousel-content {
+  margin-bottom: 40px;
+}
+
+.carousel-title {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  color: white;
+  line-height: 1.3;
+  font-family: "Anek Devanagari";
+}
+
+.carousel-description {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 200;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 450px;
+  font-family: "Anek Devanagari";
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: 54px;
+  font-weight: 100;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.arrow:hover {
+  color: #4fd1c7; /* highlight on hover */
+  transform: scale(1.2);
+}
+
+.prev-arrow {
+  padding-right: 4px;
+}
+
+.image-section {
+  flex: 1;
+  max-width: 700px;
+}
+
+.image-container {
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: all 0.5s ease;
+}
+
+.image-container:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.timeline-section {
+  margin-top: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.timeline-year {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(39, 163, 196, 1);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.timeline-marker {
+  width: 2px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.timeline-item.active .timeline-year {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.timeline-item.active .timeline-marker {
+  height: 40px;
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .legacy-container {
+    padding: 40px 20px;
+  }
+
+  .legacy-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .carousel-title {
+    font-size: 20px;
+  }
+
+  .timeline {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+}
+
+/* Add these responsive styles to your existing CSS */
+
+@media only screen and (max-width: 425px) {
+  .legacy-container {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .legacy-content .row {
+    flex-direction: column;
+  }
+
+  .col-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Title comes first - full width and centered */
+  .legacy-spanning-main-title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+
+  /* Hide the original title and description in text section */
+  .text-section .carousel-title {
+    display: none;
+  }
+
+  .text-section .carousel-description {
+    display: none;
+  }
+
+  /* Hide navigation controls in text section */
+  .text-section .navigation-controls {
+    display: none;
+  }
+
+  /* Image section - comes second */
+  .image-section {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .image-container {
+    transform: none; /* Remove 3D transform on mobile */
+    border-radius: 0px;
+  }
+
+  .carousel-image {
+    height: 200px;
+  }
+
+  /* Create new mobile description section that appears after image */
+  .mobile-description {
+    display: block;
+    order: 3;
+    margin-top: 20px;
+  }
+
+  .mobile-description .carousel-description {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  /* Mobile navigation */
+  .mobile-description .navigation-controls {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+
+  .arrow {
+    font-size: 40px;
+  }
+
+  /* Timeline adjustments for mobile */
+  .timeline-section {
+    margin-top: 25px;
+  }
+
+  .timeline {
+    height: 60px;
+  }
+
+  .timeline-year {
+    font-size: 12px;
+  }
+
+  .timeline-item.active .timeline-year {
+    font-size: 14px;
+  }
+
+  .timeline::before{
+    bottom: 0px;
+  }
+
+  .timeline-item.active .timeline-marker{
+    height: 30px;
+  }
+
+  .timeline-marker{
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 283px) {
+  .timeline::before{
+    bottom: 3px;
+  }
+}

@@ -2,7 +2,7 @@
     display: flex;
     background-color: #09213a;
     color: white;
-    padding: 60px 50px 50px 141px;
+    padding: 60px 50px 50px 60px;
     top: 0;
     overflow-y: auto;
 }
@@ -36,14 +36,14 @@
 
 .left-panel h1 {
     font-family: 'Esperanza Headline Roman';
-    font-size: 4rem !important;
+    font-size: 2.5rem !important;
     font-weight: 400;
     line-height: 109%;
 }
 
 .left-panel p {
     font-family: "Anek Devanagari", sans-serif;
-    font-size: 21px !important;
+    font-size: 19px !important;
     color: #FFFFFF !important;
     line-height: 117% !important;
     font-weight: 200 !important;
@@ -51,14 +51,16 @@
 
 .project-card h2 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 120%;
     font-family: "Anek Devanagari";
 }
 
-
+.left-heading h1 .break {
+  display: block;
+}
 
 @media only screen and (max-width: 1640px) {
     .left-panel h1 {
@@ -66,11 +68,11 @@
     }
 
     .left-panel p {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .project-card h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -102,7 +104,7 @@
     }
 
     .left-panel p {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .project-card h2 {

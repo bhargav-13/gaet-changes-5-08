@@ -33,7 +33,9 @@ function AssociationsPhotoBlock() {
                         {/* Title Section */}
                         <div className="title-section">
                             <h1 className="main-title">
-                                Our Social Initiatives
+                                Our 
+                                <span className="break">Social</span>
+                                <span className="break">Initiatives</span> 
                             </h1>
                         </div>
 

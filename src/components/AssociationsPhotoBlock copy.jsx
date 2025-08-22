@@ -22,17 +22,6 @@ function AssociationsPhotoBlock() {
                             </div>
                         </ScrollAnimation>
                     </div>
-                    {/* <div className='half-block'>
-                        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={600}>
-                            <div className='photo-block yellow'>
-                                <img src={process.env.PUBLIC_URL + "/images/welfare-trust.png"} alt="" />
-                                <div className='bottom-content'>
-                                    <h3>Goenka & Associates Social Welfare Trust </h3>
-                                    <Link to="#" className='btn-more'>Learn More</Link>
-                                </div>
-                            </div>
-                        </ScrollAnimation>
-                    </div> */}
                 </div>
             </div>
         </>
