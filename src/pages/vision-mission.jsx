@@ -11,6 +11,10 @@ import { useApi } from '../hooks/useApi';
 import './VisionMission.css';
 import { Helmet } from "react-helmet-async";
 import Footer from "../include/Footer";
+import visionOne from '../assets/vissionOne.png';
+import visionTwo from '../assets/vissionTwo.png';
+import coreValues from '../assets/coreValues.png';
+
 
 
 
@@ -45,7 +49,24 @@ function VisionMissionPage() {
     if (loading) return <div><Loader /></div>;
     if (error) return <div className="error-message">Error: {error.message}</div>;
     if (!data) return null;
-
+    const sections = [
+        {
+            title: "Vision",
+            image: visionOne,
+            description: "To create a generation of thoughtful learners who are curious, capable and confident to grow to become passionate, purposeful and compassionate to make a meaningful difference in the world."
+        },
+        {
+            title: "Mission",
+            image: visionTwo,
+            description: "To create a place where every child is seen, heard, and supported with true learning experiences, strong relationships and a safe environment, grow at their own pace."
+        }
+    ];
+    const values = [
+        { text: "Real Learning", position: "top-left" },
+        { text: "Right Environment", position: "bottom-left" },
+        { text: "Honest Growth", position: "top-right" },
+        { text: "People before Policies", position: "bottom-right" }
+    ];
     return (
         <>
             <Helmet>
@@ -75,7 +96,7 @@ function VisionMissionPage() {
             </div>
 
             <div className="inner-content-wapper">
-                <section>
+                {/* <section>
                     <div className="inner-top-content-block">
                         <Container>
                             <ScrollAnimation animateIn="fadeInUp" animateOnce delay={200}>
@@ -89,77 +110,55 @@ function VisionMissionPage() {
                             </ScrollAnimation>
                         </Container>
                     </div>
-                </section>
+                </section> */}
 
-                <section>
-                    <div className="vision-mission-photo">
-                        <img
-                            src={data.vision_mission_section?.image}
-                            className="bg"
-                            alt="vision"
-                        />
-                        <div className="center-content">
-                            <ScrollAnimation animateIn="fadeInUp" animateOnce delay={500}>
-                                <img
-                                    src="/images/vision-title.svg"
-                                    alt="vision"
-                                />
-                            </ScrollAnimation>
-                            <ScrollAnimation animateIn="fadeInUp" animateOnce delay={1500}>
-
-                                {/* <h2>{data.vision_mission_section?.title}</h2> */}
-                                <h2><span dangerouslySetInnerHTML={{ __html: data.vision_mission_section?.title || '', }} /></h2>
-                            </ScrollAnimation>
+                {/*New Core Value */}
+                <div className="core-values-wrapper">
+                        {/* Title Section */}
+                        <div className="title-section">
+                            <h1 className="main-title">Our Core Values</h1>
                         </div>
-                    </div>
-                </section>
 
-                <section>
-                    <div className="vision-tab-area">
-                        <Container>
-                            <div className="inner-block">
-                                <div className="left-part">
-                                    <ScrollAnimation animateIn="fadeInUp" animateOnce delay={500}>
-                                        <div className="logo">
-                                            <img
-                                                src="/images/gaet-vertical.png"
-                                                alt="logo"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
-                                </div>
-                                <ul className="rightlist">
-                                    {data.vision_section?.slice().reverse().map((vision, index) => (
-                                        <li key={index} className={activeindex === index ? 'open' : ''}
-                                        onMouseEnter={() => setActiveindex(index)}
-                                        >
-                                            <ScrollAnimation animateIn="fadeInUp" animateOnce delay={1000}>
-                                                <h3 dangerouslySetInnerHTML={{ __html: vision.title }} />
-                                                <div className="bottom-part">
-                                                    <div className="left-block">
-                                                        <p
-                                                            dangerouslySetInnerHTML={{
-                                                                __html: vision.description,
-                                                            }}
-                                                        />
-                                                    </div>
-
-                                                    <div className="photo-block">
-                                                        <div className="top-left"></div>
-                                                        <div className="top-right"></div>
-                                                        <img
-                                                            src={vision.image}
-                                                            alt="vision-mission"
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </ScrollAnimation>
-                                        </li>
-                                    ))}
-                                </ul>
+                        {/* Values Section with Background Image */}
+                        <div className="values-section">
+                            <div className="background-image">
+                                <img src={coreValues} alt="Students collaborating"className="bg-image" />
+                                <div className="image-overlay"></div>
                             </div>
-                        </Container>
-                    </div>
+
+                            {/* Value Labels */}
+                            <div className="values-overlay">
+                                {values.map((value, index) => (
+                                    <div key={index} className={`value-label ${value.position}`}>
+                                        <div className="label-bg">
+                                            <span className="label-text">{value.text}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                </div>
+
+                {/* New Vision Mission Section */}
+                <section>
+                    <div className="vision-mission-wrapper">
+                            <div className="sections-grid">
+                                {sections.map((section, index) => (
+                                    <div key={index} className="section">
+                                        <div className="section-content">
+                                            <h2 className="section-title">{section.title}</h2>
+                                            <div className="image-container">
+                                                <img src={section.image} alt={section.title} className="section-image"
+                                                />
+                                            </div>
+                                            <p className="section-description">
+                                                {section.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                 </section>
 
                 <ApplyEnrolBlock />
