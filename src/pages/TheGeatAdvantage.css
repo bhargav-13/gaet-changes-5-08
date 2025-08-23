@@ -39,6 +39,7 @@
 }
 
 .image-wrapper img {
+<<<<<<< HEAD
   display: block;
   width: 100%;
   height: 100vh;
@@ -53,6 +54,11 @@
   height: 100vh;
   padding: 40px 40px;
   background-color: #124066;
+=======
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+>>>>>>> 252502c5c5cad0d45f476c21d6b37fe30862fffa
 }
 
 .image-description {
@@ -90,6 +96,11 @@
   height: 100vh;
 }
 
+=======
+.right-image img{
+    height: 50px;
+}
+>>>>>>> 252502c5c5cad0d45f476c21d6b37fe30862fffa
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .slider-style-two-section {
