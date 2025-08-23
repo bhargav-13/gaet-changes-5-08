@@ -121,7 +121,7 @@ function TheGaetAdvantagePage() {
       </div>
 
       <div className='inner-content-wapper'>
-        {/* <div className='slider-style-two-section'>
+         {/* <div className='slider-style-two-section'>
           <Swiper
             navigation={true}
             loop={true}
@@ -159,7 +159,6 @@ function TheGaetAdvantagePage() {
             ))}
           </Swiper>
         </div> */}
-
         <div className='slider-style-two-section'>
           <Swiper
             navigation={true}

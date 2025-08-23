@@ -108,3 +108,22 @@
     height: 492px;
 }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    .custom-nav{
+        top: 101%;
+        position: absolute;
+        gap: 16rem;
+    }
+
+    .events-section{
+        padding-top: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .slide-image{
+        margin-top: 1rem !important;
+        border-radius: 0px;
+    }
+}

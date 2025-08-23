@@ -447,7 +447,7 @@
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 22px !important;
+  font-size: 19px !important;
   color: #fff !important;
 }
 
@@ -557,6 +557,18 @@
 }
 
 @media only screen and (min-width: 200px) and (max-width: 425px) {
+
+  .school-overlay-one,
+  .school-overlay-two,
+  .school-overlay-three,
+  .school-overlay-four,
+  .school-overlay-five,
+  .school-overlay-six,
+  .school-overlay-seven {
+    opacity: 1 !important;   
+    transition: none !important;
+  }
+
   .school-slider-sections .swiper-button-next {
     left: 86%;
   }
@@ -654,11 +666,6 @@
     text-align: center;
   }
 
-  .school-slider-sections .swiper-button-prev {
-    bottom: 2%;
-    left: 18%;
-  }
-
   .school-slider-sections .swiper-button-prev,
   .school-slider-sections .swiper-button-next {
     z-index: 9999;
@@ -666,7 +673,9 @@
 
  .school-slider-sections .swiper-button-prev {
    top: auto;
-    left: 69% !important;
+    left: 73% !important;
+    bottom: 2%;
+
   }
 
   .school-slider-sections .swiper-button-next {
