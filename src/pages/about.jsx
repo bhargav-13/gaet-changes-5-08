@@ -22,8 +22,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 function AboutPage() {
+const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -138,7 +141,8 @@ function AboutPage() {
           </div>
         </div>
 
-        <section className="founders-section">
+        <section className="founders-section" onClick={() => navigate("/about-our-founders")}
+        style={{ cursor: "pointer" }}>
           <h2 className="founders-title">Our Founders</h2>
 
           <div className="founders-grid">

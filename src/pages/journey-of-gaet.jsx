@@ -81,7 +81,7 @@ function JourneyGaetPage() {
             </div>
 
             <div className='inner-content-wapper'>
-                <section>
+                {/* <section>
                     <div
                         ref={oldSchoolPhotoRef}
                         className={`old-school-photo ${isVisible ? 'new-class' : ''}`}
@@ -93,9 +93,9 @@ function JourneyGaetPage() {
                             </ScrollAnimation>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
-                <section>
+                {/* <section>
                     <div
                         className="gaet-story old369-school-photo"
                         style={{ background: `url(${data.gallery_area.image}) no-repeat fixed top` }}
@@ -118,32 +118,13 @@ function JourneyGaetPage() {
                             </div>
                         </Container>
                     </div>
-                </section>
-
-                {/* <section>
-                    <div className='inner-blue-content-block'>
-                        <Container>
-                            <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={500}>
-                                <p>
-                                    <strong
-                                        dangerouslySetInnerHTML={{
-                                            __html: data.top_section.story
-                                        }}
-                                    />
-                                </p>
-                            </ScrollAnimation>
-                        </Container>
-                    </div>
                 </section> */}
 
-                <section>
+                {/* <section>
                     <div className='school-list-style-two'>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={500}>
                             <Container>
-                                {/* <h2>{data.institution.title}</h2> */}
-                                {/* <Link to={data.institution.link} className='btn-more'>
-                                    Visit Schools
-                                </Link> */}
+
                             </Container>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={800}>
@@ -156,7 +137,7 @@ function JourneyGaetPage() {
                             </ul>
                         </ScrollAnimation>
                     </div>
-                </section>
+                </section> */}
                 <LegacySpanning/>
                 <ProjectUnderWay />
                 <AssociationsPhotoBlock />

@@ -29,6 +29,8 @@
     line-height: 1.1;
     margin: 0;
     padding-left: 1rem;
+    color: #fff;
+    padding-top: 10px !important;
 }
 
 .main-title .break {
@@ -118,16 +120,12 @@
     }
 
     .main-title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .cards-grid {
         gap: 16px;
     }
-
-    /* .image-container {
-        height: 180px;
-    } */
 }
 
 @media (max-width: 992px) {
@@ -195,7 +193,6 @@
     }
 
     .image-container {
-        /* height: 160px; */
         margin-bottom: 12px;
     }
 
@@ -243,6 +240,15 @@
     
     .btn-more {
         font-size: 0.85rem;
+    }
+
+    .main-title{
+        padding: 0px !important;
+    }
+
+    .title-section{
+        margin-bottom: 0px !important;
+        padding-left: 0px !important;
     }
 }
 
