@@ -1,106 +1,125 @@
-.inner-top-area{position: relative; overflow: hidden; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;}
-.inner-top-area .bg-img{position: absolute; overflow: hidden; width: 100%; height: 100%;}
-.inner-top-area .bg-img img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover;}
-.inner-top-area .bg-img::before{content: ''; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: #F9F9F9; opacity: 0.9; z-index: 1;}
-.inner-top-area h1{position: relative; z-index: 2; margin: 0px auto 50px auto; text-align: center; font-family:'Esperanza Headline Roman'; font-size: 74px; color: var(--blue-color); line-height: 84px; max-width: 800px;}
-.inner-top-area .bottom-circle{width: 600px; height: 600px; position: absolute; overflow: hidden; bottom:-200px; left: 50%; margin-left: -300px; z-index: 1; border-radius: 50%;}
-.inner-top-area .bottom-circle img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover; filter:grayscale(1);}
-.inner-top-area::before{content: ''; position: absolute; bottom: 0px; left: 0px; width: 50%; height: 85px; border-radius: 0 85px 0 0; background: var(--blue-color); z-index: 3;} 
-.inner-top-area::after{content: ''; position: absolute; bottom: 0px; right: 0px; width: 50%; height: 85px; border-radius: 85px 0 0 0; background: var(--blue-color); z-index: 3;} 
-
-
-.circle-container{position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: flex-end; /* Start at the bottom center */}
-.circle-container h1{position: relative; z-index: 2; margin: 0px auto 50px auto; text-align: center; font-family:'Esperanza Headline Roman'; font-size: 74px; color: var(--blue-color); line-height: 84px; max-width: 800px; animation:fadeInUp 2s ease backwards;}
-.circle{background-color: #3498db; width: 600px; height: 600px; margin-bottom: -250px; border-radius: 50%; /* Circle shape */ transform: translateY(0); /* Initial transform */ transition: transform 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, margin-bottom 0.3s ease-out; position: relative; overflow: hidden; filter: grayscale(100%);}
-.circle img{position: absolute; top: 0px; bottom: 0px; left:0px; right: 0px; object-fit: cover; width: 100%; height: 100%;}
-.red-part{background: #fff; width: 100%; height: 100vh; position: fixed; top: 0px; left: 0px; display: flex; align-items: center;}
-.red-part img{position: absolute; top: 0px; bottom: 0px; left:0px; right: 0px; object-fit: cover; width: 100%; height: 100%; opacity: 0.1;}
-
-.inside-mobile-block{position: relative; overflow: hidden; width: 100%; height: 60vh; display: none; align-items: center; justify-content: center;}
-.inside-mobile-block .white-bg{position: absolute; overflow: hidden; width: 100%; height: 100%; background: #fff;}
-.inside-mobile-block .white-bg img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover; opacity: 0.1;}
-.inside-mobile-block h1{font-family:'Esperanza Headline Roman'; color: var(--blue-color); font-size: 34px; line-height: 44px; padding: 0 30px; margin: 0px; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; transform: scale(0); -webkit-transition: all 1s ease;}
-.inside-mobile-block .center-photo{position: absolute; overflow: hidden;  background: #fff; transform: scale(0); border-radius: 500px; width: 100px; height: 100px;}
-.inside-mobile-block .center-photo img{width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; object-fit: cover; }
-.inside-mobile-block h1.show{transform: scale(1); opacity: 1; -webkit-transition: all 2s ease; border-radius:0px}
-.inside-mobile-block .center-photo.show{ animation: zoom-in-zoom-out 4s ease-out ; transform: scale(1.2); opacity: 1; border-radius:0px; width: 500px; height: 500px;} 
-
-@keyframes zoom-in-zoom-out-large {
-    0% {
-        transform: scale(0);
-        width: 100px; height: 100px;
-        border-radius: 500px;
-    }
-    
-    80% {
-        transform: scale(1.2);
-        width: 767px; height: 767px;
-        border-radius: 500px;
-    }
-    100% {
-        transform: scale(1.2);
-        width: 767px; height: 767px;
-        border-radius: 0px;
-    }
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-@keyframes zoom-in-zoom-out-small {
-    0% {
-        transform: scale(0);
-        width: 100px; height: 100px;
-        border-radius: 500px;
-    }
-    
-    80% {
-        transform: scale(1.2);
-        width: 500px; height: 500px;
-        border-radius: 500px;
-    }
-    100% {
-        transform: scale(1.2);
-        width: 500px; height: 500px;
-        border-radius: 0px;
-    }
+
+/* Blue background */
+.blue-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1a3c5a;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+}
+.blue-bg.show {
+  opacity: 1;
+}
+.blue-bg.hide {
+  opacity: 0;
+}
+
+/* Rays */
+.ray-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.ray-container.show {
+  opacity: 1;
+}
+.ray-container.hide {
+  opacity: 0;
+}
+
+.ray {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 200vh;
+  background: rgba(255, 255, 255, 0.3);
+  transform-origin: bottom center;
+  animation: radiate 3s infinite ease-in-out;
+  opacity: 0;
+}
+
+@keyframes radiate {
+  0% {
+    transform: rotate(var(--angle)) scaleY(0.3);
+    opacity: 0;
   }
-/* Medium Desktop */
-@media only screen and (max-width: 1640px) {
-    .inner-top-area h1{font-size: 54px; line-height: 64px; max-width: 700px;}
-    .inner-top-area .bottom-circle{width: 440px; height: 440px; bottom: -150px; margin-left: -220px;}
-    .inner-top-area::before,
-    .inner-top-area::after{height: 50px;}
-    
-    .circle-container h1{font-size: 54px; line-height: 64px; max-width: 700px;}
-    
+  50% {
+    transform: rotate(var(--angle)) scaleY(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(var(--angle)) scaleY(1.5);
+    opacity: 0;
+  }
 }
 
-/* Small Laptop */
-@media only screen and (max-width: 1280px) {
-  
+/* Image */
+.banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  z-index: 1;
+}
+.banner-image.show {
+  opacity: 1;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Tablet (Landscape) */
-@media only screen and (max-width: 1024px) {
-    .inner-top-area h1{font-size: 34px; line-height: 44px; padding: 0 30px;}
-    .circle-container h1{font-size: 34px; line-height: 44px; padding: 0 30px;}
+/* Overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* dark transparent */
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  z-index: 2;
+}
+.overlay.show {
+  opacity: 1;
 }
 
-/* Tablet (Portrait) */
-@media only screen and (max-width: 767px) {
-    .inner-top-area{height: 600px;}
-    .inner-top-area::before {width: 100%;}
-    .inner-top-area::after {content: none;}
-    .breadcrumb-area::before{width: 100%;}
-    .breadcrumb-area::after{content: none;}
-    .breadcrumb-area{padding: 5px 20px;}
-    .circle{width: 100%; height: 100%;}
-    .circle-container{display: none;}
-    .inside-mobile-block{display: flex;}
-    .inside-mobile-block .center-photo.show{ animation: zoom-in-zoom-out-large 4s ease-out ; transform: scale(1.2); opacity: 1; border-radius:0px; width: 767px; height: 767px;} 
-
-
-    
+/* Text */
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  z-index: 3;
 }
-@media only screen and (max-width: 599px) {
-    .inside-mobile-block .center-photo.show{ animation: zoom-in-zoom-out-small 4s ease-out ; transform: scale(1.2); opacity: 1; border-radius:0px; width: 500px; height: 500px;} 
-
-
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Esperanza Headline Roman";
+  color: rgba(9, 33, 58, 1);
+  font-weight: 400;
+}
+.banner-text p {
+  font-size: 32px;
+  font-weight: 500;
+}
+.banner-text.show {
+  opacity: 1;
 }

@@ -487,6 +487,10 @@
     font-family: "Anek Devanagari", sans-serif;
 }
 
+.breadcrumb-area{
+    margin-top: 0;
+}
+
 /* Tablet Styles */
 @media (max-width: 1024px) {
     .vision-mission-wrapper {
