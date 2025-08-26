@@ -26,7 +26,7 @@ function Empowering() {
   ]);
   const colorOptions = ["#189090", "#79519F", "#CC6728", "#69934A"];
 
-  // IMAGES 
+  // IMAGES
   const imageOptions = [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix];
   const [boxImages, setBoxImages] = useState([...imageOptions]); // Initialize with actual images
 
@@ -106,7 +106,7 @@ function Empowering() {
         setBoxImages(prevImages =>
           prevImages.map((img, index) => (index === randomBox ? newImage : img))
         );
-        
+
         // Reset transition state after a short delay
         setTimeout(() => {
           setImageTransitions(prev => 
@@ -130,8 +130,8 @@ function Empowering() {
           <div dangerouslySetInnerHTML={{ __html: aboutUsData.title }} />
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
-          <Link to={aboutUsData.link} className="btn-more">
-            About Us
+          <Link to="/about">
+            <button className="abt-us-btn">About Us</button>
           </Link>
         </ScrollAnimation>
       </div>
@@ -139,9 +139,9 @@ function Empowering() {
       <ul className="box-layout">
         <li className="line-1">
           <div className="block-1">
-            <img 
-              src={boxImages[0]} 
-              alt="educational content" 
+            <img
+              src={boxImages[0]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[0] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
@@ -152,9 +152,9 @@ function Empowering() {
         </li>
         <li className="line-2">
           <div className="block-1">
-            <img 
-              src={boxImages[1]} 
-              alt="educational content" 
+            <img
+              src={boxImages[1]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[1] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
@@ -165,27 +165,27 @@ function Empowering() {
         </li>
         <li className="line-3">
           <div className="block-1">
-            <img 
-              src={boxImages[2]} 
-              alt="educational content" 
+            <img
+              src={boxImages[2]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[2] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
         </li>
         <li className="line-4">
           <div className="block-1">
-            <img 
-              src={boxImages[3]} 
-              alt="educational content" 
+            <img
+              src={boxImages[3]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[3] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
         </li>
         <li className="line-5">
           <div className="block-1">
-            <img 
-              src={boxImages[4]} 
-              alt="educational content" 
+            <img
+              src={boxImages[4]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[4] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
@@ -196,9 +196,9 @@ function Empowering() {
         </li>
         <li className="line-6">
           <div className="block-1">
-            <img 
-              src={boxImages[5]} 
-              alt="educational content" 
+            <img
+              src={boxImages[5]}
+              alt="educational content"
               className={`animated-image ${imageTransitions[5] ? 'fade-out' : 'fade-in'}`}
             />
           </div>
@@ -208,6 +208,10 @@ function Empowering() {
           ></div>
         </li>
       </ul>
+
+      <div className="rays">
+          <img src="/images/footer-rays.svg" alt="Decorative rays" />
+        </div>
     </div>
   );
 }

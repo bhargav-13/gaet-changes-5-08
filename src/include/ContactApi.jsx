@@ -15,7 +15,6 @@ function ContactApi() {
         { url: facebook, icon: '/images/facebook.svg', name: 'Facebook' },
         { url: instagram, icon: '/images/insta.svg', name: 'Instagram' },
         { url: linked_in, icon: '/images/linkdin.svg', name: 'LinkedIn' },
-        { url: `mailto:${email_id}`, icon: '/images/mail.svg', name: 'Email' },
         { url: twitter, icon: '/images/xicon.svg', name: 'Twitter' },
         { url: youtube, icon: '/images/youtube.svg', name: 'YouTube' }
     ];

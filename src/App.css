@@ -539,12 +539,13 @@ main {flex: 1; /* Pushes footer to the bottom */}
           }
 
           .founder-image-container {
-            height: 350px;
+            height: 100%;
           }
 
           .founder-info {
             padding: 20px 20px 15px;
             width: 70%;
+            min-height: 25%;
           }
 
           .founder-card:nth-child(1) .founder-info {
@@ -577,7 +578,7 @@ main {flex: 1; /* Pushes footer to the bottom */}
           }
 
           .founder-image-container {
-            height: 300px;
+            height: 100%;
           }
 
           .founder-info {

@@ -647,7 +647,7 @@
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 250px) and (max-width: 425px) {
   .school-block .school-photo {
     position: absolute;
     left: 50% !important;
@@ -674,12 +674,12 @@
  .school-slider-sections .swiper-button-prev {
    top: auto;
     left: 73% !important;
-    bottom: 2%;
+    bottom: 11%;
 
   }
 
   .school-slider-sections .swiper-button-next {
-    bottom: 2%;
+    bottom: 11%;
     left: 83%;
   }
 

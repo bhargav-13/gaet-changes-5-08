@@ -410,22 +410,6 @@
     }
 }
 
-/* 110% */
-/* @media (min-width: 1747px) and (max-width: 1800) {
-    .left-block {
-        font-size: 1.15rem !important;
-        line-height: 1.5 !important;
-        border: 2px solid red !important; 
-    }
-} */
-/* @media (resolution: 1746px) {
-    .left-block {
-        font-size: 1.15rem !important;
-        line-height: 1.5 !important;
-        border: 2px solid red !important;
-    }
-} */
-
 
 .vision-mission-wrapper {
     background: #f8f9fa;
@@ -631,9 +615,15 @@
     }
 
     .image-container {
-        height: 180px;
         margin: 0 -15px 0 -15px;
         order: 3;
+        border-radius: 0px !important;
+    }
+
+    .section-image{
+        width: 91%;
+        margin-left: 28px;
+        height: 100%;
     }
 }
 
