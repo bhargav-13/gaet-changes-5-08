@@ -29,8 +29,7 @@ function ApplyEnrolBlock() {
                                 <span dangerouslySetInnerHTML={{ __html: data.enrol_section?.title || 'title' }} />
                             </h2>
                             <p><span dangerouslySetInnerHTML={{ __html: data.enrol_section?.description || 'description' }} /></p>
-                            {/* <Link to={data.enrol_section.link} className='common-button-more cyan'>APPLY</Link> */}
-                           <a href="https://gaet.edu.in/" className="btn-apply">APPLY</a>
+                            <Link to={data.enrol_section.link} className='common-button-more cyan'>APPLY</Link>
 
                         </ScrollAnimation>
                     </div>

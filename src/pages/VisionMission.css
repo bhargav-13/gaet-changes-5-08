@@ -413,7 +413,7 @@
 
 .vision-mission-wrapper {
     background: #f8f9fa;
-    padding: 80px 20px;
+    padding: 80px 120px;
 }
 
 .container {
@@ -447,7 +447,7 @@
 .section-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
 }
 
 .section-title {
@@ -458,13 +458,14 @@
     text-align: left;
     line-height: 1.2;
     font-family: 'Esperanza Headline Roman';
+    padding-left: 0px !important;
 }
 
 .image-container {
-    width: 100%;
+    width: 94%;
     height: 280px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .section-image {
@@ -488,7 +489,7 @@
 }
 
 .breadcrumb-area{
-    margin-top: 0;
+    margin-top: -4.5rem;
 }
 
 /* Tablet Styles */
@@ -622,6 +623,7 @@
         margin: 0 -15px 0 -15px;
         order: 3;
         border-radius: 0px !important;
+        width: 100%;
     }
 
     .section-image{

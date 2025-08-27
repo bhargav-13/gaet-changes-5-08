@@ -422,21 +422,24 @@
   }
 }
 
+.common-button-more{
+    font-size: 28px;
+    line-height: 109%;
+    position: relative;
+    text-decoration: none;
+}
+
 .common-button-more.cyan {
-  color: white;
-  background-color: #1C6791;
-  border-radius: 0px 52px 0px 0px;
-  padding: 5px 33px;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  font-size: 25px;
+  color: rgb(39, 163, 196);;
+    padding: 6px 2px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 31px;
+      font-family: "Anek Devanagari", sans-serif;
+
 }
 .common-button-more.cyan p {
   padding-top: 40px;
-}
-.common-button-more.cyan:hover {
-  background-color: #27A3C4;
-  color: white;
 }
 
 /* .btn-apply {

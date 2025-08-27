@@ -10,7 +10,7 @@
 .school-block .leftbg .rightsidebg{width: 0; height: 0; border-right: 328px solid transparent; position: absolute; top: 0px; left: 100%; z-index: 1;}
 .school-block .rays{width: 3084px; height: 3097px; position: absolute; left: 50%; margin-left:-1542px; margin-top: -100px; opacity: 0.2; margin-top: -540px; z-index: 1; animation-name: rotate; animation-duration: 350s; animation-iteration-count: infinite; animation-timing-function: linear;}
 .school-block .rays img{width: 100%;}
-.school-block .content-area{height: 100%; position: relative; z-index: 2;  width: 50%; padding: 160px 142px 230px 142px; display: flex; flex-direction: column; justify-content: space-between;}
+.school-block .content-area{height: 100%; position: relative; z-index: 2;  width: 50%; padding: 0px 142px 230px 142px; display: flex; flex-direction: column; justify-content: space-between;}
 .school-block .content-area h3{font-family:'Esperanza Headline Roman'; font-size: 58px; line-height: 117%; color: #fff;}
 .school-block .content-area p{font-family: "Anek Devanagari", sans-serif; font-size: 24px; line-height: 117%; color: #fff; font-weight: 300; margin: 0 0 30px 0;}
 .school-block .content-area .info{font-family: "Anek Devanagari", sans-serif; font-size: 38px; line-height: 117%; color: #fff; font-weight: 300; margin: 0 0 50px 0;}
@@ -47,7 +47,7 @@
     .school-slider-section h2{font-size: 36px;}
     .school-slider-section .btn-more {font-size: 22px;}
     .school-block{height: 580px;}
-    .school-block .content-area {padding: 60px 60px 100px 50px;}
+    .school-block .content-area {padding: 0px 60px 100px 50px;}
     .school-block .content-area h3{font-size: 30px; line-height: 44px;}
     .school-block .content-area p{font-size: 18px; margin: 0 0 20px 0;}
     .school-block .content-area .info{font-size: 26px; margin: 0 0 20px 0;}
@@ -68,7 +68,7 @@
     .school-slider-section h2 {font-size: 36px;}
     .school-slider-section .btn-more {font-size: 20px;}
     .school-block{height: 500px;}
-    .school-block .content-area {padding:50px 30px 90px 30px;}
+    .school-block .content-area {padding:0px 30px 90px 30px !important;}
     .school-block .content-area h3{font-size: 28px;}
     .school-block .content-area p {font-size: 15px;}
     .school-block .content-area .info {font-size: 26px; margin: 0 0 10px 0;}

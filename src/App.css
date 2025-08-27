@@ -611,7 +611,7 @@ main {flex: 1; /* Pushes footer to the bottom */}
 
 /* ------------Core Belief --------------- */
 .core-belief-section {
-          padding: 80px 0;
+          padding-top: 80px;
           background-color: #f8f9fa;
           position: relative;
         }
@@ -626,7 +626,7 @@ main {flex: 1; /* Pushes footer to the bottom */}
           font-family: 'Esperanza Headline Roman';
           font-size: 2.5rem;
           font-weight: 400;
-          color: rgba(9, 33, 58, 1);
+          color: rgba(9, 33, 58, 1) !important;
           text-align: left;
           margin-bottom: 3rem;
           letter-spacing: 0.5px;
