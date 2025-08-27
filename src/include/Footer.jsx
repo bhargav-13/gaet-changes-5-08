@@ -55,9 +55,9 @@ function Footer() {
                   <div className="contact">
                     <h3>Contact</h3>
                     <p>
-                      <Link
+                      +91 <Link
                         to={`tel:${
-                          data?.settings?.contact_no || "02240278222"
+                          data?.settings?.contact_no || "+91 02240278222"
                         }`}
                       >
                         {data?.settings?.contact_no || "022 40278222"}

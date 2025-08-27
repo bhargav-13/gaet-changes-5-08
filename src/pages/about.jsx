@@ -59,12 +59,12 @@ const navigate = useNavigate();
         BackgrondBack={data.top_section.back_image}
         CircleFront={data.top_section.front_image}
       />
-      <InsideMobileBlock
+      {/* <InsideMobileBlock
         pageTitle={data.top_section.title}
         pageBreadcrumb="About Us"
         BackgrondBack={data.top_section.back_image}
         CircleFront={data.top_section.front_image}
-      />
+      /> */}
 
       <div className="breadcrumb-area">
         <Breadcrumb>
