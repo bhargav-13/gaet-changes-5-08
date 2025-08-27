@@ -66,12 +66,12 @@ function JourneyGaetPage() {
                 BackgrondBack={data.top_section.back_image}
                 CircleFront={data.top_section.front_image}
             />
-            <InsideMobileBlock
+            {/* <InsideMobileBlock
                 pageTitle={data.top_section.title}
                 pageBreadcrumb="Journey Of GAET"
                 BackgrondBack={data.top_section.back_image}
                 CircleFront={data.top_section.front_image}
-            />
+            /> */}
 
             <div className='breadcrumb-area'>
                 <Breadcrumb>

@@ -65,12 +65,12 @@ function PhotoGalleryPage() {
                 BackgrondBack={data.top_section.back_image}
                 CircleFront={data.top_section.front_image}
             />
-            <InsideMobileBlock
+            {/* <InsideMobileBlock
                 pageTitle={data.top_section.title}
                 pageBreadcrumb="Governing Body"
                 BackgrondBack={data.top_section.back_image}
                 CircleFront={data.top_section.front_image}
-            />
+            /> */}
             <div className='breadcrumb-area'>
                 <Breadcrumb>
                     <Breadcrumb.Item href="/about">About Us</Breadcrumb.Item>
