@@ -39,6 +39,10 @@
   opacity: 0;
 }
 
+.breadcrumb-area {
+  margin-top: 0;
+}
+
 .ray {
   position: absolute;
   bottom: 0;
