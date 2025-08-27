@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LegacySpanning.css";
 
 // Images:
-import imageOne from "../assets/GHS 3.png";
+import imageOne from "../assets/1981.png";
 import imageTwo from "../assets/GHS 3.png";
 import imageThree from "../assets/Mask group.png";
 import imageFour from "../assets/Mask group (1).png";
@@ -15,16 +15,15 @@ const carouselData = [
   {
     id: 1,
     image: imageOne,
-    title: "Goenka & Associates Educational Trust",
+    title: "",
     description:
-      "GAET has established the following schools & institutions located in the buildings constructed from the corpus of",
+      "GAET has established the following schools & Institutions located in the buildings constructed from the corpus of the Trust raised by donations received from philanthropic organizations and corporate bodies.",
   },
   {
     id: 2,
     image:imageTwo,
-    title: "Modern Educational Infrastructure",
-    description:
-      "State-of-the-art facilities designed to provide world-class education with modern amenities and learning environments",
+    title: "Goenka & Associates Educational Trust",
+    description:"GAET has established the following schools & Institutions located in the buildings constructed from the corpus of",
   },
   {
     id: 3,
@@ -86,7 +85,7 @@ export default function LegacySpanning() {
             <div className="text-section">
               <h1 className="legacy-spanning-main-title">
                 <span className="line">A Legacy Spanning</span>
-                <span className="line">Over Years</span>
+                <span className="line"> Over Years</span>
               </h1>
 
               <div className="carousel-content">
