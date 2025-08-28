@@ -56,7 +56,7 @@ function AdmissionPage() {
           <Breadcrumb.Item active>Admission</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div className="inner-content-wapper">
+      {/* <div className="inner-content-wapper">
         <div className="two-photo-area">
           <div className="left-part">
             <div className="photo-block">
@@ -145,7 +145,7 @@ function AdmissionPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="content-block">
         <div className="inner-top-content-block">

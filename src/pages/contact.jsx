@@ -104,12 +104,7 @@ function ContactPage() {
         BackgrondBack={contactData?.top_section?.back_image}
         CircleFront={contactData?.top_section?.front_image}
       />
-      <InsideMobileBlock
-        pageTitle={contactData?.top_section?.title}
-        pageBreadcrumb="Governing Body"
-        BackgrondBack={contactData?.top_section?.back_image}
-        CircleFront={contactData?.top_section?.front_image}
-      />
+      
       <div className="breadcrumb-area">
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
