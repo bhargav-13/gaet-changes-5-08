@@ -82,7 +82,7 @@ function Footer() {
                   <div>
                     <h3>Timimgs</h3>
                     <p>
-                      09:30 a.m - 05:30 p.m (M  on-Fri)2nd & 4th Saturdays Closed
+                      09:30 a.m - 05:30 p.m (Mon-Fri)2nd & 4th Saturdays Closed
                     </p>  
                   </div>
                 </div>
