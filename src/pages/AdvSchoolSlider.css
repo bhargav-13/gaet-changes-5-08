@@ -316,7 +316,7 @@
   position: relative;
   z-index: 2;
   width: 50%;
-  padding: 160px 142px 230px 142px;
+  padding: 120px 142px 230px 142px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -476,7 +476,7 @@
   }
 
   .school-block .content-area {
-    padding: 60px 60px 100px 50px;
+    padding: 0px 60px 100px 50px;
   }
 
   .school-block .content-area h3 {
