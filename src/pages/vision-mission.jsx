@@ -76,7 +76,8 @@ function VisionMissionPage() {
             </Helmet>
 
             <InsideTopBanner
-                pageTitle={data.top_section?.title}
+                // pageTitle={data.top_section?.title}
+                pageTitle={"Our Vision & Mission"}
                 pageBreadcrumb="Vision & Mission"
                 BackgrondBack={data.top_section?.back_image}
                 CircleFront={data.top_section?.front_image}

@@ -54,7 +54,8 @@ const navigate = useNavigate();
       </Helmet>
 
       <InsideTopBanner
-        pageTitle={data.top_section.title}
+        // pageTitle={data.top_section.title}
+        pageTitle={"Growing thinkers with Purpose, Passion and Patience"}
         pageBreadcrumb="About Us"
         BackgrondBack={data.top_section.back_image}
         CircleFront={data.top_section.front_image}
@@ -88,6 +89,7 @@ const navigate = useNavigate();
                       __html: data.top_section?.story || "",
                     }}
                   />
+                  <strong></strong>
                 </p>
               </ScrollAnimation>
             </Container>

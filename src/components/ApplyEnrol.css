@@ -429,13 +429,13 @@
     text-decoration: none;
 }
 
-.common-button-more.cyan {
-  color: rgb(39, 163, 196);;
-    padding: 6px 2px;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    font-size: 31px;
-      font-family: "Anek Devanagari", sans-serif;
+.apply-btn {
+background-color: rgba(28, 103, 145, 1);
+  border: none;
+  font-size: 20px;
+  padding: 4px 27px;
+  color: rgba(193, 193, 193, 1);
+  text-decoration: none;
 
 }
 .common-button-more.cyan p {

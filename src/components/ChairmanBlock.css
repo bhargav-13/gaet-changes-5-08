@@ -36,12 +36,12 @@
 }
 
 .chairman-section .content-area .btn-more {
-    font-size: 20px;
-    line-height: 109%;
-    color: var(--light-blue-color);
-    text-decoration: underline;
-    font-family: "Anek Devanagari", sans-serif;
-    font-weight: 500;
+    background-color: rgba(28, 103, 145, 1);
+  border: none;
+  font-size: 20px;
+  padding: 4px 27px;
+  color: rgba(193, 193, 193, 1);
+  text-decoration: none;
 }
 
 .chairman-section .content-area p {

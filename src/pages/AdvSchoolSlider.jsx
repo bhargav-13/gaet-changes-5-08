@@ -85,8 +85,8 @@ function AdvSchoolSlider() {
                             <div className="school-image-wrapper">
                                 <img src={rowOneImageTwo} alt="School2" className="img-fluid w-100" />
                                 <div className="school-overlay-two school-overlay">
-                                    <h3>Yashodham High School & Junior
-                                        <span className="school-type">(ICSE & ICS)</span>
+                                    <h3>Yashodham High School & Junior College 
+                                        <span className="school-type"> (CBSE)</span>
                                     </h3>
                                     <div className="school-info">
                                         <p>Situated in Goregaon (E)</p>
@@ -117,7 +117,7 @@ function AdvSchoolSlider() {
                             <div className="school-image-wrapper">
                                 <img src={rowTwoImageOne} alt="School4" className="img-fluid w-100" />
                                 <div className="school-overlay-four school-overlay">
-                                    <h3>Thane Police School</h3>
+                                    <h3>Thane Police School (CBSE)</h3>
                                     <div className="school-info">
                                         <p>Situated in Thane (W)</p>
                                         <p>Estd. 2006</p>
@@ -141,7 +141,7 @@ function AdvSchoolSlider() {
                             <div className="school-image-wrapper">
                                 <img src={rowTwoImageThree} alt="School5" className="img-fluid w-100" />
                                 <div className="school-overlay-six school-overlay">
-                                    <h3>Lakshdham High School</h3>
+                                    <h3>Lakshdham High School (ICSE)</h3>
                                     <div className="school-info">
                                         <p>Situated in Goregaon(E)</p>
                                         <p>Estd. 2008</p>
