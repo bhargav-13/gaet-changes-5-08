@@ -179,7 +179,7 @@ const navigate = useNavigate();
         </section>
 
         <section className="core-belief-section">
-          <h2 className="section-title">Our Core belief</h2>
+          <h2 className="section-title">Our Core Belief</h2>
 
           <div className="belief-content">
             <div className="belief-image-container">
