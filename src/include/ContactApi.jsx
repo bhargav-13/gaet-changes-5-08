@@ -9,14 +9,15 @@ function ContactApi() {
     if (error) return <div className="error-message">Error: {error.message}</div>;
     if (!settings) return null;
 
-    const { facebook, instagram, linked_in, email_id, twitter, youtube, } = settings?.settings || {};
+    const { facebook, instagram, linked_in, email_id, twitter, youtube,map } = settings?.settings || {};
 
     const socialLinks = [
         { url: facebook, icon: '/images/facebook.svg', name: 'Facebook' },
         { url: instagram, icon: '/images/insta.svg', name: 'Instagram' },
         { url: linked_in, icon: '/images/linkdin.svg', name: 'LinkedIn' },
         { url: twitter, icon: '/images/xicon.svg', name: 'Twitter' },
-        { url: youtube, icon: '/images/youtube.svg', name: 'YouTube' }
+        { url: youtube, icon: '/images/youtube.svg', name: 'YouTube' },
+        { url: map, icon: '/images/MapIcon.png', name: 'Map' }
     ];
 
     return (
