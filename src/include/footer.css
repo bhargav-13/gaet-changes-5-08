@@ -14,10 +14,13 @@
     height: 100%;
 }
 
-.contact-email .contact{
+.contact-email .contact {
     min-height: 55%;
 }
 
+.footer-email{
+font-family: "Anek Devanagari", sans-serif;
+}
 .footer-area .inner-flex {
     display: flex;
     height: 100%;
@@ -224,7 +227,7 @@
     }
 
     .footer-area .container {
-        padding: 0 50px;
+        padding: 0 30px;
     }
 
     .footer-area .inner-flex .leftside .logo {
@@ -250,7 +253,7 @@
 
     .footer-area .inner-flex .rightside ul.social li a {
         width: 24px;
-        height: 24px;
+        height: 29px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -437,7 +440,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-.head-office{
-    margin-top: 20px;
-}
+    .head-office {
+        margin-top: 20px;
+    }
 }

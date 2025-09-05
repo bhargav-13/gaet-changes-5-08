@@ -59,7 +59,7 @@ function Footer() {
                     </p>
                   </div>
 
-                  <div>
+                  <div className='footer-email'>
                     <h3>Email</h3>
                     <a href="mailto:gaetedu@gaet.edu.in" className='text-white text-decoration-none'>gaetedu@gaet.edu.in</a>
                   </div>
