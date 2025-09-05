@@ -57,7 +57,7 @@ main {flex: 1; /* Pushes footer to the bottom */}
 .inner-top-content-block::after{content: ''; width: 100%; height: 70px; border-radius: 70px 0 0 0; border-top: var(--light-blue-color) 2px solid; border-left: var(--light-blue-color) 2px solid; position: absolute; top: 100px; left: 74px;}
 .inner-top-content-block p{font-family: "Anek Devanagari"; font-size: 28px; line-height: 120%; letter-spacing: 2%; color: var(--blue-color); font-weight: 300;}
 .inner-top-content-block p strong{font-weight: 600; color: var(--light-blue-color);}
-.inner-top-content-block p:last-child{margin: 0px;text-align: center;}
+
 
 
 .container {
@@ -138,12 +138,18 @@ main {flex: 1; /* Pushes footer to the bottom */}
           text-align: left !important;
           font-size: 16px !important;
           color: #fff !important;
+          width: 60%;
+          margin-left: 0;
+          margin-right: auto;
         }
 
         .about-text-align-right {
           text-align: right !important;
           font-size: 16px !important;
           color: #fff !important;
+          width: 60% !important;
+          margin-left: auto !important;
+          margin-right: 0;
         }
 
 @media only screen and (min-width: 200px) and (max-width: 425px) {

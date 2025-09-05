@@ -40,7 +40,7 @@
 }
 
 .breadcrumb-area {
-  margin-top: -4.5rem;
+  margin-top: -2.5rem;
 }
 
 .ray {
@@ -99,7 +99,7 @@
   z-index: 2;
 }
 .overlay.show {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 /* Text */

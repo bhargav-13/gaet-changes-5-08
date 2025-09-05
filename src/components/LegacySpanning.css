@@ -88,10 +88,9 @@
 .image-container {
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  transform: perspective(1000px) rotateY(-5deg);
   transition: all 0.5s ease;
   border-radius: 0px !important;
-  height: 75%;
+  height: 92%;
 }
 
 .image-container:hover {

@@ -60,9 +60,16 @@ const carouselData = [
     description:
       "Building stronger communities through education and creating lasting impact on society through quality educational services",
   },
+  {
+    id: 7,
+    image:imageSeven,
+    title: "CTest",
+    description:
+      "Test",
+  }
 ];
 
-const timelineYears = ["1981", "1983", "1987", "1990", "2006", "2007", "2008"];
+const timelineYears = ["1981", "1983", "1987", "1990", "2006", "2007", "2008", "2025"];
 
 export default function LegacySpanning() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -158,7 +165,7 @@ export default function LegacySpanning() {
       </div>
 
       <div className="timeline-section">
-        <div className="timeline">
+        {/* <div className="timeline">
           {timelineYears.map((year, index) => (
             <div
               key={year}
@@ -169,7 +176,21 @@ export default function LegacySpanning() {
               <div className="timeline-marker"></div>
             </div>
           ))}
-        </div>
+        </div> */}
+          <div className="timeline">
+          {timelineYears.map((year, index) => (
+            <div
+              key={year}
+              className={`timeline-item ${currentSlide === index ? "active" : ""}`}
+              onClick={() => setCurrentSlide(index)} // <-- Add this
+              role="button"
+              aria-label={`Go to ${year}`}
+            >
+              <div className="timeline-year">{year}</div>
+              <div className="timeline-marker"></div>
+            </div>
+          ))}
+          </div>
       </div>
     </div>
   );
