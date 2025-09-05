@@ -65,7 +65,7 @@ function Footer() {
                   </div>
                 </div>
                 <div className="inner-part address-timings">
-                  <div>
+                  <div className="head-office">
                     <h3>Trust Head Office</h3>
                     <p>
                       <a className='text-white' href="https://www.google.com/maps/search/?api=1&query=Yashodham+High+School+Building,+Yashodham,+Goregaon(East),+Mumbai+-+400063" target="_blank" rel="noopener noreferrer">
