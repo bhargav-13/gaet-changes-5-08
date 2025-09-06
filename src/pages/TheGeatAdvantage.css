@@ -700,7 +700,7 @@
 
 /* Remove gap between slider and next content */
 .breadcrumb-area {
-  margin-top: 0px !important;
+  margin-top: -2.5rem !important;
 }
 
 /* Additional gap removal - target any potential spacing elements */
