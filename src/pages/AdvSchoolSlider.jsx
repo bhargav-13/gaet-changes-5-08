@@ -85,7 +85,7 @@ function AdvSchoolSlider() {
                             <div className="school-image-wrapper">
                                 <img src={rowOneImageTwo} alt="School2" className="img-fluid w-100" />
                                 <div className="school-overlay-two school-overlay">
-                                    <h3>Yashodham High School & Junior College 
+                                    <h3>Yashodham High School & Junior College
                                         <span className="school-type"> (CBSE)</span>
                                     </h3>
                                     <div className="school-info">
@@ -171,6 +171,41 @@ function AdvSchoolSlider() {
 
 
             {/* Education with pupose section */}
+            {/* <section>
+                <div className='school-slider-sections'>
+                    <Swiper
+                        navigation={true}
+                        loop={true}
+                        pagination={{ clickable: true }}
+                        effect={'fade'}
+                        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+                        className="mySwiper"
+                        autoplay={{ delay: 5500, disableOnInteraction: false }}
+                    >
+                        {highlights.map((item) => {
+                            const specialClass = [2, 3, 5].includes(item.id) ? 'adjust-text-slide' : '';
+                            return (
+                                <SwiperSlide key={item.id}>
+                                    <div className={`school-block container ${specialClass}`}>
+                                        <div className='content-area'>
+                                            <h3>Educating with Purpose, Evolving Over Four Decades</h3>
+                                            <div className='bottombar'>
+                                                <div className='info'>{item.description}</div>
+                                            </div>
+                                        </div>
+                                        <div className='school-photo'>
+                                            <img src={item.image} alt={item.description} />
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+
+                    </Swiper>
+                </div>
+            </section> */}
+
+
             <section>
                 <div className='school-slider-sections'>
                     <Swiper
@@ -182,21 +217,26 @@ function AdvSchoolSlider() {
                         className="mySwiper"
                         autoplay={{ delay: 5500, disableOnInteraction: false }}
                     >
-                        {highlights.map((item) => (
-                            <SwiperSlide key={item.id}>
-                                <div className='school-block container'>
-                                    <div className='content-area'>
-                                        <h3>Educating with Purpose, Evolving Over Four Decades</h3>
-                                        <div className='bottombar'>
-                                            <div className='info'>{item.description}</div>
+                        {highlights.map((item) => {
+                            const specialClass = [2, 3, 5].includes(item.id) ? 'adjust-text-slide' : '';
+                             const responsiveClass = [4, 6].includes(item.id) ? 'adjust-text-responsive' : '';
+                              const idThree = [3].includes(item.id) ? 'adjust-text-three' : '';
+                            return (
+                                <SwiperSlide key={item.id}>
+                                    <div className={`school-block container ${specialClass} ${responsiveClass} ${idThree}`}>
+                                        <div className='content-area'>
+                                            <h3>Educating with Purpose, Evolving Over Four Decades</h3>
+                                            <div className='bottombar'>
+                                                <div className='info'>{item.description}</div>
+                                            </div>
+                                        </div>
+                                        <div className='school-photo'>
+                                            <img src={item.image} alt={item.description} />
                                         </div>
                                     </div>
-                                    <div className='school-photo'>
-                                        <img src={item.image} alt={item.description} />
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
+                                </SwiperSlide>
+                            );
+                        })}
                     </Swiper>
                 </div>
             </section>
