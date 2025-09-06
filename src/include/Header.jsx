@@ -175,8 +175,14 @@ function Header() {
                                         </Nav.Item>
                                     ))}
                                     <Nav.Item>
+                                        <Nav.Link as={Link} to="/the-gaet-advantage" onClick={toggleMenu}>
+                                            Why GAET
+                                        </Nav.Link>
+                                    </Nav.Item>
+                                    
+                                    <Nav.Item>
                                         <Nav.Link as={Link} to="/contact-us" onClick={toggleMenu}>
-                                            Contact
+                                            Contact Us
                                         </Nav.Link>
                                     </Nav.Item>
                                 </Nav>
