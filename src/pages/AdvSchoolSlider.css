@@ -497,7 +497,7 @@
   }
 
   .school-block .content-area h3 {
-    font-size: 45px;
+    font-size: 43px;
     line-height: 51px;
   }
 
@@ -520,7 +520,11 @@
     width: 58.85%;
   }
 }
-
+@media only screen and (max-width: 1404px) {
+    .school-block .content-area h3 {
+        font-size: 42px;
+    }
+  }
 /* Small Laptop */
 @media only screen and (min-width: 931px) and (max-width: 1024px) {
   .school-slider-sections .swiper-pagination {
@@ -539,6 +543,13 @@
     line-height: 33px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+    .school-block .content-area h3 {
+        font-size: 23px !important;
+    }
+
+  }
 
 @media only screen and (min-width: 575px) and (max-width: 930px) {
   .school-slider-sections .swiper-button-next {
