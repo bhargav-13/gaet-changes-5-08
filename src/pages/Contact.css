@@ -150,12 +150,13 @@
 }
 
 .school-list-area-heading {
-  font-family: Esperanza Headline;
-  font-weight: 400;
-  font-size: 39px;
+  font-family: Esperanza Headline Roman;
+  font-weight: 500 !important;
+  font-size: 45px;
   margin: 0 0 30px 0;
   font-weight: 600;
   letter-spacing: 1px;
+  color: rgba(9, 33, 58, 1);
 }
 
 .school-list-area h2 {
@@ -198,6 +199,10 @@
 
 .school-card:hover {
   transform: translateY(-3px);
+}
+
+.icon-line-span{
+  margin-top: 3px;
 }
 
 /* Medium Desktop */
