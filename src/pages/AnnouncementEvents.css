@@ -22,6 +22,8 @@
 .subtitle {
     font-family: "Anek Devanagari", sans-serif;
     font-size: 24px;
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .description {
@@ -94,39 +96,67 @@
     .content-area h3 {
         font-size: 28px;
     }
+
     .divider img {
-    height: 444px;
-}
+        height: 444px;
+    }
 
 }
 
 @media only screen and (max-width: 768px) {
     .content-area h3 {
-        font-size: 21px;
+        font-size: 26px;
     }
+
     .divider img {
-    height: 492px;
+        height: 492px;
     }
-    .events-section{
+
+    .events-section {
         padding: 1rem !important;
+    }
+
+    .subtitle {
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px){
-    .custom-nav{
+@media only screen and (max-width: 375px) {
+    .custom-nav {
         top: 101%;
         position: absolute;
-        gap: 16rem;
+        gap: 15.6rem !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .custom-nav {
+        top: 101%;
+        position: absolute;
+        gap: 12.7rem !important;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .custom-nav {
+        top: 101%;
+        position: absolute;
+        gap: 18rem;
     }
 
-    .events-section{
+    .events-section {
         padding-top: 1rem !important;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
+        margin-bottom: 4rem !important;
     }
 
-    .slide-image{
+    .slide-image {
         margin-top: 1rem !important;
         border-radius: 0px;
+    }
+
+    .content-area .announcements-events {
+        margin-top: 2rem !important;
     }
 }

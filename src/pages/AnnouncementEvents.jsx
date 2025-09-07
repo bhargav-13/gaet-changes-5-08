@@ -52,9 +52,9 @@ function AnnouncementEvents() {
                     <div className="col-12 col-md-4 left-content pt-md-4">
                         <div className="content">
                             <div className='content-area'>
-                                <h3>Announcements & Events</h3>
+                                <h3 className='announcements-events'>Announcements & Events</h3>
                             </div>
-                            <h3 className="subtitle mt-4">{contentData[activeIndex].subtitle}</h3>
+                            <h3 className="subtitle">{contentData[activeIndex].subtitle}</h3>
                             <p className="description">{contentData[activeIndex].description}</p>
 
                             {/* Custom Arrow Buttons */}
