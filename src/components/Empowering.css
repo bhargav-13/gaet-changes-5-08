@@ -63,7 +63,6 @@
 
 /* Override mobile animations for smoother color transitions */
 @media only screen and (max-width: 767px) {
-
   .blue,
   .light-blue,
   .medium-blue {
@@ -184,18 +183,18 @@
 }
 
 .empowering-section .content-block h2 {
-  font-family: 'Esperanza Headline Roman';
+  font-family: "Esperanza Headline Roman";
   font-size: 68px;
   line-height: 130%;
-  color: #C1C1C1;
+  color: #c1c1c1;
   margin: 0 0 50px 0;
 }
 
 .empowering-section .content-block h2 span {
-  font-family: 'Esperanza Headline Roman';
+  font-family: "Esperanza Headline Roman";
   font-size: 68px;
   line-height: 109%;
-  color: #27A3C4;
+  color: #27a3c4;
   margin: 0 0 50px 0;
   display: block;
   color: var(--light-blue-color);
@@ -204,13 +203,13 @@
 .empowering-section .content-block .btn-more {
   font-size: 40px;
   position: relative;
-  color: #C1C1C1;
+  color: #c1c1c1;
   font-family: "Anek Devanagari", sans-serif;
   transition: color 0.3s ease;
 }
 
 .empowering-section .content-block .btn-more::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -226,7 +225,7 @@
 }
 
 .empowering-section .content-block .btn-more:hover {
-  color: #27A3C4;
+  color: #27a3c4;
 }
 
 .empowering-section ul.box-layout {
@@ -491,22 +490,22 @@
 }
 
 .blue:hover {
-  background: #261C35 !important;
+  background: #261c35 !important;
   transition: all 0.5s ease;
 }
 
 .light-blue {
-  background: #27A3C4;
+  background: #27a3c4;
   transition: all 0.5s ease;
 }
 
 .light-blue:hover {
-  background: #78519E !important;
+  background: #78519e !important;
   transition: all 0.5s ease;
 }
 
 .medium-blue {
-  background: #1C6791;
+  background: #1c6791;
   transition: all 0.5s ease;
 }
 
@@ -525,7 +524,7 @@
   }
 
   50.0% {
-    background-color: #261C35;
+    background-color: #261c35;
   }
 
   100.0% {
@@ -535,21 +534,21 @@
 
 @keyframes lightbluecolor {
   0% {
-    background-color: #27A3C4;
+    background-color: #27a3c4;
   }
 
   50.0% {
-    background-color: #78519E;
+    background-color: #78519e;
   }
 
   100.0% {
-    background-color: #27A3C4;
+    background-color: #27a3c4;
   }
 }
 
 @keyframes mediumbluecolor {
   0% {
-    background-color: #1C6791;
+    background-color: #1c6791;
   }
 
   50.0% {
@@ -557,7 +556,7 @@
   }
 
   100.0% {
-    background-color: #1C6791;
+    background-color: #1c6791;
   }
 }
 
@@ -621,7 +620,6 @@
 
   .empowering-section ul.box-layout {
     gap: 5px;
-
   }
 
   .blue {
@@ -651,20 +649,18 @@
 
 @media only screen and (max-width: 768px) {
   .empowering-section ul.box-layout li.line-2 .block-1 {
-   bottom: 32%;
+    bottom: 32%;
   }
-.empowering-section ul.box-layout li.line-1 .block-2
- {
+  .empowering-section ul.box-layout li.line-1 .block-2 {
     border-radius: 0 47px 0 0;
- }
+  }
 
   .empowering-section ul.box-layout li.line-5 .block-1 {
-   bottom: 34%;
+    bottom: 34%;
   }
 
   .empowering-section ul.box-layout li.line-6 .block-2 {
     border-radius: 47px 0 0 0;
-  
   }
 }
 
@@ -680,16 +676,28 @@
   }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
+  .empowering-section ul.box-layout li.line-1 .block-1 {
+    height: 39%;
+  }
+
   .empowering-section ul.box-layout li.line-2 .block-1 {
     width: 100%;
-    height: 16%;
+    height: 19%;
     position: absolute;
     bottom: 34%;
     left: 0px;
     border-radius: 0 80px 0 0;
     z-index: 2;
     overflow: hidden;
+  }
+
+  .empowering-section ul.box-layout li.line-2 .block-2,
+  .empowering-section ul.box-layout li.line-3 .block-1,
+  .empowering-section ul.box-layout li.line-4 .block-1,
+  .empowering-section ul.box-layout li.line-5 .block-2,
+  .empowering-section ul.box-layout li.line-6 .block-1 {
+    height: 39%;
   }
 
   .empowering-section ul.box-layout li.line-5 .block-1 {
@@ -710,7 +718,7 @@
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
   .empowering-section ul.box-layout li.line-2 .block-1 {
     width: 100%;
     height: 16%;
@@ -749,27 +757,23 @@
     object-fit: cover;
   }
 
-    .empowering-section ul.box-layout li.line-2 .block-1 {
-   bottom: 36%;
+  .empowering-section ul.box-layout li.line-2 .block-1,.empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 41%;
   }
-.empowering-section ul.box-layout li.line-1 .block-2
- {
+  .empowering-section ul.box-layout li.line-1 .block-2 {
     border-radius: 0 37px 0 0;
- }
-
-  .empowering-section ul.box-layout li.line-5 .block-1 {
-   bottom: 36%;
+    bottom: 41%;
   }
 
   .empowering-section ul.box-layout li.line-6 .block-2 {
     border-radius: 37px 0 0 0;
-  
+    bottom: 41%;
   }
 }
 
 @media only screen and (max-width: 375px) {
- .empowering-section ul.box-layout li.line-5 .block-1 {
-   bottom: 36% !important;
+  .empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 36% !important;
   }
 }
 
@@ -784,20 +788,18 @@
     object-fit: cover;
   }
 
-      .empowering-section ul.box-layout li.line-2 .block-1 {
-   bottom: 36%;
+  .empowering-section ul.box-layout li.line-2 .block-1 {
+    bottom: 36%;
   }
-.empowering-section ul.box-layout li.line-1 .block-2
- {
+  .empowering-section ul.box-layout li.line-1 .block-2 {
     border-radius: 0 37px 0 0;
- }
+  }
 
   .empowering-section ul.box-layout li.line-5 .block-1 {
-   bottom: 38%;
+    bottom: 38%;
   }
 
   .empowering-section ul.box-layout li.line-6 .block-2 {
     border-radius: 37px 0 0 0;
-  
   }
 }

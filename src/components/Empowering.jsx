@@ -128,7 +128,7 @@ function Empowering() {
       <div className="content-block">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           {/* <div dangerouslySetInnerHTML={{ __html: aboutUsData.title }} /> */}
-<h2>Growing thinkers with Purpose, Passion and Patience</h2>
+<h2>Growing thinkers with <br /> Purpose, Passion and Patience</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
           <Link to="/about">

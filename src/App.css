@@ -871,7 +871,7 @@ main {
 /* Mobile Portrait */
 @media (max-width: 480px) {
   .core-belief-section {
-    padding: 40px 0;
+    padding:0px;
   }
 
   .container {
@@ -908,11 +908,11 @@ main {
 /* Small Mobile */
 @media (max-width: 375px) {
   .core-belief-section {
-    padding: 30px 0;
+    padding:0px !important;
   }
 
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .belief-image-container {

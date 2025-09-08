@@ -165,18 +165,6 @@ export default function LegacySpanning() {
       </div>
 
       <div className="timeline-section">
-        {/* <div className="timeline">
-          {timelineYears.map((year, index) => (
-            <div
-              key={year}
-              className={`timeline-item ${currentSlide === index ? "active" : ""
-                }`}
-            >
-              <div className="timeline-year">{year}</div>
-              <div className="timeline-marker"></div>
-            </div>
-          ))}
-        </div> */}
           <div className="timeline">
           {timelineYears.map((year, index) => (
             <div
