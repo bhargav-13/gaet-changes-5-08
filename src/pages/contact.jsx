@@ -191,7 +191,7 @@ function ContactPage() {
 
                       <p className="icon-line">
                         <img src={Phone} alt="Phone" className="icon" />
-                        <span>{contactNumber}</span>
+                        <span className="icon-line-span">{contactNumber}</span>
                       </p>
 
                       <p className="icon-line">

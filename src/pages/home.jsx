@@ -69,7 +69,7 @@ function HomePage() {
       <div className='school-slider-sections hp'>
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <div className="container">
-            <h2>Our Schools</h2>
+            <h2 className='our-school'>Our Schools</h2>
           </div>
             {/* <Link to="/our-school" className='btn-more'>Visit Schools</Link> */}
         </ScrollAnimation>

@@ -15,17 +15,16 @@ import { Helmet } from "react-helmet-async";
 // Import Images:
 import advantageOne from '../assets/advantageOne.png';
 import advantageOneRight from '../assets/advantageOneRight.png';
-import advantageTwo from '../assets/advantageTwo.png';
-import advantageTwoRight from '../assets/advantageTwoRight.png';
-import advantageThree from '../assets/advantageThree.png';
-import advantageThreeRight from '../assets/advantageThreeRight.png';
+import advantageTwo from '../assets/advantageThree.png';
+import advantageTwoRight from '../assets/advantageThreeRight.png';
+import advantageThree from '../assets/advantageTwo.png';
+import advantageThreeRight from '../assets/advantageTwoRight.png';
 import advantageFour from '../assets/advantageFour.png';
 import advantageFourRight from '../assets/advantageFourRight.png';
 import advantageFive from '../assets/advantageFive.png';
 import advantageFiveRight from '../assets/advantageFiveRight.png';
 import advantageSix from '../assets/advantageSix.png';
 import advantageSixRight from '../assets/advantageSixRight.png';
-
 
 
 // Import Swiper styles
