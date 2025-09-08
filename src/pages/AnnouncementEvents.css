@@ -124,27 +124,20 @@
 
 @media only screen and (max-width: 375px) {
     .custom-nav {
-        top: 101%;
-        position: absolute;
+        top: 101% !important;
+        position: absolute !important;
         gap: 15.6rem !important;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .custom-nav {
-        top: 101%;
-        position: absolute;
-        gap: 12.7rem !important;
+        top: 101% !important;
+        position: absolute !important;
+        gap: 12.5rem !important;
     }
 }
 
-@media only screen and (max-width: 390px) {
-    .custom-nav {
-        top: 101%;
-        position: absolute;
-        gap: 16.5rem !important;
-    }
-}
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .custom-nav {
