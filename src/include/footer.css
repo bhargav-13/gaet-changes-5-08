@@ -8,8 +8,7 @@
 .footer-area .container {
     width: 100%;
     max-width: 100%;
-    /* padding: 0 140px; */
-    padding: 4rem 4rem 0rem !important;
+    padding: 4rem 4rem 0rem 3.5rem !important;
     position: relative;
     z-index: 2;
     height: 100%;
