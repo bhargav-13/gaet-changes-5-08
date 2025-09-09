@@ -933,5 +933,17 @@
     .label-bg{
         padding: 0px;
     }
+}
 
+@media only screen and (min-width: 931px) and (max-width: 1600px) {
+  .vision-mission-wrapper {
+    background: #f8f9fa;
+    padding: 80px 70px;
+}
+.main-title{
+    font-size: 2.5rem;
+}
+.core-values-wrapper .title-section {
+    padding-left: 4.2rem;
+}
 }
