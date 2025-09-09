@@ -292,3 +292,9 @@
     transform: translateY(0);
   }
 }
+
+@media only screen and (min-width: 931px) and (max-width: 1600px) {
+  .top-slider-area .swiper-slide .content-area{
+    padding: 0 70px;
+  }
+}

@@ -1,5 +1,5 @@
 .apply-enrol-area {
-  background: #EBEBEB;
+  background: #ebebeb;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,7 @@
 }
 
 .apply-enrol-area h2 {
-  font-family: 'Esperanza Headline Roman';
+  font-family: "Esperanza Headline Roman";
   font-size: 72px;
   line-height: 78px;
   color: var(--blue-color);
@@ -76,7 +76,7 @@
 .apply-enrol-area .bg-view li.line1 .box1 {
   width: 100%;
   height: 18%;
-  border: #27A3C4 1px solid;
+  border: #27a3c4 1px solid;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -86,9 +86,9 @@
 
 .apply-enrol-area .bg-view li.line1 .box1:hover img {
   opacity: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li img {
@@ -101,16 +101,16 @@
   bottom: 0px;
   object-fit: cover;
   opacity: 0;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line2 .box1 {
   width: 100%;
   height: 29%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -120,14 +120,14 @@
 }
 
 .apply-enrol-area .bg-view li.line2 .box1:hover {
-  background: #27A3C4
+  background: #27a3c4;
 }
 
 .apply-enrol-area .bg-view li.line2 .box2 {
   width: 100%;
   height: 27%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 20.7%;
   left: 0px;
@@ -138,56 +138,55 @@
 
 .apply-enrol-area .bg-view li.line2 .box2:hover img {
   opacity: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
-
 
 .apply-enrol-area .bg-view li.line3 .box1 {
   width: 100%;
   height: 73%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
   border-radius: 50px 0 0 0;
   z-index: 1;
   overflow: hidden;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line3 .box1:hover img {
   opacity: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line4 .box1 {
   width: 100%;
   height: 44%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
   border-radius: 0 50px 0 0;
   z-index: 2;
   overflow: hidden;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line4 .box2 {
   width: 100%;
   height: 46.5%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 36%;
   left: 0px;
@@ -198,23 +197,23 @@
 
 .apply-enrol-area .bg-view li.line4 .box2:hover img {
   opacity: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line4 .box1:hover {
-  background: #1C6791;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  background: #1c6791;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line5 .box1 {
   width: 100%;
   height: 40%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -226,8 +225,8 @@
 .apply-enrol-area .bg-view li.line5 .box2 {
   width: 100%;
   height: 55%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 32%;
   left: 0px;
@@ -239,8 +238,8 @@
 .apply-enrol-area .bg-view li.line5 .box3 {
   width: 100%;
   height: 35%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 64.5%;
   left: 0px;
@@ -252,8 +251,8 @@
 .apply-enrol-area .bg-view li.line6 .box1 {
   width: 100%;
   height: 58%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -265,8 +264,8 @@
 .apply-enrol-area .bg-view li.line6 .box2 {
   width: 100%;
   height: 23.5%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 50%;
   left: 0px;
@@ -278,8 +277,8 @@
 .apply-enrol-area .bg-view li.line7 .box1 {
   width: 100%;
   height: 29%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -291,8 +290,8 @@
 .apply-enrol-area .bg-view li.line7 .box2 {
   width: 100%;
   height: 27%;
-  border: #27A3C4 1px solid;
-  background: #EBEBEB;
+  border: #27a3c4 1px solid;
+  background: #ebebeb;
   position: absolute;
   bottom: 20.5%;
   left: 0px;
@@ -302,17 +301,17 @@
 }
 
 .apply-enrol-area .bg-view li.line7 .box1:hover {
-  background: #1C6791;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  background: #1c6791;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 .apply-enrol-area .bg-view li.line7 .box2:hover img {
   opacity: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
 }
 
 /* Medium Desktop */
@@ -368,7 +367,8 @@
 }
 
 /* Small Laptop */
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1280px) {
+}
 
 /* Tablet (Landscape) */
 @media only screen and (max-width: 1024px) {
@@ -422,21 +422,20 @@
   }
 }
 
-.common-button-more{
-    font-size: 28px;
-    line-height: 109%;
-    position: relative;
-    text-decoration: none;
+.common-button-more {
+  font-size: 28px;
+  line-height: 109%;
+  position: relative;
+  text-decoration: none;
 }
 
 .apply-btn {
-background-color: rgba(28, 103, 145, 1);
+  background-color: rgba(28, 103, 145, 1);
   border: none;
   font-size: 20px;
   padding: 4px 27px;
   color: rgba(193, 193, 193, 1);
   text-decoration: none;
-
 }
 .common-button-more.cyan p {
   padding-top: 40px;
@@ -464,7 +463,7 @@ apply-enrol-area .btn-apply {
 }
 
 .apply-enrol-area .btn-apply:hover {
-  background-color: #27A3C4;
+  background-color: #27a3c4;
   color: white;
 }
 
@@ -482,5 +481,11 @@ apply-enrol-area .btn-apply {
     font-size: 18px;
     line-height: 45px;
     padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 931px) and (max-width: 1600px) {
+  .apply-enrol-area .content-block {
+    padding-left: 1rem;
   }
 }

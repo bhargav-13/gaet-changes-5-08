@@ -1677,3 +1677,17 @@ body.about-open {
     margin-top: -50px;
   }
 }
+
+@media only screen and (min-width: 931px) and (max-width: 1600px) {
+  .section-title {
+    padding-left: 3.5rem;
+  }
+
+  .inner-top-content-block{
+    padding: 150px 40px 100px 65px;
+  }
+
+  .founders-title{
+    margin-left: 70px;
+  }
+}
