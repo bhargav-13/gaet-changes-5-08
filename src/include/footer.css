@@ -8,7 +8,8 @@
 .footer-area .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 140px;
+    /* padding: 0 140px; */
+    padding: 4rem 4rem 0rem !important;
     position: relative;
     z-index: 2;
     height: 100%;
@@ -18,9 +19,10 @@
     min-height: 55%;
 }
 
-.footer-email{
-font-family: "Anek Devanagari", sans-serif;
+.footer-email {
+    font-family: "Anek Devanagari", sans-serif;
 }
+
 .footer-area .inner-flex {
     display: flex;
     height: 100%;
@@ -164,7 +166,7 @@ font-family: "Anek Devanagari", sans-serif;
         line-height: 109%;
         color: #27A3C4;
         font-weight: 400;
-        margin: 0 0 20px 0;
+        margin: 0 0 22px 0;
     }
 
     p {
@@ -172,6 +174,8 @@ font-family: "Anek Devanagari", sans-serif;
         font-size: 24px;
         line-height: 109%;
         color: #fff;
+        max-width: 31rem !important;
+        margin-top: 15px;
     }
 }
 
@@ -226,9 +230,10 @@ font-family: "Anek Devanagari", sans-serif;
         align-items: flex-start;
     }
 
+    /* 
     .footer-area .container {
         padding: 0 30px;
-    }
+    } */
 
     .footer-area .inner-flex .leftside .logo {
         width: 400px;
@@ -332,6 +337,15 @@ font-family: "Anek Devanagari", sans-serif;
     }
 }
 
+@media only screen and (max-width: 768px)
+{
+.footer-area .middlepart {
+    p {
+        max-width: none !important;
+    }
+}
+}
+
 /* Tablet (Portrait) */
 @media only screen and (max-width: 767px) {
     .footer-area {
@@ -347,7 +361,7 @@ font-family: "Anek Devanagari", sans-serif;
     }
 
     .footer-area .container {
-        padding: 0 20px;
+        padding: 0 20px !important;
     }
 
     .footer-area .inner-flex .leftside .logo {
