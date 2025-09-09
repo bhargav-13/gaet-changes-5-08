@@ -48,7 +48,6 @@ function SchoolSlider() {
 
                 <Swiper navigation={true} loop={true} pagination={{ clickable: true, }} effect={'fade'} modules={[Navigation, Pagination, Autoplay, EffectFade]} className="mySwiper" autoplay={{ delay: 6000, disableOnInteraction: false, }}>
                     {data?.school_list?.map((school) => (
-
                         <SwiperSlide key={school.id}>
                             <div className='school-block'>
                                 <div className='leftbg'
