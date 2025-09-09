@@ -199,6 +199,7 @@
 .school-slider-sections .swiper-pagination {
   bottom: 22%;
   left: 25% !important;
+  display: none;
 }
 
 /* Responsive adjustments */
@@ -405,6 +406,7 @@
 .school-slider-sections .swiper-pagination {
   bottom: 22%;
   left: 23%;
+  display: none;
 }
 
 .school-slider-sections .swiper-pagination-bullet-active {
@@ -412,7 +414,7 @@
 }
 
 .school-slider-sections .swiper-button-prev {
-  left: 3%;
+  left: 1%;
   bottom: 0%;
   top: 75%;
   color: rgba(18, 64, 102, 1) !important;
@@ -420,7 +422,7 @@
 }
 
 .school-slider-sections .swiper-button-next {
-  right: -8%;
+  right: -9%;
   top: auto;
   margin-right: 140px;
   bottom: 20%;
@@ -524,6 +526,7 @@
 @media only screen and (min-width: 931px) and (max-width: 1024px) {
   .school-slider-sections .swiper-pagination {
     left: 23%;
+    display: none;
   }
 
   .school-slider-sections .swiper-button-prev {
@@ -568,6 +571,7 @@
   }
 
   .school-slider-sections .swiper-pagination {
+    display: none;
     left: 18%;
   }
     .school-block .content-area h3 {
