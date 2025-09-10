@@ -237,12 +237,24 @@
 
     .main-title{
         padding: 0px !important;
+        font-size: 28px;
+    }
+
+    .card-title{
+        margin: 30px 0px 10px 0px;
     }
 
     .title-section{
         margin-bottom: 0px !important;
         padding-left: 0px !important;
     }
+
+    .main-title .break:first-of-type {
+    display: inline;
+  }
+  .main-title .break:last-of-type {
+    display: block;
+  }
 }
 
 @media (max-width: 360px) {
@@ -261,5 +273,23 @@
     
     .btn-more {
         font-size: 0.8rem;
+    }
+
+    .main-title .break:first-of-type {
+        display: inline;
+    }
+
+    .main-title .break:last-of-type {
+        display: block;
+    }
+
+    .card-title{
+        min-height: 70px;
+        font-size: 0.8rem
+    }
+
+    .learn-more-button-two{
+        font-size: 0.75rem !important;
+        padding-bottom: 8px !important;
     }
 }

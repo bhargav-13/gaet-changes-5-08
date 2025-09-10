@@ -45,7 +45,7 @@ function AnnouncementEvents() {
     const nextRef = useRef(null);
 
     return (
-        <section className='events-section p-5'>
+        <section className='events-section'>
             <div className="row">
                 <div className="container d-flex flex-wrap align-items-start">
                     {/* Left Content */}

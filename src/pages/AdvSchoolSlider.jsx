@@ -183,13 +183,13 @@ function AdvSchoolSlider() {
           {/* Row-3 */}
           <div className="row g-2 mb-3 pb-5">
             <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-              <div className="school-image-wrapper school-overlay">
+              <div className="school-image-wrapper">
                 <img
                   src={rowThreeImageOne}
                   alt="School7"
                   className="img-fluid w-100"
                 />
-                <div className="school-overlay-seven">
+                <div className="school-overlay-seven school-overlay">
                   <h3>GAET International School Aldeia</h3>
                   <div className="school-info">
                     <p>Situated in Bambolin, Goa</p>
