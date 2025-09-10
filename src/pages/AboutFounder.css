@@ -222,3 +222,9 @@
         margin: 0 0 20px 0;
     }
 }
+
+@media only screen and (max-width:425px){
+ .founder-list-section .founder-block .content-block .arrow {
+        left: -6px;
+    }
+}

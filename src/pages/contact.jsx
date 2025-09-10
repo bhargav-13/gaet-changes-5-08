@@ -132,8 +132,10 @@ function ContactPage() {
                   animateOnce={true}
                   delay={300}
                 >
-                  <h3>Office</h3>
-                  <p>{settingsData?.settings?.address}</p>
+                  <h3>Our Office</h3>
+                  {/* <p>{settingsData?.settings?.address}</p> */}
+                  <p>Yashodham High School Building, Yashodham, Goregaon(East),
+Mumbai - 400063</p>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeInUp"
@@ -142,7 +144,7 @@ function ContactPage() {
                 >
                   <h3>Contact</h3>
                   <p>
-                    <Link to="/">{settingsData?.settings?.contact_no}</Link>
+                    <Link to="/">022 40278222</Link>
                   </p>
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -150,7 +152,7 @@ function ContactPage() {
                   animateOnce={true}
                   delay={500}
                 >
-                  <h3>Connect with us</h3>
+                  <h3>Social</h3>
                   <ContactApi />
                 </ScrollAnimation>
               </div>

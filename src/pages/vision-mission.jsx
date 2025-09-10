@@ -130,7 +130,7 @@ function VisionMissionPage() {
 
         <section>
           <div className="vision-mission-wrapper">
-            <div className="sections-grid">
+            <div className="sections-grid vision-mission-grid">
               {sections.map((section, index) => (
                 <div key={index} className="section">
                   <div className="section-content">

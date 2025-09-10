@@ -631,6 +631,10 @@
         margin-left: 28px;
         height: 100%;
     }
+
+    .vision-mission-grid .section:first-child {
+        padding-top: 20px; 
+    }
 }
 
 /* Extra Small Mobile */
@@ -666,6 +670,10 @@
         height: 160px;
         margin: 0 -12px 0 -12px;
         order: 3;
+    }
+
+    .vision-mission-grid .section:first-child {
+        padding-top: 20px; 
     }
 }
 
