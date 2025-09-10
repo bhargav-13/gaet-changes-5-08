@@ -211,7 +211,9 @@
     }
 
     .founder-list-section .founder-block .content-block .arrow {
-        left: -20px;
+        /* left: -20px; */
+        left: -2px;
+        right: auto;
     }
 
     .founder-list-section .founder-block .content-block {

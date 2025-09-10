@@ -33,7 +33,9 @@ const Loader = ({ onFinish }) => {
 
     // Hide loader after 6 seconds
     const finishTimer = setTimeout(() => {
-      onFinish();
+      if(onFinish){
+        onFinish();
+      }
     }, 6000);
 
     return () => {

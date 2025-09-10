@@ -33,8 +33,8 @@ function AssociationsPhotoBlock() {
                         {/* Title Section */}
                         <div className="title-section">
                             <h1 className="main-title">
-                                Our 
-                                <span className="break"> Social</span>
+                                Our {window.innerWidth < 768 ? 'Social' : ''}
+                                {window.innerWidth >= 768 && <span className="break">Social</span>}
                                 <span className="break">Initiatives</span> 
                             </h1>
                         </div>
@@ -49,9 +49,10 @@ function AssociationsPhotoBlock() {
                                         </div>
                                         <div className="card-content">
                                             <h3 className="card-title">{initiative.title}</h3>
-                                            <a href={initiative.link} className="learn-more-btn learn-more-button-two">
+                                            <div dangerouslySetInnerHTML={{ __html: initiative?.description }}/>
+                                            {/* <a href={initiative.link} className="learn-more-btn">
                                                 Learn More
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 ))}
