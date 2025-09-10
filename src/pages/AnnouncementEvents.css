@@ -124,9 +124,9 @@
 
 @media only screen and (max-width: 375px) {
     .custom-nav {
-        top: 101% !important;
+        top: 99% !important;
         position: absolute !important;
-        gap: 11.6rem !important;
+        gap: 13rem !important;
     }
 }
 
@@ -141,16 +141,16 @@
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .custom-nav {
-        top: 101%;
+        top: 97%;
         position: absolute;
-        gap: 18rem;
+        gap: 16rem;
     }
 
     .events-section {
         padding-top: 1rem !important;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
-        margin-bottom: 4rem !important;
+        margin-bottom: 2rem !important;
     }
 
     .slide-image {
@@ -160,5 +160,9 @@
 
     .content-area .announcements-events {
         margin-top: 2rem !important;
+    }
+
+    .events-section .row .container{
+        padding: 0 10px 0px;
     }
 }

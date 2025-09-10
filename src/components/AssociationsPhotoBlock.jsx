@@ -34,7 +34,7 @@ function AssociationsPhotoBlock() {
                         <div className="title-section">
                             <h1 className="main-title">
                                 Our 
-                                <span className="break">Social</span>
+                                <span className="break"> Social</span>
                                 <span className="break">Initiatives</span> 
                             </h1>
                         </div>
@@ -49,7 +49,7 @@ function AssociationsPhotoBlock() {
                                         </div>
                                         <div className="card-content">
                                             <h3 className="card-title">{initiative.title}</h3>
-                                            <a href={initiative.link} className="learn-more-btn">
+                                            <a href={initiative.link} className="learn-more-btn learn-more-button-two">
                                                 Learn More
                                             </a>
                                         </div>

@@ -720,7 +720,7 @@
 @media only screen and (max-width: 425px) {
   .school-slider-sections .container {
     flex-direction: column;
-    padding: 0 10px 0px !important;
+    padding: 0 10px 18px !important;
     align-items: flex-start;
     min-width: 0;
     max-width: 100%;
@@ -789,10 +789,10 @@
   }
 
   .school-slider-sections .swiper-button-prev {
-    left: 10px !important;
+    left: 5px !important;
     right: auto !important;
     top: auto !important;
-    bottom: 10px !important;
+    bottom: -1% !important;
     margin: 0 !important;
     font-size: 18px !important;
     z-index: 10;
@@ -802,7 +802,7 @@
     right: 10px !important;
     left: auto !important;
     top: auto !important;
-    bottom: 10px !important;
+    bottom: -1% !important;
     margin: 0 !important;
     font-size: 18px !important;
     z-index: 10;
