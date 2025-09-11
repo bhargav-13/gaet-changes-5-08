@@ -207,6 +207,14 @@
   margin-top: 3px;
 }
 
+.icon-line .map{
+    margin-right: 7px !important;
+  }
+
+  .icon-line .contact{
+    margin-right: 4px;
+  }
+
 /* Medium Desktop */
 @media only screen and (max-width: 1640px) {
   .contact-page {
@@ -319,6 +327,14 @@
 
   .school-card p {
     font-size: 0.7rem;
+  }
+
+  .icon-line .map{
+    margin-right: 7px !important;
+  }
+
+  .icon-line .contact{
+    margin-right: 4px;
   }
 }
 

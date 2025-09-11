@@ -192,7 +192,7 @@ Mumbai - 400063</p>
                       <h3>{school.name}</h3>
 
                       <p className="icon-line">
-                        <img src={Phone} alt="Phone" className="icon" />
+                        <img src={Phone} alt="Phone" className="icon contact" />
                         <span className="icon-line-span">{contactNumber}</span>
                       </p>
 
@@ -202,7 +202,7 @@ Mumbai - 400063</p>
                       </p>
 
                       <p className="icon-line">
-                        <img src={Map} alt="Map" className="icon" />
+                        <img src={Map} alt="Map" className="icon map" />
                         <span>{school.office}</span>
                       </p>
                     </div>
