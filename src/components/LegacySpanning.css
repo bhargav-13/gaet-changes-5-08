@@ -65,6 +65,10 @@
   font-family: "Anek Devanagari";
 }
 
+.carousel-mobile-description {
+  display: none;
+}
+
 .navigation-controls {
   display: flex;
   align-items: center;
@@ -323,6 +327,17 @@
   .text-section .carousel-description {
     display: none;
   }
+
+  .carousel-mobile-description {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 200;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 450px;
+    font-family: "Anek Devanagari";
+    display: block;
+}
 
   /* Hide navigation controls in text section */
   .text-section .navigation-controls {

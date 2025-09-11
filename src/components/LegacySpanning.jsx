@@ -136,6 +136,11 @@ export default function LegacySpanning() {
               </div>
             </div>
           </div>
+          <div>
+              <p className="carousel-mobile-description">
+                {carouselData[currentSlide].description}
+              </p>
+          </div>
 
           {/* Mobile description section - only visible on mobile */}
           {/* <div className="mobile-description">
