@@ -104,7 +104,7 @@ export default function LegacySpanning() {
                 </p>
               </div>
 
-              <div className="navigation-controls">
+              {/* <div className="navigation-controls">
                 <span
                   className="arrow prev-arrow"
                   onClick={prevSlide}
@@ -121,7 +121,7 @@ export default function LegacySpanning() {
                 >
                   &#8250;
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -138,7 +138,7 @@ export default function LegacySpanning() {
           </div>
 
           {/* Mobile description section - only visible on mobile */}
-          <div className="mobile-description">
+          {/* <div className="mobile-description">
             <p className="carousel-description">
               {carouselData[currentSlide].description}
             </p>
@@ -160,16 +160,38 @@ export default function LegacySpanning() {
                 &#8250;
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="timeline-section">
-          <div className="timeline">
+        {/* Timeline navigation arrows for mobile */}
+        <div className="timeline-nav-arrows">
+          <span
+            className="timeline-arrow timeline-prev-arrow"
+            onClick={prevSlide}
+            role="button"
+            aria-label="Previous timeline item"
+          >
+            &#8249;
+          </span>
+          <span
+            className="timeline-arrow timeline-next-arrow"
+            onClick={nextSlide}
+            role="button"
+            aria-label="Next timeline item"
+          >
+            &#8250;
+          </span>
+        </div>
+
+        <div className="timeline">
           {timelineYears.map((year, index) => (
             <div
               key={year}
-              className={`timeline-item ${currentSlide === index ? "active" : ""}`}
+              className={`timeline-item ${
+                currentSlide === index ? "active" : ""
+              }`}
               onClick={() => setCurrentSlide(index)} // <-- Add this
               role="button"
               aria-label={`Go to ${year}`}
@@ -178,7 +200,7 @@ export default function LegacySpanning() {
               <div className="timeline-marker"></div>
             </div>
           ))}
-          </div>
+        </div>
       </div>
     </div>
   );

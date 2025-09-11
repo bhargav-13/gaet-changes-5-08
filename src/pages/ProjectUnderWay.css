@@ -135,7 +135,7 @@
 /*  Mobile View */
 @media (max-width: 768px) {
     .card-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .left-panel {

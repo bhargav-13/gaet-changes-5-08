@@ -11,9 +11,17 @@ import { useApi } from "../hooks/useApi";
 import "./VisionMission.css";
 import { Helmet } from "react-helmet-async";
 import Footer from "../include/Footer";
-import visionOne from "../assets/vissionOne.png";
-import visionTwo from "../assets/vissionTwo.png";
-import coreValues from "../assets/coreValues.png";
+import visionOne from '../assets/vissionOne.png';
+import visionTwo from '../assets/vissionTwo.png';
+import realLearning from '../assets/RealLearning.png';
+import rightEnv from '../assets/RightEnv.png';
+import growth from '../assets/HonestGrowth.png';
+import people from '../assets/People.png';
+
+import cardBg1 from '../assets/card-bg-1.png';
+import cardBg4 from '../assets/card-bg-2.png'; 
+import cardBg3 from '../assets/card-bg-3.png'; 
+import cardBg2 from '../assets/card-bg-4.png'; 
 
 function VisionMissionPage() {
   useEffect(() => {
@@ -38,60 +46,64 @@ function VisionMissionPage() {
       item.addEventListener("click", handleItemClick)
     );
 
-    // Cleanup to avoid memory leaks
-    return () => {
-      listItems.forEach((item) =>
-        item.removeEventListener("click", handleItemClick)
-      );
-    };
-  }, [data]); // Only re-run when data changes
+        // Cleanup to avoid memory leaks
+        return () => {
+            listItems.forEach((item) => item.removeEventListener('click', handleItemClick));
+        };
+    }, [data]);
 
-  if (loading)
+    if (loading) return <div><Loader /></div>;
+    if (error) return <div className="error-message">Error: {error.message}</div>;
+    if (!data) return null;
+
+    const sections = [
+        {
+            title: "Vision",
+            image: visionOne,
+            description: "To create a generation of thoughtful learners who are curious, capable and confident to grow to become passionate, purposeful and compassionate to make a meaningful difference in the world."
+        },
+        {
+            title: "Mission",
+            image: visionTwo,
+            description: "To create a place where every child is seen, heard, and supported with true learning experiences, strong relationships and a safe environment, grow at their own pace."
+        }
+    ];
+
+    const coreValues = [
+        {
+            title: "Real Learning",
+            icon: realLearning,
+            backgroundImage: cardBg1
+        },
+        {
+            title: "Right Environment",
+            icon: rightEnv,
+            backgroundImage: cardBg2
+        },
+        {
+            title: "Honest Growth",
+            icon: growth,
+            backgroundImage: cardBg3
+        },
+        {
+            title: "People Before Policies",
+            icon: people,
+            backgroundImage: cardBg4
+        }
+    ];
     return (
-      <div>
-        <Loader />
-      </div>
-    );
-  if (error) return <div className="error-message">Error: {error.message}</div>;
-  if (!data) return null;
-  const sections = [
-    {
-      title: "Vision",
-      image: visionOne,
-      description:
-        "To create a generation of thoughtful learners who are curious, capable and confident to grow to become passionate, purposeful and compassionate to make a meaningful difference in the world.",
-    },
-    {
-      title: "Mission",
-      image: visionTwo,
-      description:
-        "To create a place where every child is seen, heard, and supported with true learning experiences, strong relationships and a safe environment, grow at their own pace.",
-    },
-  ];
-  const values = [
-    { text: "Real Learning", position: "top-left" },
-    { text: "Right Environment", position: "bottom-left" },
-    { text: "Honest Growth", position: "top-right" },
-    { text: "People before Policies", position: "bottom-right" },
-  ];
-  return (
-    <>
-      <Helmet>
-        {/* <title>{data?.seo?.meta_title || "GAET"}</title> */}
-        <meta
-          name="description"
-          content={data?.seo?.meta_description || "GAET"}
-        />
-        <meta name="keywords" content={data?.seo?.meta_keywords || "GAET"} />
-      </Helmet>
+        <>
+            <Helmet>
+                <meta name="description" content={data?.seo?.meta_description || "GAET"} />
+                <meta name="keywords" content={data?.seo?.meta_keywords || "GAET"} />
+            </Helmet>
 
-      <InsideTopBanner
-        // pageTitle={data.top_section?.title}
-        pageTitle={"Our Vision & Mission"}
-        pageBreadcrumb="Vision & Mission"
-        BackgrondBack={data.top_section?.back_image}
-        CircleFront={data.top_section?.front_image}
-      />
+            <InsideTopBanner
+                pageTitle={"Our Vision & Mission"}
+                pageBreadcrumb="Vision & Mission"
+                BackgrondBack={data.top_section?.back_image}
+                CircleFront={data.top_section?.front_image}
+            />
 
       <div className="breadcrumb-area">
         <Breadcrumb>
@@ -100,33 +112,48 @@ function VisionMissionPage() {
         </Breadcrumb>
       </div>
 
-      <div className="inner-content-wapper">
-        <div className="core-values-wrapper">
-          <div className="title-section">
-            <h1 className="main-title">Our Core Values</h1>
-          </div>
+            <div className="inner-content-wapper">
+                {/* Core Values Section */}
+                <div className="core-values-wrapper">
+                    <div className="title-section">
+                        <h1 className="main-title">Our Core Values</h1>
+                    </div>
 
-          <div className="values-section">
-            <div className="background-image">
-              <img
-                src={coreValues}
-                alt="Students collaborating"
-                className="bg-image"
-              />
-              <div className="image-overlay"></div>
-            </div>
-
-            <div className="values-overlay">
-              {values.map((value, index) => (
-                <div key={index} className={`value-label ${value.position}`}>
-                  <div className="label-bg">
-                    <span className="label-text">{value.text}</span>
-                  </div>
+                    <div className="values-cards-container">
+                        <div className="values-cards">
+                            {coreValues.map((value, index) => (
+                                <div 
+                                    key={index} 
+                                    className="value-card"
+                                    style={{
+                                        backgroundImage: `url(${value.backgroundImage})`
+                                    }}
+                                >
+                                    <div className="card-content">
+                                        <h3 className="card-title">
+                                            {value.title.includes("Before") ? (
+                                                <>
+                                                    People Before <br />
+                                                    Policies
+                                                </>
+                                            ) : (
+                                                value.title.split(" ").map((word, i) => (
+                                                    <span key={i}>
+                                                        {word}
+                                                        {i < value.title.split(" ").length - 1 ? <br /> : ""}
+                                                    </span>
+                                                ))
+                                            )}
+                                        </h3>
+                                        <div className="card-icon">
+                                            <img src={value.icon} alt={value.title} />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         <section>
           <div className="vision-mission-wrapper">

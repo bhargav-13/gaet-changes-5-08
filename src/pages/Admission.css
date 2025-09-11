@@ -367,10 +367,13 @@
 .click-here-btn {
     background-color: rgba(28, 103, 145, 1);
     border: none;
-    font-size: 17px;
-    padding: 10px 26px 5px 26px;
+    font-size: 15px;
     color: #fff;
-    font-family: 'Anek Devanagari';
+    font-family: "Anek Devanagari";
+    font-weight: 300;
+    padding: 13px 20px 7px 20px;
+    line-height: 20px;
+    text-decoration: none;
 }
 
 .span-blue {
