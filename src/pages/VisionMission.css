@@ -228,6 +228,9 @@
     box-shadow: -40px -15px 0 0 #fff;
 }
 
+.custom-nav-icons{
+    display: none;
+}
 
 /* Medium Desktop */
 @media only screen and (max-width: 1640px) {
@@ -914,5 +917,37 @@
 }
 .core-values-wrapper .title-section {
     padding-left: 4.2rem;
+}
+}
+
+@media only screen and (min-width: 200px) and (max-width: 425px) {
+    .value-card {
+  display: none;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.value-card.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.value-card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.custom-nav-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-nav-icons .custom-prev,.custom-nav-icons .custom-next{
+    background: transparent;
+    border: none;
+}
+
+.values-cards{
+    justify-content: center;
 }
 }
