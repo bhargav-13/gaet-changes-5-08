@@ -271,16 +271,24 @@
 }
 
 .member-position {
-    font-size: 14px;
+    font-size: 16px;
     color: #09213A;
     opacity: 0.5;
+    min-height: 42px;
 }
+
 
 @media screen and (max-width:425px) {
     .member-position {
     font-size: 16px;
     color: #09213A;
     opacity: 1;
+    min-height: 0px !important;
+}
+
+
+.board-area .inner-flex ul.member-list-four li h3 {
+    min-height: 0px !important;
 }
 }
 
@@ -422,6 +430,7 @@
     color: var(--light-blue-color);
     font-weight: 500;
     margin: 0;
+    min-height: 53px;
 }
 
 .board-area .inner-flex ul.member-list-four li h3 strong {
