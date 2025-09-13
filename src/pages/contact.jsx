@@ -135,7 +135,7 @@ function ContactPage() {
                   <h3>Our Office</h3>
                   {/* <p>{settingsData?.settings?.address}</p> */}
                   <p>Yashodham High School Building, Yashodham, Goregaon(East),
-Mumbai - 400063</p>
+                    Mumbai - 400063</p>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeInUp"
@@ -144,7 +144,7 @@ Mumbai - 400063</p>
                 >
                   <h3>Contact</h3>
                   <p>
-                    <Link to="/">022 40278222</Link>
+                    <a href="tel:+912240278222">+91-22-4027 8222</a>
                   </p>
                 </ScrollAnimation>
                 <ScrollAnimation

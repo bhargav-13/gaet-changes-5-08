@@ -17,6 +17,7 @@
 .content {
     display: flex;
     flex-direction: column;
+    padding: 0px 0rem 0rem 2.5rem;
 }
 
 .subtitle {
@@ -126,7 +127,10 @@
     .custom-nav {
         top: 99% !important;
         position: absolute !important;
-        gap: 13rem !important;
+        gap: 14rem !important;
+    }
+     .content {
+        padding: 0rem;
     }
 }
 
@@ -134,7 +138,10 @@
     .custom-nav {
         top: 101% !important;
         position: absolute !important;
-        gap: 12.5rem !important;
+        gap: 10.5rem !important;
+    }
+     .content {
+        padding: 0rem;
     }
 }
 
@@ -143,7 +150,11 @@
     .custom-nav {
         top: 97%;
         position: absolute;
-        gap: 16rem;
+        gap: 17rem;
+    }
+
+    .content {
+        padding: 0rem;
     }
 
     .events-section {
@@ -162,7 +173,9 @@
         margin-top: 2rem !important;
     }
 
-    .events-section .row .container{
+    .events-section .row .container {
         padding: 0 10px 0px;
     }
+
+
 }

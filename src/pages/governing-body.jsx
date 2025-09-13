@@ -13,6 +13,42 @@ import { Helmet } from "react-helmet-async";
 import Footer from '../include/Footer';
 
 
+const managementTeam = [
+    {
+        name: "Mrs Jaimeera Sankar",
+        position: "C.E.O"
+    },
+    {
+        name: "Mrs Meera Kothari",
+        position: "C.E.O (Counselling Centre)"
+    },
+    {
+        name: "Mrs Nagrajan Usha",
+        position: "DIRECTOR-EDU. CONSULTANT"
+    },
+    {
+        name: "Mrs Nalini Iyer",
+        position: "DIRECTOR-EDU. CONSULTANT"
+    },
+    {
+        name: "Mrs Neerja Mony",
+        position: "DIRECTOR-EDU. CONSULTANT"
+    },
+    {
+        name: "Mrs Suvarna Harish Babu",
+        position: "DIRECTOR-SPORTS"
+    },
+    {
+        name: "Col.(Retd.) Mr Ramdeo Singh",
+        position: "GENERAL MANAGER - TRANSPORT"
+    },
+    {
+        name: "Col.(Retd.) Mr Atul Dimri",
+        position: "CHIEF TECHNOLOGY OFFICER"
+    }
+];
+
+
 function GoverningBodyPage() {
 
     useEffect(() => {
@@ -180,11 +216,14 @@ function GoverningBodyPage() {
                                 </h2>
                                 <div className='rightside'>
                                     <ul className='member-list-four'>
-                                        {data.management_team.map((member, index) => (
+                                        {managementTeam.map((member, index) => (
                                             <li key={index}>
                                                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={700}>
                                                     <div className='photo-area d-none'>
-                                                        <img src={member.image} alt={member.name} />
+                                                        {/* If you want to use backend images, you can still reference them like this: */}
+                                                        {data.management_team[index] && (
+                                                            <img src={data.management_team[index].image} alt={member.name} />
+                                                        )}
                                                         <div className='gray-bg'>
                                                             <div className='rays'>
                                                                 <img src="/images/ray.png" alt="ray" />
@@ -192,13 +231,17 @@ function GoverningBodyPage() {
                                                         </div>
                                                     </div>
                                                     <h3>{member.name}</h3>
-                                                    {/* <p>{member.about_team_member}</p> */}
+                                                    <p className="member-position">{member.position}</p>
                                                     <Link
                                                         to=""
                                                         className='more-about'
                                                         onClick={(e) => {
                                                             e.preventDefault();
-                                                            handleMoreAboutClick(member);
+                                                            handleMoreAboutClick(
+                                                                data.management_team[index]
+                                                                    ? { ...data.management_team[index], ...member }
+                                                                    : member
+                                                            );
                                                         }}
                                                     >
                                                         About
@@ -212,6 +255,8 @@ function GoverningBodyPage() {
                         </Container>
                     </div>
                 </section>
+
+
 
                 <div className={`about-detail-area ${isAboutVisible ? "open" : ""}`}>
                     {selectedMember && (

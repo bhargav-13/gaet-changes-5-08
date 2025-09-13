@@ -320,9 +320,9 @@
   }
 
   /* Hide the original title and description in text section */
-  .text-section .carousel-title {
+  /* .text-section .carousel-title {
     display: none;
-  }
+  } */
 
   .text-section .carousel-description {
     display: none;

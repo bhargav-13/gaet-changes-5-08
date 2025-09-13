@@ -15,7 +15,7 @@ const carouselData = [
   {
     id: 1,
     image: imageOne,
-    title: "",
+    title: "Goenka & Associates Educational Trust",
     description:
       "GAET has established the following schools & Institutions located in the buildings constructed from the corpus of the Trust raised by donations received from philanthropic organizations and corporate bodies.",
   },
