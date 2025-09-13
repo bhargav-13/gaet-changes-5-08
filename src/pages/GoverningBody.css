@@ -425,7 +425,7 @@
 
 .board-area .inner-flex ul.member-list-four li h3 {
     font-family: "Anek Devanagari", sans-serif;
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 26px;
     color: var(--light-blue-color);
     font-weight: 500;
