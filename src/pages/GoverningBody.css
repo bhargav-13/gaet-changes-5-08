@@ -713,6 +713,13 @@
 
 /* Tablet (Landscape) */
 @media only screen and (max-width: 1024px) {
+    .member-position {
+    min-height: 0px;
+}
+.board-area .inner-flex ul.member-list-four li h3 {
+    min-height: 0px;
+}
+
     .chairperson-area .container {
         padding: 0 30px;
     }
