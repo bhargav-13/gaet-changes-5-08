@@ -232,8 +232,8 @@ function Header() {
                         <div className="bottompart">
                             <ul className="link">
                                 <li><Link to="/admission" onClick={toggleMenu}>Admissions</Link></li>
-                                <li><Link to="/the-gaet-advantage" onClick={toggleMenu}>Safety</Link></li>
-                                <li><Link to="/associations" onClick={toggleMenu}>Associations</Link></li>
+                                {/* <li><Link to="/the-gaet-advantage" onClick={toggleMenu}>Safety</Link></li>
+                                <li><Link to="/associations" onClick={toggleMenu}>Associations</Link></li> */}
                                 <li><Link to="/faq" onClick={toggleMenu}>FAQ</Link></li>
                             </ul>
                             <ContactApi />

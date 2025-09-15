@@ -205,7 +205,7 @@ function VisionMissionPage() {
               {sections.map((section, index) => (
                 <div key={index} className="section">
                   <div className="section-content">
-                    <h2 className="section-title">{section.title}</h2>
+                    <h2 className="section-title vision-mission-font-color">{section.title}</h2>
                     <div className="image-container">
                       <img
                         src={section.image}

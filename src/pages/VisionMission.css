@@ -232,6 +232,10 @@
     display: none;
 }
 
+.vision-mission-font-color{
+    color: rgba(28, 103, 145, 1) !important;
+}
+
 /* Medium Desktop */
 @media only screen and (max-width: 1640px) {
     .vision-tab-area {

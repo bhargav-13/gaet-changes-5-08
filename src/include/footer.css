@@ -243,7 +243,7 @@
     }
 
     .footer-area .inner-flex .rightside p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 124%;
     }
 
@@ -333,6 +333,10 @@
 
     .footer-area .middlepart {
         margin: 40px 0 60px;
+    }
+
+    .footer-area .inner-flex .rightside p{
+        font-size: 15px;
     }
 }
 
