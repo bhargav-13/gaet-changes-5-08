@@ -82,7 +82,7 @@ function PhotoGalleryPage() {
                     <div className='inside-block'>
                         {/* Render images from API */}
                         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
-                            <Masonry columnsCount={4} gutter="10px">
+                            <Masonry columnsCount={4} gutter="10px" className="my-masonry-wrapper">
                                 {data.gallery_list.slice(0, visibleImages).map((gallery, index) => (
                                     <a
                                         href={gallery.image}

@@ -40,7 +40,7 @@
 }
 
 .breadcrumb-area {
-  margin-top: -4.5rem;
+  margin-top: -2.5rem;
 }
 
 .ray {
@@ -99,7 +99,7 @@
   z-index: 2;
 }
 .overlay.show {
-  opacity: 1;
+  opacity: 0.2;
 }
 
 /* Text */
@@ -117,7 +117,7 @@
   font-size: 40px;
   font-weight: 600;
   font-family: "Esperanza Headline Roman";
-  color: rgba(9, 33, 58, 1);
+  color: #ffff;
   font-weight: 400;
 }
 .banner-text p {

@@ -59,7 +59,7 @@
 }
 
 .left-heading h1 .break {
-  display: block;
+    display: block;
 }
 
 .swiper-button-next,
@@ -134,6 +134,10 @@
 
 /*  Mobile View */
 @media (max-width: 768px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+
     .left-panel {
         display: flex;
         flex-direction: column;
@@ -165,6 +169,10 @@
     .swiper-button-prev {
         padding: 10px;
     }
+
+    .social-initiatives-wrapper {
+        padding: 2rem 2rem 8rem 2rem;
+    }
 }
 
 /* Small Mobile View */
@@ -175,6 +183,10 @@
 
     .project-card h2 {
         font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem !important;
     }
 
     /* Positioning */
@@ -203,20 +215,21 @@
         left: 81% !important;
     }
 
-    .project-card h2{
+    .project-card h2 {
         font-size: 1rem;
     }
 
-    .left-panel p{
+    .left-panel p {
         font-size: 12px !important;
     }
 
-    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
         display: none;
     }
 
-    .social-initiatives-wrapper{
-        padding: 85px 20px;
+    .card-title {
+        font-size: 1rem;
     }
 }
 
@@ -225,20 +238,38 @@
         left: 75% !important;
     }
 
-    .left-panel p{
+    .left-panel p {
         font-size: 12px !important;
     }
 
-    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
         display: none;
     }
 
-    .social-initiatives-wrapper{
-        padding: 120px 20px;
-    }
 
-    .swiper-button-next{
+    .swiper-button-next {
         right: 0%;
         left: 91%;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+    }
+
+    .learn-more-btn {
+        padding: 5px 21px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .social-initiatives-wrapper {
+        padding: 2rem 0rem 8rem !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .social-initiatives-wrapper {
+        padding: 3rem 0rem 8rem;
     }
 }

@@ -15,7 +15,7 @@ const carouselData = [
   {
     id: 1,
     image: imageOne,
-    title: "",
+    title: "Goenka & Associates Educational Trust",
     description:
       "GAET has established the following schools & Institutions located in the buildings constructed from the corpus of the Trust raised by donations received from philanthropic organizations and corporate bodies.",
   },
@@ -60,9 +60,16 @@ const carouselData = [
     description:
       "Building stronger communities through education and creating lasting impact on society through quality educational services",
   },
+  {
+    id: 7,
+    image:imageSeven,
+    title: "CTest",
+    description:
+      "Test",
+  }
 ];
 
-const timelineYears = ["1981", "1983", "1987", "1990", "2006", "2007", "2008"];
+const timelineYears = ["1981", "1983", "1987", "1990", "2006", "2007", "2008", "2025"];
 
 export default function LegacySpanning() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -97,7 +104,7 @@ export default function LegacySpanning() {
                 </p>
               </div>
 
-              <div className="navigation-controls">
+              {/* <div className="navigation-controls">
                 <span
                   className="arrow prev-arrow"
                   onClick={prevSlide}
@@ -114,7 +121,7 @@ export default function LegacySpanning() {
                 >
                   &#8250;
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -129,9 +136,14 @@ export default function LegacySpanning() {
               </div>
             </div>
           </div>
+          <div>
+              <p className="carousel-mobile-description">
+                {carouselData[currentSlide].description}
+              </p>
+          </div>
 
           {/* Mobile description section - only visible on mobile */}
-          <div className="mobile-description">
+          {/* <div className="mobile-description">
             <p className="carousel-description">
               {carouselData[currentSlide].description}
             </p>
@@ -153,17 +165,41 @@ export default function LegacySpanning() {
                 &#8250;
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="timeline-section">
+        {/* Timeline navigation arrows for mobile */}
+        <div className="timeline-nav-arrows">
+          <span
+            className="timeline-arrow timeline-prev-arrow"
+            onClick={prevSlide}
+            role="button"
+            aria-label="Previous timeline item"
+          >
+            &#8249;
+          </span>
+          <span
+            className="timeline-arrow timeline-next-arrow"
+            onClick={nextSlide}
+            role="button"
+            aria-label="Next timeline item"
+          >
+            &#8250;
+          </span>
+        </div>
+
         <div className="timeline">
           {timelineYears.map((year, index) => (
             <div
               key={year}
-              className={`timeline-item ${currentSlide === index ? "active" : ""
-                }`}
+              className={`timeline-item ${
+                currentSlide === index ? "active" : ""
+              }`}
+              onClick={() => setCurrentSlide(index)} // <-- Add this
+              role="button"
+              aria-label={`Go to ${year}`}
             >
               <div className="timeline-year">{year}</div>
               <div className="timeline-marker"></div>

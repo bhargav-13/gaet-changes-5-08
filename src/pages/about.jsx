@@ -54,7 +54,8 @@ const navigate = useNavigate();
       </Helmet>
 
       <InsideTopBanner
-        pageTitle={data.top_section.title}
+        // pageTitle={data.top_section.title}
+        pageTitle={"Growing thinkers with Purpose, Passion and Patience"}
         pageBreadcrumb="About Us"
         BackgrondBack={data.top_section.back_image}
         CircleFront={data.top_section.front_image}
@@ -88,6 +89,7 @@ const navigate = useNavigate();
                       __html: data.top_section?.story || "",
                     }}
                   />
+                  <strong></strong>
                 </p>
               </ScrollAnimation>
             </Container>
@@ -177,7 +179,7 @@ const navigate = useNavigate();
         </section>
 
         <section className="core-belief-section">
-          <h2 className="section-title">Our Core belief</h2>
+          <h2 className="section-title">Our Core Belief</h2>
 
           <div className="belief-content">
             <div className="belief-image-container">

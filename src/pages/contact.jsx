@@ -14,6 +14,12 @@ import Loader from "../components/Loader";
 import { Helmet } from "react-helmet-async";
 import Footer from "../include/Footer";
 
+// Images:
+import Phone from '../assets/Phone.png'
+import Mail from '../assets/Mail.png'
+import Map from '../assets/Map.png'
+
+
 function ContactPage() {
   const {
     data: contactData,
@@ -67,6 +73,7 @@ function ContactPage() {
       email: "helpdesk@gaet.edu.in",
       office:
         "GAET International School, near Grand Hyatt, Aldeia, Bambolim, Goa 403206",
+      "color": "#A2AA84"
     }
   ];
 
@@ -104,7 +111,6 @@ function ContactPage() {
         BackgrondBack={contactData?.top_section?.back_image}
         CircleFront={contactData?.top_section?.front_image}
       />
-      
       <div className="breadcrumb-area">
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
@@ -126,8 +132,10 @@ function ContactPage() {
                   animateOnce={true}
                   delay={300}
                 >
-                  <h3>Office</h3>
-                  <p>{settingsData?.settings?.address}</p>
+                  <h3>Our Office</h3>
+                  {/* <p>{settingsData?.settings?.address}</p> */}
+                  <p>Yashodham High School Building, Yashodham, Goregaon(East),
+                    Mumbai - 400063</p>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeInUp"
@@ -136,7 +144,7 @@ function ContactPage() {
                 >
                   <h3>Contact</h3>
                   <p>
-                    <Link to="/">{settingsData?.settings?.contact_no}</Link>
+                    <a href="tel:+912240278222">+91-22-4027 8222</a>
                   </p>
                 </ScrollAnimation>
                 <ScrollAnimation
@@ -144,7 +152,7 @@ function ContactPage() {
                   animateOnce={true}
                   delay={500}
                 >
-                  <h3>Connect with us</h3>
+                  <h3>Social</h3>
                   <ContactApi />
                 </ScrollAnimation>
               </div>
@@ -167,23 +175,35 @@ function ContactPage() {
           <div className="container">
             <h3 className="school-list-area-heading">Our Schools</h3>
             <div className="row">
-              {contactData?.school_list?.map((school, index) => {
-                const extra = schoolExtraInfo[index];
+              {schoolExtraInfo.map((school, index) => {
+                // fallback contact number for Aldeia
+                const contactNumber =
+                  contactData?.school_list?.[index]?.contact_no ||
+                  (school.name === "GAET International School Aldeia" ? "+91 90048 36427" : "N/A");
+
+                // fallback color for Aldeia
+                const schoolColor =
+                  contactData?.school_list?.[index]?.color ||
+                  (school.name === "GAET International School Aldeia" ? "#A2AA84" : "#ccc");
+
                 return (
                   <div className="col-12 col-md-6 col-lg-6 mb-4" key={index}>
-                    <div
-                      className="school-card"
-                      style={{ backgroundColor: school.color }}
-                    >
-                      <h3>{extra?.name || "N/A"}</h3>
-                      <p className="contact-number">
-                        Contact:{school.contact_no}
+                    <div className="school-card" style={{ backgroundColor: schoolColor }}>
+                      <h3>{school.name}</h3>
+
+                      <p className="icon-line">
+                        <img src={Phone} alt="Phone" className="icon contact" />
+                        <span className="icon-line-span">{contactNumber}</span>
                       </p>
-                      <p>
-                        Email:{extra?.email || "N/A"}
+
+                      <p className="icon-line">
+                        <img src={Mail} alt="Email" className="icon" />
+                        <span>{school.email}</span>
                       </p>
-                      <p>
-                        Office:{extra?.office || "N/A"}
+
+                      <p className="icon-line">
+                        <img src={Map} alt="Map" className="icon map" />
+                        <span>{school.office}</span>
                       </p>
                     </div>
                   </div>
@@ -192,7 +212,6 @@ function ContactPage() {
             </div>
           </div>
         </div>
-
         <ApplyEnrolBlock />
       </div>
       <Footer />

@@ -15,18 +15,6 @@
   transform: scale(1);
 }
 
-/* Smooth background color transitions */
-/* .animated-bg {
-  transition: background-color 0.8s ease-in-out, transform 0.3s ease;
-}
-
-.animated-bg:hover {
-  transform: scale(1.02);
-} */
-
-/* Enhanced smooth color transitions - Replace your existing .animated-bg and .box-layout .block-2 styles */
-
-/* Smooth background color transitions */
 .animated-bg {
   transition: background-color 1.2s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,36 +101,40 @@
   position: relative;
   overflow: hidden;
   background-color: #09213a;
-  padding-bottom: 50px;
   z-index: 10;
 }
 
 .empowering-section .rays {
-    width: 4103px;
-    height: 4122px;
-    position: absolute;
-    left: 50%;
-    margin-left: -2051.5px;
-    margin-top: -2007px;
-    z-index: 0;
-    animation-name: rotate;
-    animation-duration: 350s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    opacity: 0.5;
-    display: block;
+  width: 4103px;
+  height: 4122px;
+  position: absolute;
+  left: 50%;
+  margin-left: -2051.5px;
+  margin-top: -2007px;
+  z-index: 0;
+  animation-name: rotate;
+  animation-duration: 350s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 0.5;
+  display: block;
 }
 
 .empowering-section .rays img {
-    width: 100%;
+  width: 100%;
 }
 
 .abt-us-btn {
   background-color: rgba(28, 103, 145, 1);
   border: none;
   font-size: 20px;
-  padding: 4px 27px;
   color: rgba(193, 193, 193, 1);
+  text-decoration: none;
+  font-family: "Anek Devanagari";
+  font-weight: 300;
+  padding: 13px 35px 7px 35px;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .empowering-section img {
@@ -184,18 +176,18 @@
 }
 
 .empowering-section .content-block h2 {
-  font-family: 'Esperanza Headline Roman';
+  font-family: "Esperanza Headline Roman";
   font-size: 68px;
   line-height: 130%;
-  color: #C1C1C1;
+  color: #c1c1c1;
   margin: 0 0 50px 0;
 }
 
 .empowering-section .content-block h2 span {
-  font-family: 'Esperanza Headline Roman';
+  font-family: "Esperanza Headline Roman";
   font-size: 68px;
   line-height: 109%;
-  color: #27A3C4;
+  color: #27a3c4;
   margin: 0 0 50px 0;
   display: block;
   color: var(--light-blue-color);
@@ -204,13 +196,13 @@
 .empowering-section .content-block .btn-more {
   font-size: 40px;
   position: relative;
-  color: #C1C1C1;
+  color: #c1c1c1;
   font-family: "Anek Devanagari", sans-serif;
   transition: color 0.3s ease;
 }
 
 .empowering-section .content-block .btn-more::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -226,7 +218,7 @@
 }
 
 .empowering-section .content-block .btn-more:hover {
-  color: #27A3C4;
+  color: #27a3c4;
 }
 
 .empowering-section ul.box-layout {
@@ -250,11 +242,11 @@
 }
 
 .empowering-section ul.box-layout li.line-1 .block-1 {
-  width: 100%;
-  height: 32%;
-  position: absolute;
   bottom: 0;
-  left: 0px;
+  height: 34%;
+  left: 0;
+  position: absolute;
+  width: 100%;
   z-index: 1;
 }
 
@@ -270,14 +262,13 @@
 }
 
 .empowering-section ul.box-layout li.line-1 .block-2 {
-  width: 100%;
-  height: 16%;
-  position: absolute;
-  bottom: 34%;
-  left: 0px;
-  border-radius: 0 102px 0 0;
+  border-radius: 0 70px 0 0;
+  bottom: 36%;
+  height: 19%;
+  left: 0;
   overflow: hidden;
-
+  position: absolute;
+  width: 100%;
 }
 
 @keyframes animName {
@@ -297,9 +288,9 @@
 
 .empowering-section ul.box-layout li.line-2 .block-1 {
   width: 100%;
-  height: 15.7%;
+  height: 19%;
   position: absolute;
-  bottom: 34%;
+  bottom: 36%;
   left: 0px;
   border-radius: 0 80px 0 0;
   z-index: 2;
@@ -315,11 +306,11 @@
 }
 
 .empowering-section ul.box-layout li.line-2 .block-2 {
-  width: 100%;
-  height: 32%;
+  bottom: 0;
+  height: 34%;
+  left: 0;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  width: 100%;
   z-index: 1;
 }
 
@@ -349,7 +340,7 @@
 
 .empowering-section ul.box-layout li.line-3 .block-1 {
   width: 100%;
-  height: 32%;
+  height: 34%;
   position: absolute;
   bottom: 0;
   left: 0px;
@@ -391,11 +382,11 @@
 }
 
 .empowering-section ul.box-layout li.line-6 .block-1 {
-  width: 100%;
-  height: 32%;
-  position: absolute;
   bottom: 0;
-  left: 0px;
+  height: 34%;
+  left: 0;
+  position: absolute;
+  width: 100%;
   z-index: 1;
 }
 
@@ -411,13 +402,13 @@
 }
 
 .empowering-section ul.box-layout li.line-6 .block-2 {
-  width: 100%;
-  height: 16%;
-  position: absolute;
-  bottom: 34%;
-  left: 0px;
-  border-radius: 0 102px 0 0;
+  border-radius: 70px 0 0 0;
+  bottom: 36%;
+  height: 19%;
+  left: 0;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 .empowering-section ul.box-layout li.line-4 {
@@ -425,14 +416,14 @@
 }
 
 .empowering-section ul.box-layout li.line-4 .block-1 {
-  width: 100%;
-  height: 32%;
-  position: absolute;
-  bottom: 0;
-  left: 0px;
   border-radius: 120px 0 0 0;
-  z-index: 2;
+  bottom: 0;
+  height: 34%;
+  left: 0;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 .empowering-section ul.box-layout li.line-4 .block-1 img {
@@ -456,22 +447,22 @@
 }
 
 .empowering-section ul.box-layout li.line-5 .block-1 {
-  width: 100%;
-  height: 15.7%;
-  position: absolute;
-  bottom: 34%;
-  left: 0px;
   border-radius: 80px 0 0 0;
-  z-index: 2;
+  bottom: 36%;
+  height: 19%;
+  left: 0;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 .empowering-section ul.box-layout li.line-5 .block-2 {
-  width: 100%;
-  height: 32%;
+  bottom: 0;
+  height: 34%;
+  left: 0;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  width: 100%;
   z-index: 1;
 }
 
@@ -492,22 +483,22 @@
 }
 
 .blue:hover {
-  background: #261C35 !important;
+  background: #261c35 !important;
   transition: all 0.5s ease;
 }
 
 .light-blue {
-  background: #27A3C4;
+  background: #27a3c4;
   transition: all 0.5s ease;
 }
 
 .light-blue:hover {
-  background: #78519E !important;
+  background: #78519e !important;
   transition: all 0.5s ease;
 }
 
 .medium-blue {
-  background: #1C6791;
+  background: #1c6791;
   transition: all 0.5s ease;
 }
 
@@ -526,7 +517,7 @@
   }
 
   50.0% {
-    background-color: #261C35;
+    background-color: #261c35;
   }
 
   100.0% {
@@ -536,21 +527,21 @@
 
 @keyframes lightbluecolor {
   0% {
-    background-color: #27A3C4;
+    background-color: #27a3c4;
   }
 
   50.0% {
-    background-color: #78519E;
+    background-color: #78519e;
   }
 
   100.0% {
-    background-color: #27A3C4;
+    background-color: #27a3c4;
   }
 }
 
 @keyframes mediumbluecolor {
   0% {
-    background-color: #1C6791;
+    background-color: #1c6791;
   }
 
   50.0% {
@@ -558,7 +549,7 @@
   }
 
   100.0% {
-    background-color: #1C6791;
+    background-color: #1c6791;
   }
 }
 
@@ -622,7 +613,6 @@
 
   .empowering-section ul.box-layout {
     gap: 5px;
-
   }
 
   .blue {
@@ -650,6 +640,23 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .empowering-section ul.box-layout li.line-2 .block-1 {
+    bottom: 32%;
+  }
+  .empowering-section ul.box-layout li.line-1 .block-2 {
+    border-radius: 0 47px 0 0;
+  }
+
+  .empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 34%;
+  }
+
+  .empowering-section ul.box-layout li.line-6 .block-2 {
+    border-radius: 47px 0 0 0;
+  }
+}
+
 @media only screen and (max-width: 620px) {
   .empowering-section ul.box-layout {
     min-height: 340px;
@@ -662,16 +669,28 @@
   }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
+  .empowering-section ul.box-layout li.line-1 .block-1 {
+    height: 39%;
+  }
+
   .empowering-section ul.box-layout li.line-2 .block-1 {
     width: 100%;
-    height: 16%;
+    height: 19%;
     position: absolute;
     bottom: 34%;
     left: 0px;
     border-radius: 0 80px 0 0;
     z-index: 2;
     overflow: hidden;
+  }
+
+  .empowering-section ul.box-layout li.line-2 .block-2,
+  .empowering-section ul.box-layout li.line-3 .block-1,
+  .empowering-section ul.box-layout li.line-4 .block-1,
+  .empowering-section ul.box-layout li.line-5 .block-2,
+  .empowering-section ul.box-layout li.line-6 .block-1 {
+    height: 39%;
   }
 
   .empowering-section ul.box-layout li.line-5 .block-1 {
@@ -692,10 +711,10 @@
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
   .empowering-section ul.box-layout li.line-2 .block-1 {
     width: 100%;
-    height: 16%;
+    height: 19%;
     position: absolute;
     bottom: 34%;
     left: 0px;
@@ -714,31 +733,69 @@
     z-index: 2;
     overflow: hidden;
   }
+
   .empowering-section ul.box-layout .empowering-section ul.box-layout {
     min-height: 160px;
   }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 680px) {
-  .animated-image.fade-in{
+  .animated-image.fade-in {
     height: 54px;
     object-fit: cover;
   }
 
-  .animated-image.fade-in{
+  .animated-image.fade-in {
     height: 54px;
     object-fit: cover;
+  }
+
+  .empowering-section ul.box-layout li.line-2 .block-1,.empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 41%;
+  }
+  .empowering-section ul.box-layout li.line-1 .block-2 {
+    border-radius: 0 37px 0 0;
+    bottom: 41%;
+  }
+
+  .empowering-section ul.box-layout li.line-6 .block-2 {
+    border-radius: 37px 0 0 0;
+    bottom: 41%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 41% !important;
+    height: 19%;
   }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 399px) {
-  .animated-image.fade-in{
+  .animated-image.fade-in {
     height: 54px;
     object-fit: cover;
   }
 
-  .animated-image.fade-in{
+  .animated-image.fade-in {
     height: 54px;
     object-fit: cover;
+  }
+
+  .empowering-section ul.box-layout li.line-2 .block-1 {
+    bottom: 41%;
+  }
+  .empowering-section ul.box-layout li.line-1 .block-2 {
+    border-radius: 0 37px 0 0;
+    bottom: 41%;
+  }
+
+  .empowering-section ul.box-layout li.line-5 .block-1 {
+    bottom: 41%;
+  }
+
+  .empowering-section ul.box-layout li.line-6 .block-2 {
+    border-radius: 37px 0 0 0;
+    bottom: 41%;
   }
 }

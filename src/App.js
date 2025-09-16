@@ -72,7 +72,6 @@ function App() {
                 <Route path="/terms&policies" element={<PrivacyPage />} />
                 <Route path="/accessibility" element={<Accessibility />} />
                 <Route path="/contact-us" element={<ContactPage />} />
-                <Route path="/contact-us" element={<ContactPage />} />
                 <Route
                   path="/our-social-initiatives"
                   element={<GonekaAssociates />}

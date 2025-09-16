@@ -1,5 +1,5 @@
 .breadcrumb-area {
-    margin-top: -4.5rem;
+    margin-top: -2.5rem;
 }
 
 .founder-list-section {
@@ -211,7 +211,9 @@
     }
 
     .founder-list-section .founder-block .content-block .arrow {
-        left: -20px;
+        /* left: -20px; */
+        left: -2px;
+        right: auto;
     }
 
     .founder-list-section .founder-block .content-block {
@@ -220,5 +222,11 @@
 
     .founder-list-section .founder-block .content-block .position {
         margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (max-width:425px){
+ .founder-list-section .founder-block .content-block .arrow {
+        left: -6px;
     }
 }

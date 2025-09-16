@@ -270,6 +270,29 @@
     opacity: 0.5;
 }
 
+.member-position {
+    font-size: 17px;
+    color: #09213A;
+    opacity: 0.5;
+    min-height: 49px;
+    font-family: 'Anek Devanagari';
+}
+
+
+@media screen and (max-width:425px) {
+    .member-position {
+    font-size: 16px;
+    color: #09213A;
+    opacity: 1;
+    min-height: 0px !important;
+}
+
+
+.board-area .inner-flex ul.member-list-four li h3 {
+    min-height: 0px !important;
+}
+}
+
 .board-area .inner-flex ul.member-list-three li .more-position {
     position: absolute;
     bottom: -25px;
@@ -403,11 +426,12 @@
 
 .board-area .inner-flex ul.member-list-four li h3 {
     font-family: "Anek Devanagari", sans-serif;
-    font-size: 20px;
+    font-size: 23px !important;
     line-height: 26px;
     color: var(--light-blue-color);
     font-weight: 500;
     margin: 0;
+    min-height: 53px;
 }
 
 .board-area .inner-flex ul.member-list-four li h3 strong {
@@ -617,7 +641,7 @@
     }
 
     .board-area .inner-flex h2 {
-        font-size: 38px;
+        font-size: 41px;
         line-height: 48px;
         width: 30%;
         padding-right: 100px;
@@ -690,6 +714,13 @@
 
 /* Tablet (Landscape) */
 @media only screen and (max-width: 1024px) {
+    .member-position {
+    min-height: 0px;
+}
+.board-area .inner-flex ul.member-list-four li h3 {
+    min-height: 0px;
+}
+
     .chairperson-area .container {
         padding: 0 30px;
     }
@@ -839,4 +870,13 @@
         line-height: 30px;
     }
 
+}
+
+@media only screen and (min-width: 931px) and (max-width: 1600px) {
+
+    .chairperson-area,
+    .board-area .board-members-area,
+    .board-area {
+        padding: 150px 0 100px 25px;
+    }
 }

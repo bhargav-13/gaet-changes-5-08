@@ -1,25 +1,42 @@
 .breadcrumb-area {
-  margin-top: 0;
+  margin-top: -2.5rem;
+}
+
+/* Icon line fixes */
+.icon-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: white;
+  word-break: break-word;
+}
+
+.icon-line .icon {
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .contact-page {
   background: #ebebeb;
   padding: 150px 0;
   position: relative;
-  border-radius: 0 50px 0 0;
 }
+
 .contact-page .arrow {
   position: absolute;
   left: 106px;
   top: -35px;
   transform: rotate(90deg);
 }
+
 .contact-page .arrow .top {
   width: 70px;
   height: 70px;
   overflow: hidden;
   position: relative;
 }
+
 .contact-page .arrow .top::before {
   content: "";
   display: block;
@@ -31,28 +48,31 @@
   left: 0;
   box-shadow: -50px 50px 0 0 #1c6791;
 }
+
 .contact-page .arrow .bottom {
   width: 70px;
   height: 70px;
   overflow: hidden;
   position: relative;
 }
+
 .contact-page .arrow .bottom::before {
   content: "";
   display: block;
   width: 200%;
   height: 200%;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 38%;
   top: 0;
   left: 0;
   box-shadow: -50px -50px 0 0 #1c6791;
 }
+
 .contact-page .container {
   width: 100%;
   max-width: 100%;
-  padding: 0 140px;
 }
+
 .contact-page h2 {
   font-size: 42px;
   line-height: 109%;
@@ -60,13 +80,19 @@
   margin: 0 0 80px 0;
   font-family: "Esperanza Headline Roman";
 }
+
 .contact-page .inner-flex {
   display: flex;
 }
+
 .contact-page .leftside-info {
   width: 50%;
   padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 .contact-page .leftside-info h3 {
   font-family: "Anek Devanagari", sans-serif;
   font-size: 28px;
@@ -75,6 +101,7 @@
   font-weight: 500;
   margin: 0 0 15px 0;
 }
+
 .contact-page .leftside-info p {
   font-family: "Anek Devanagari", sans-serif;
   font-weight: 300;
@@ -83,11 +110,14 @@
   color: var(--blue-color);
   max-width: 460px;
   margin: 0 0 70px 0;
+  max-width: 300px;
 }
+
 .contact-page .leftside-info p a {
   color: var(--blue-color);
   text-decoration: none;
 }
+
 .contact-page .leftside-info ul.social {
   margin: 0px;
   padding: 0px;
@@ -95,18 +125,22 @@
   display: flex;
   align-items: center;
 }
+
 .contact-page .leftside-info ul.social li {
   margin-right: 50px;
 }
+
 .contact-page .leftside-info ul.social li img {
   max-width: 26px;
   max-height: 26px;
   filter: brightness(0%) invert(0);
 }
+
 .contact-page .map-area {
   width: 50%;
   min-height: 565px;
 }
+
 .contact-page .map-area iframe {
   width: 100%;
   height: 100%;
@@ -114,16 +148,17 @@
 
 .school-list-area {
   padding: 50px 0;
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .school-list-area-heading {
-  font-family: Esperanza Headline;
-  font-weight: 400;
-  font-size: 39px;
+  font-family: Esperanza Headline Roman;
+  font-weight: 500 !important;
+  font-size: 45px;
   margin: 0 0 30px 0;
   font-weight: 600;
   letter-spacing: 1px;
+  color: rgba(9, 33, 58, 1);
 }
 
 .school-list-area h2 {
@@ -168,59 +203,82 @@
   transform: translateY(-3px);
 }
 
+.icon-line-span{
+  margin-top: 3px;
+}
+
+.icon-line .map{
+    margin-right: 7px !important;
+  }
+
+  .icon-line .contact{
+    margin-right: 4px;
+  }
+
 /* Medium Desktop */
 @media only screen and (max-width: 1640px) {
   .contact-page {
-    padding: 100px 0 70px 0;
+    padding: 135px 0 70px 0;
   }
+
   .contact-page .arrow {
-    left: 35px;
+    left: 66px;
     top: -25px;
   }
+
   .contact-page .arrow .top,
   .contact-page .arrow .bottom {
     width: 50px;
     height: 50px;
   }
-  .contact-page .container {
-    padding: 0 50px;
-  }
+
   .contact-page h2 {
     font-size: 32px;
     margin: 0 0 30px 0;
   }
+
   .contact-page .leftside-info {
     padding-top: 30px;
   }
+
   .contact-page .leftside-info h3 {
     font-size: 22px;
     margin: 0 0 10px 0;
   }
+
   .contact-page .leftside-info p {
     font-size: 20px;
     margin: 0 0 40px 0;
+    max-width: 300px;
   }
+
   .contact-page .leftside-info ul.social li {
     margin-right: 30px;
   }
+
   .contact-page .leftside-info ul.social li img {
     max-width: 22px;
     max-height: 22px;
   }
+
   .contact-page .map-area {
     min-height: 420px;
   }
+
   .school-list-area h2 {
     font-size: 32px;
     margin: 0 0 30px 0;
   }
+
   .school-list-area ul.list li h3 {
     font-size: 22px;
   }
+
   .school-list-area ul.list li {
     padding: 10px 0;
     margin-bottom: 30px;
   }
+
   .school-list-area ul.list li .btn-flex a {
     width: 25px;
     height: 25px;
@@ -229,7 +287,7 @@
 
   .school-list-area .container {
     padding: 0px !important;
-    max-width: 1200px;
+    max-width: 1350px;
   }
 }
 
@@ -242,33 +300,41 @@
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width:1220px){
-    .school-list-area .container {
+@media only screen and (min-width: 900px) and (max-width:1220px) {
+  .school-list-area .container {
     padding: 3rem !important;
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width:901px){
-    .school-list-area .container {
+@media only screen and (min-width: 426px) and (max-width:901px) {
+  .school-list-area .container {
     padding: 2rem !important;
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width:425px){
-    .school-list-area .container {
+@media only screen and (min-width: 200px) and (max-width:425px) {
+  .school-list-area .container {
     padding: 1rem !important;
   }
 
-  .school-card{
+  .school-card {
     padding: 20px 20px 0px 20px;
   }
 
-  .school-card h3{
-    margin-bottom: 0px;    
+  .school-card h3 {
+    margin-bottom: 0px;
   }
 
-  .school-card p{
+  .school-card p {
     font-size: 0.7rem;
+  }
+
+  .icon-line .map{
+    margin-right: 7px !important;
+  }
+
+  .icon-line .contact{
+    margin-right: 4px;
   }
 }
 
@@ -277,36 +343,41 @@
   .contact-page {
     padding: 80px 0 50px 0;
   }
-  .contact-page .container {
-    padding: 0 30px;
-  }
+
   .contact-page .inner-flex {
     display: block;
   }
+
   .contact-page .leftside-info {
     width: 100%;
   }
+
   .contact-page .map-area {
     height: 360px;
     width: 100%;
     margin-top: 30px;
     min-height: 360px;
   }
+
   .contact-page h2 {
     font-size: 28px;
     margin: 0 0 10px 0;
   }
+
   .contact-page .leftside-info p {
     font-size: 16px;
     margin: 0 0 20px 0;
+    max-width: 300px;
   }
 
   .school-list-area {
     padding: 50px 0;
   }
+
   .school-list-area .container {
     padding: 0 30px;
   }
+
   .school-list-area h2 {
     font-size: 28px;
   }
@@ -317,33 +388,46 @@
   .contact-page .container {
     padding: 0 15px;
   }
+
   .school-list-area .container {
     padding: 0 15px;
   }
+
   .school-list-area h2 {
     margin: 0 0 10px 0;
   }
+
   .school-list-area ul.list li {
     display: block;
     padding: 10px 0 20px 0;
     margin-bottom: 10px;
   }
+
   .school-list-area ul.list li h3 {
     font-size: 16px;
     margin: 0 0 8px 0;
   }
+
   .school-list-area ul.list li .btn-flex {
     display: flex;
     align-items: flex-start;
     padding: 0;
   }
+
   .school-list-area ul.list li .btn-flex a {
     width: 20px;
     height: 20px;
     margin: 0 15px 0 0;
     display: block;
   }
+
   .school-list-area ul.list li .btn-flex a svg {
     vertical-align: top;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1600px) {
+  .contact-page .container {
+    padding: 0 80px;
   }
 }

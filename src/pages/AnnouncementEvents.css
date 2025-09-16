@@ -17,11 +17,14 @@
 .content {
     display: flex;
     flex-direction: column;
+    padding: 0px 0rem 0rem 2.5rem;
 }
 
 .subtitle {
     font-family: "Anek Devanagari", sans-serif;
     font-size: 24px;
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
 }
 
 .description {
@@ -94,39 +97,85 @@
     .content-area h3 {
         font-size: 28px;
     }
+
     .divider img {
-    height: 444px;
-}
+        height: 444px;
+    }
 
 }
 
 @media only screen and (max-width: 768px) {
     .content-area h3 {
-        font-size: 21px;
+        font-size: 26px;
     }
+
     .divider img {
-    height: 492px;
+        height: 492px;
     }
-    .events-section{
+
+    .events-section {
         padding: 1rem !important;
+    }
+
+    .subtitle {
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px){
-    .custom-nav{
-        top: 101%;
+@media only screen and (max-width: 375px) {
+    .custom-nav {
+        top: 99% !important;
+        position: absolute !important;
+        gap: 14rem !important;
+    }
+     .content {
+        padding: 0rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .custom-nav {
+        top: 101% !important;
+        position: absolute !important;
+        gap: 10.5rem !important;
+    }
+     .content {
+        padding: 0rem;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .custom-nav {
+        top: 97%;
         position: absolute;
-        gap: 16rem;
+        gap: 17rem;
     }
 
-    .events-section{
+    .content {
+        padding: 0rem;
+    }
+
+    .events-section {
         padding-top: 1rem !important;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
+        margin-bottom: 2rem !important;
     }
 
-    .slide-image{
+    .slide-image {
         margin-top: 1rem !important;
         border-radius: 0px;
     }
+
+    .content-area .announcements-events {
+        margin-top: 2rem !important;
+    }
+
+    .events-section .row .container {
+        padding: 0 10px 0px;
+    }
+
+
 }

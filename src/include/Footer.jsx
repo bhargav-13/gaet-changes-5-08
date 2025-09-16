@@ -14,29 +14,24 @@ import './footer.css';
 function Footer() {
   // const { data, settings, error } = useApi(endpoints.settings);
   const { data, error, loading } = useApi(endpoints.settings);
-
-
   if (error) return <div className="error-message">Error: {error.message}</div>;
   if (!data) return null;
-    if (loading) return <div><Loader /></div>;
-
-
-
+  if (loading) return <div><Loader /></div>;
 
   return (
     <footer>
-            <div className='footer-area'>
+      <div className='footer-area'>
         <Container>
-                    <div className='inner-flex'>
-                        <div className='leftside'>
+          <div className='inner-flex'>
+            <div className='leftside'>
               {/* <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}> */}
-                            <div className='logo'>
+              <div className='logo'>
                 <Link to="/">
                   <img src={data?.settings?.footer_logo} alt="GAET Logo" />
                 </Link>
 
               </div>
-                            <div className='middlepart'>
+              <div className='middlepart'>
                 <h3>Notice</h3>
                 <p>
                   Goenka and Associates Educational Trust does not accept any
@@ -56,46 +51,40 @@ function Footer() {
                     <h3>Contact</h3>
                     <p>
                       +91 <Link
-                        to={`tel:${
-                          data?.settings?.contact_no || "+91 02240278222"
-                        }`}
+                        to={`tel:${data?.settings?.contact_no || "+91 2240278222"
+                          }`}
                       >
-                        {data?.settings?.contact_no || "022 40278222"}
+                        {data?.settings?.contact_no || "22 40278222"}
                       </Link>
                     </p>
                   </div>
 
-                  <div>
+                  <div className='footer-email'>
                     <h3>Email</h3>
-                    <p>gaetedu@gaet.edu.in</p>
+                    <a href="mailto:gaetedu@gaet.edu.in" className='text-white text-decoration-none'>gaetedu@gaet.edu.in</a>
                   </div>
                 </div>
                 <div className="inner-part address-timings">
-                  <div>
+                  <div className="head-office">
                     <h3>Trust Head Office</h3>
                     <p>
-                      Yashodham High School Building, Yashodham, Goregaon(East),
-                      Mumbai - 400063
+                      <a className='text-white' href="https://www.google.com/maps/search/?api=1&query=Yashodham+High+School+Building,+Yashodham,+Goregaon(East),+Mumbai+-+400063" target="_blank" rel="noopener noreferrer">
+                        Yashodham High School Building, Yashodham, Goregaon(East), Mumbai - 400063
+                      </a>
                     </p>
                   </div>
 
                   <div>
-                    <h3>Timimgs</h3>
+                    <h3>Timings</h3>
                     <p>
-                      09:30 a.m - 05:30 p.m (Mon-Fri)2nd & 4th Saturdays Closed
-                    </p>  
+                      09:30 a.m - 05:30 p.m (Mon-Fri) 2nd & 4th Saturdays Closed
+                    </p>
                   </div>
                 </div>
                 <div className="last-part">
                   <ul className="link">
                     <li>
                       <Link to="/admission">Admissions</Link>
-                    </li>
-                    <li>
-                      <Link to="/the-gaet-advantage">Safety</Link>
-                    </li>
-                    <li>
-                      <Link to="/associations">Associations</Link>
                     </li>
                     <li>
                       <Link to="/faq">FAQ</Link>
@@ -114,11 +103,11 @@ function Footer() {
                 <ContactApi />
                 <div className="copyright">
                   <p>
-                    ©{new Date().getFullYear()} Goenka & Associates Educational
+                    ©2020 Goenka & Associates Educational
                     Trust
                   </p>
                   <div className="d-flex">
-                    <Link to="/terms&policies">Terms & Policies</Link>
+                    <Link to="/terms&policies">Privacy</Link>
                     <Link to="/accessibility">Accessibility</Link>
                   </div>
                 </div>

@@ -17,3 +17,9 @@
     .photo-gallery-area{padding: 20px; }
      .photo-gallery-area img{height: 200px;}
 }
+
+@media only screen and  (max-width:750px){
+    .inside-block [style*="justify-content"] {
+  justify-content: center !important;
+}
+}

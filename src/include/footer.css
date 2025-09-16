@@ -8,14 +8,18 @@
 .footer-area .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 140px;
+    padding: 4rem 4rem 0rem 3.5rem !important;
     position: relative;
     z-index: 2;
     height: 100%;
 }
 
-.contact-email .contact{
+.contact-email .contact {
     min-height: 55%;
+}
+
+.footer-email {
+    font-family: "Anek Devanagari", sans-serif;
 }
 
 .footer-area .inner-flex {
@@ -161,7 +165,7 @@
         line-height: 109%;
         color: #27A3C4;
         font-weight: 400;
-        margin: 0 0 20px 0;
+        margin: 0 0 22px 0;
     }
 
     p {
@@ -169,6 +173,8 @@
         font-size: 24px;
         line-height: 109%;
         color: #fff;
+        max-width: 31rem !important;
+        margin-top: 15px;
     }
 }
 
@@ -223,9 +229,10 @@
         align-items: flex-start;
     }
 
+    /* 
     .footer-area .container {
-        padding: 0 50px;
-    }
+        padding: 0 30px;
+    } */
 
     .footer-area .inner-flex .leftside .logo {
         width: 400px;
@@ -236,7 +243,7 @@
     }
 
     .footer-area .inner-flex .rightside p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 124%;
     }
 
@@ -250,7 +257,7 @@
 
     .footer-area .inner-flex .rightside ul.social li a {
         width: 24px;
-        height: 24px;
+        height: 29px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -327,6 +334,19 @@
     .footer-area .middlepart {
         margin: 40px 0 60px;
     }
+
+    .footer-area .inner-flex .rightside p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+.footer-area .middlepart {
+    p {
+        max-width: none !important;
+    }
+}
 }
 
 /* Tablet (Portrait) */
@@ -344,7 +364,7 @@
     }
 
     .footer-area .container {
-        padding: 0 20px;
+        padding: 0 20px !important;
     }
 
     .footer-area .inner-flex .leftside .logo {
@@ -433,5 +453,11 @@
 
     .middlePart-separator {
         height: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .head-office {
+        margin-top: 20px;
     }
 }
