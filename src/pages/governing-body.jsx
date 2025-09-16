@@ -215,12 +215,11 @@ function GoverningBodyPage() {
                                     </ScrollAnimation>
                                 </h2>
                                 <div className='rightside'>
-                                    <ul className='member-list-four'>
+                                    <ul className='member-list-three'>
                                         {managementTeam.map((member, index) => (
                                             <li key={index}>
                                                 <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={700}>
                                                     <div className='photo-area d-none'>
-                                                        {/* If you want to use backend images, you can still reference them like this: */}
                                                         {data.management_team[index] && (
                                                             <img src={data.management_team[index].image} alt={member.name} />
                                                         )}
@@ -231,7 +230,20 @@ function GoverningBodyPage() {
                                                         </div>
                                                     </div>
                                                     <h3>{member.name}</h3>
-                                                    <p className="member-position">{member.position}</p>
+                                                    <Link
+                                                        to=""
+                                                        className='more-position'
+                                                        onClick={(e) => {
+                                                            e.preventDefault();
+                                                            handleMoreAboutClick(
+                                                                data.management_team[index]
+                                                                    ? { ...data.management_team[index], ...member }
+                                                                    : member
+                                                            );
+                                                        }}
+                                                    >
+                                                        {member.position}
+                                                    </Link>
                                                     <Link
                                                         to=""
                                                         className='more-about'

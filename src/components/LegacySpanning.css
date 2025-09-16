@@ -540,3 +540,22 @@
     max-width: 1350px;
   }
 }
+
+.legacy-mobile-only {
+  display: none;
+}
+
+.legacy-desktop-only {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .legacy-mobile-only {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .legacy-desktop-only {
+    display: none;
+  }
+}

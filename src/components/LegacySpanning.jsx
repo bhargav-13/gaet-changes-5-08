@@ -86,15 +86,19 @@ export default function LegacySpanning() {
 
   return (
     <div className="legacy-container">
+      {/* Mobile-only H1 at the top */}
+      <h1 className="legacy-spanning-main-title legacy-mobile-only" style={{ marginBottom: '1rem' }}>
+        <span className="line">A Legacy Spanning</span>
+        <span className="line"> Over Years</span>
+      </h1>
       <div className="legacy-content">
         <div className="row">
           <div className="col-6">
-            <div className="text-section">
+            <div className="text-section legacy-desktop-only">
               <h1 className="legacy-spanning-main-title">
                 <span className="line">A Legacy Spanning</span>
                 <span className="line"> Over Years</span>
               </h1>
-
               <div className="carousel-content">
                 <h2 className="carousel-title">
                   {carouselData[currentSlide].title}
@@ -103,25 +107,6 @@ export default function LegacySpanning() {
                   {carouselData[currentSlide].description}
                 </p>
               </div>
-
-              {/* <div className="navigation-controls">
-                <span
-                  className="arrow prev-arrow"
-                  onClick={prevSlide}
-                  role="button"
-                  aria-label="Previous slide"
-                >
-                  &#8249;
-                </span>
-                <span
-                  className="arrow next-arrow"
-                  onClick={nextSlide}
-                  role="button"
-                  aria-label="Next slide"
-                >
-                  &#8250;
-                </span>
-              </div> */}
             </div>
           </div>
 
@@ -134,37 +119,23 @@ export default function LegacySpanning() {
                   className="carousel-image"
                 />
               </div>
+              {/* Mobile-only title/description below image */}
+              <div className="legacy-mobile-only">
+                
+                <h2 className="carousel-title">
+                  {carouselData[currentSlide].title}
+                </h2>
+                <p className="carousel-description">
+                  {carouselData[currentSlide].description}
+                </p>
+              </div>
             </div>
           </div>
-          <div>
+          {/* Remove or comment out the old mobile description section */}
+          {/* <div>
               <p className="carousel-mobile-description">
                 {carouselData[currentSlide].description}
               </p>
-          </div>
-
-          {/* Mobile description section - only visible on mobile */}
-          {/* <div className="mobile-description">
-            <p className="carousel-description">
-              {carouselData[currentSlide].description}
-            </p>
-            <div className="navigation-controls">
-              <span
-                className="arrow prev-arrow"
-                onClick={prevSlide}
-                role="button"
-                aria-label="Previous slide"
-              >
-                &#8249;
-              </span>
-              <span
-                className="arrow next-arrow"
-                onClick={nextSlide}
-                role="button"
-                aria-label="Next slide"
-              >
-                &#8250;
-              </span>
-            </div>
           </div> */}
         </div>
       </div>

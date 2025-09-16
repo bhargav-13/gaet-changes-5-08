@@ -274,7 +274,6 @@
     font-size: 17px;
     color: #09213A;
     opacity: 0.5;
-    min-height: 49px;
     font-family: 'Anek Devanagari';
 }
 
@@ -384,7 +383,7 @@
     background: #DDDDDD;
     overflow: hidden;
     transition: all .5s ease;
-    -webkit-transition: all .5s ease;
+    -webkit-transition: all .5s ease;   
     -moz-transition: all .5s ease;
 }
 
@@ -880,3 +879,4 @@
         padding: 150px 0 100px 25px;
     }
 }
+

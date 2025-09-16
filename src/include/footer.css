@@ -48,6 +48,7 @@
 .footer-area .inner-flex .rightside .toppart {
     display: flex;
     justify-content: space-between;
+
 }
 
 .footer-area .inner-flex .rightside .inner-part {
@@ -75,9 +76,14 @@
     color: #fff;
 }
 
+.footer-area .inner-flex .rightside .address-timings {
+    width: 50%;  /* was inside .inner-part = 33.33% */
+}
+
 .footer-area .inner-flex .rightside p a {
     color: #fff;
     text-decoration: none;
+    font-size: 21px;
 }
 
 .footer-area .inner-flex .rightside ul.link {
@@ -243,7 +249,7 @@
     }
 
     .footer-area .inner-flex .rightside p {
-        font-size: 14px;
+        font-size: 19px;
         line-height: 124%;
     }
 
@@ -423,7 +429,7 @@
     }
 
     .footer-area .inner-flex .rightside .copyright p {
-        font-size: 14px;
+        font-size: 1px;
         margin: 0 0 5px 0;
     }
 
