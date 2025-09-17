@@ -62,7 +62,7 @@
 
 .footer-area .inner-flex .rightside h3 {
     font-family: "Anek Devanagari", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 109%;
     color: #27A3C4;
     font-weight: 400;
@@ -240,6 +240,7 @@
 .footer-area .rightside .toppart .address-timings .Time p {
 
  font-weight: 200;
+ margin-bottom: 24px;
 }
 
 .footer-area .rightside .toppart .contact-email .contact p {
@@ -493,4 +494,129 @@
     .head-office {
         margin-top: 20px;
     }
+}
+
+@media only screen and (max-width: 435px) {
+  .footer-area {
+    padding: 24px 0 32px 0;
+  }
+
+  .footer-area .container {
+    padding: 0 15px !important;
+  }
+
+  .footer-area .inner-flex {
+    display: block;
+    gap: 0;
+  }
+
+  .footer-area .inner-flex .leftside,
+  .footer-area .inner-flex .rightside {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .footer-area .inner-flex .leftside .logo {
+    width: 300px;
+    margin-bottom: 16px;
+  }
+
+  .footer-area .inner-flex .rightside {
+    padding: 16px 0 0 0;
+  }
+
+  .footer-area .inner-flex .rightside .toppart {
+    display: block;
+  }
+
+  .footer-area .inner-flex .rightside .inner-part,
+  .footer-area .inner-flex .rightside .last-part {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .footer-area .inner-flex .rightside h3 {
+    font-size: 24px;
+    margin: 0 0 4px 0;
+  }
+
+  .footer-area .inner-flex .rightside p,
+  .footer-area .inner-flex .rightside p a {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .footer-area .inner-flex .rightside ul.link {
+    display: block;
+  }
+
+  .footer-area .inner-flex .rightside ul.link li {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .footer-area .inner-flex .rightside ul.link li a {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .footer-area .inner-flex .rightside ul.social {
+    margin-bottom: 24px;
+    justify-content: flex-start;
+  }
+
+  .footer-area .inner-flex .rightside ul.social li {
+    margin-right: 50px;
+  }
+
+  .footer-area .inner-flex .rightside ul.social li a {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright {
+    margin-top: 16px;
+    display: block;
+    text-align: left;
+  }
+
+  .footer-area .inner-flex .rightside .copyright p,
+  .footer-area .inner-flex .rightside .copyright a {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+  }
+
+  .footer-area .rays {
+    display: block !important;
+  }
+
+  .footer-area .middlepart {
+    margin: 16px 0;
+  }
+
+  .footer-area .middlepart h3 {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+  }
+
+  .footer-area .middlepart p {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .middlePart-separator {
+    height: 0px;
+  }
+
+  .footer-area .inner-flex .rightside .Time {
+    max-width: 280px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    word-break: break-word;
+  }
+
 }

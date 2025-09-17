@@ -76,7 +76,7 @@ function Footer() {
 
                   <div className='Time'>
                     <h3>Timings</h3>
-                    <p>
+                    <p className='timeP'>
                       09:30 a.m - 05:30 p.m (Mon-Fri) 2nd & 4th Saturdays Closed
                     </p>
                   </div>
