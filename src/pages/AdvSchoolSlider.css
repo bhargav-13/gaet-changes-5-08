@@ -717,7 +717,11 @@
 }
 
 
+<<<<<<< HEAD
 @media only screen and (max-width: 435px) {
+=======
+@media only screen and (max-width: 768px) {
+>>>>>>> 774560f7060aa452327ef46060cb0b10f4603392
   .school-slider-sections .container {
     flex-direction: column;
     padding: 0 10px 18px !important;
