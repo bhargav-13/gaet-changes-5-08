@@ -62,31 +62,6 @@
   .smooth-color-transition {
     transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  /* 1. Reduce the height of images in line-2 and line-5 */
-  .empowering-section ul.box-layout li.line-2 .block-1 img,
-  .empowering-section ul.box-layout li.line-5 .block-1 img {
-    max-height: 32px;
-    height: 32px;
-    width: auto;
-    object-fit: contain;
-  }
-
-  /* 2. Reduce the gap between image and block-2 in lines with both */
-  .empowering-section ul.box-layout li.line-1 .block-2,
-  .empowering-section ul.box-layout li.line-2 .block-2,
-  .empowering-section ul.box-layout li.line-5 .block-2,
-  .empowering-section ul.box-layout li.line-6 .block-2 {
-    margin-top: 4px !important; /* Reduce the gap */
-  }
-
-  /* Optionally, reduce the bottom margin of the image's parent for even less gap */
-  .empowering-section ul.box-layout li.line-1 .block-1,
-  .empowering-section ul.box-layout li.line-2 .block-1,
-  .empowering-section ul.box-layout li.line-5 .block-1,
-  .empowering-section ul.box-layout li.line-6 .block-1 {
-    margin-bottom: 2px !important;
-  }
 }
 
 /* Add subtle hover effects to image containers */
@@ -157,7 +132,7 @@
   text-decoration: none;
   font-family: "Anek Devanagari";
   font-weight: 300;
-  padding: 8px 20px 4px 20px;
+  padding: 8px 25px 4px 25px;
   line-height: 20px;
   text-decoration: none;
 }
@@ -289,7 +264,7 @@
 .empowering-section ul.box-layout li.line-1 .block-2 {
   border-radius: 0 70px 0 0;
   bottom: 36%;
-  height: 15%;
+  height: 19%;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -387,7 +362,7 @@
 
 .empowering-section ul.box-layout li.line-3 .block-2 {
   width: 100%;
-  height: 10%;
+  height: 16.8%;
   position: absolute;
   bottom: 42.5%;
   left: 0px;
@@ -429,7 +404,7 @@
 .empowering-section ul.box-layout li.line-6 .block-2 {
   border-radius: 70px 0 0 0;
   bottom: 36%;
-  height: 15%;
+  height: 19%;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -663,37 +638,7 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
   }
-
-  /* 1. Reduce the height of images in line-2 and line-5 */
-  .empowering-section ul.box-layout li.line-2 .block-1 img,
-  .empowering-section ul.box-layout li.line-5 .block-1 img {
-    max-height: 35px;
-    height: 35px;
-    width: auto;
-    object-fit: contain;
-  }
-
-  /* 2. Reduce the gap between image and block-2 in lines with both */
-  .empowering-section ul.box-layout li.line-1 .block-2,
-  .empowering-section ul.box-layout li.line-6 .block-2 {
-    margin-bottom: -10px !important; /* Reduce the gap */
-  }
-
-  /* Optionally, reduce the bottom margin of the image's parent for even less gap */
-  .empowering-section ul.box-layout li.line-1 .block-1,
-  .empowering-section ul.box-layout li.line-2 .block-1,
-  .empowering-section ul.box-layout li.line-5 .block-1,
-  .empowering-section ul.box-layout li.line-6 .block-1 {
-    margin-bottom: 0px !important;
-  }
-
-  .empowering-section ul.box-layout li.line-2 .block-1,
-  .empowering-section ul.box-layout li.line-5 .block-1 {
-    bottom: 32% !important; /* Lower value moves the image down */
-  }
-
 }
-
 
 @media only screen and (max-width: 768px) {
   .empowering-section ul.box-layout li.line-2 .block-1 {
@@ -853,10 +798,4 @@
     border-radius: 37px 0 0 0;
     bottom: 41%;
   }
-}
-
-.empowering-section ul.box-layout li.line-2 .block-1,
-.empowering-section ul.box-layout li.line-5 .block-1 {
-  height: 15% !important; /* or your preferred value */
-  min-height: 48px;
 }

@@ -9,9 +9,6 @@
   background-color: #124066;
   color: white;
   position: relative;
-  min-height: 400px;
-  display: flex;
-  align-items: stretch;
 }
 
 .slider-style-two-section .swiper-slide {
@@ -57,15 +54,6 @@
   flex-direction: column;
   justify-content: flex-start;
   background-color: #124066;
-  height: 100%;
-}
-
-.right-illustration .col-md-6:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 150%;
-  min-height: 100%;
 }
 
 .image-description {
@@ -79,13 +67,9 @@
 
 .right-image {
   display: flex;
-  align-items: flex-end;    /* Stick to bottom */
-  justify-content: flex-start; /* Stick to left */
-  height: 100%;
-  min-height: 300px;
-  padding-left: 0; 
-  flex: 1 1 auto;
-  margin-top: 50px;
+  align-items: flex-end;
+  flex: 1;
+  margin-top: auto;
 }
 
 .right-image img {
@@ -93,12 +77,8 @@
   max-width: 100%;
   width: auto;
   object-fit: contain;
-  display: block;
 }
 
-.right-image .img-fluid{
-  margin-top: 50px;
-}
 /* Navigation arrows styling - positioned on the image */
 .slider-style-two-section .swiper-button-next,
 .slider-style-two-section .swiper-button-prev {
@@ -113,15 +93,6 @@
 .slider-style-two-section .swiper-button-prev:after {
   font-size: 23px !important;
   font-weight: bold !important;
-}
-
-@media (max-width: 1024px) {
-  .right-image {
-    min-height: 220px;
-  }
-  .right-image img {
-    height: 220px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -153,7 +124,6 @@
     flex-direction: row !important;
     padding: 0;
     background-color: #124066;
-    margin: 0;
   }
 
   /* Override Bootstrap's responsive behavior */
@@ -547,7 +517,6 @@
 
   .right-illustration .row {
     width: 100% !important;
-    height: 100% !important;
     display: flex !important;
     flex-direction: row !important;
   }
@@ -772,76 +741,6 @@
 
 }
 
-/* Simple right side: description at top, image at bottom left */
-.right-illustration-simple {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #124066;
-  height: 100%;
-  min-height: 400px;
-  padding: 0 0 0 0;
-}
-
-.adv-description {
-  font-family: "Anek Devanagari", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
-  color: white;
-  padding: 32px 32px 0 32px;
-  text-align: left;
-}
-
-.adv-bottom-image {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 0 32px 32px;
-  min-height: 0;
-}
-
-.adv-bottom-image img {
-  height: 300px;
-  max-width: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .right-illustration-simple {
-    min-height: 300px;
-  }
-  .adv-description {
-    font-size: 16px;
-    padding: 24px 16px 0 16px;
-  }
-  .adv-bottom-image {
-    padding: 0 0 16px 16px;
-  }
-  .adv-bottom-image img {
-    height: 160px;
-  }
-}
-
-@media (max-width: 600px) {
-  .right-illustration-simple {
-    min-height: 200px;
-  }
-  .adv-description {
-    font-size: 14px;
-    padding: 16px 8px 0 8px;
-  }
-  .adv-bottom-image {
-    padding: 0 0 8px 8px;
-  }
-  .adv-bottom-image img {
-    height: 100px;
-  }
-}
-
 .swiper-slide {
   opacity: 0;
   visibility: hidden;
@@ -880,8 +779,6 @@
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
-
-
 
 @media only screen and (min-width: 250px) and (max-width: 425px) {
 
