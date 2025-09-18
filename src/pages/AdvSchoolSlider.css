@@ -579,7 +579,7 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 574px) {
+@media only screen and (min-width: 424px) and (max-width: 574px) {
   .school-slider-sections .swiper-button-next {
     top: 77%;
     left: 95%;
@@ -608,7 +608,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   .school-block .content-area {
     padding: 0px 20px !important;
   }
@@ -634,7 +634,7 @@
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 425px) {
+@media only screen and (min-width: 200px) and (max-width: 435px) {
 
   .school-overlay-one,
   .school-overlay-two,

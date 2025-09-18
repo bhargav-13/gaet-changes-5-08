@@ -291,7 +291,7 @@
 
 /* Add these responsive styles to your existing CSS */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   .legacy-container {
     padding: 20px 15px;
     min-height: auto;

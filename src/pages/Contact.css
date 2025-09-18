@@ -26,7 +26,7 @@
 .contact-page .arrow {
   position: absolute;
   left: 106px;
-  top: -35px;
+  top: -23.5px !important;
   transform: rotate(90deg);
 }
 

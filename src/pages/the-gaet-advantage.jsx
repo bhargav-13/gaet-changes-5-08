@@ -178,20 +178,12 @@ function TheGaetAdvantagePage() {
                   </div>
 
                   {/* Right Side - Image / Illustration */}
-                  <div className="col-lg-5 right-illustration d-flex flex-lg-column">
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-md-6 col-sm-6 col-lg-12 mb-lg-5">
-                          <p className="text-light image-description mt-lg-5">{slide.description}</p>
-                        </div>
-                        <div className="col-md-6 col-lg-12 col-sm-6">
-                          <div className="slide-image-container right-image d-flex align-items-center  mt-lg-5">
-                            <img src={slide.illustration} alt="Slide Illustration" className="img-fluid" />
-                          </div>
-                        </div>
-
-                      </div>
-
+                  <div className="col-lg-5 right-illustration-simple">
+                    <div className="adv-description">
+                      {slide.description}
+                    </div>
+                    <div className="adv-bottom-image">
+                      <img src={slide.illustration} alt="Slide Illustration" className="img-fluid" />
                     </div>
                   </div>
                 </div>

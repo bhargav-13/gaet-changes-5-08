@@ -924,7 +924,7 @@
 }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 425px) {
+@media only screen and (min-width: 200px) and (max-width: 435px) {
     .value-card {
   display: none;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;

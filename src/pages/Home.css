@@ -14,9 +14,10 @@
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 424px) {
+@media only screen and (min-width: 200px) and (max-width: 435px) {
   .our-school {
-    margin-left: 28px !important;
+    margin-left: 10px !important;
+    margin-top: 25px !important;
     font-size: 33px !important;
     padding-top: 2rem;
     padding-bottom: 0rem;
