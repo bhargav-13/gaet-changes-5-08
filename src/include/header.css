@@ -647,7 +647,7 @@
 }
 
 .desktop-nav .submenu li {
-  padding: 8px 20px;
+  padding: 5px 20px;
 }
 
 .desktop-nav .submenu li a {
@@ -656,6 +656,7 @@
   text-decoration: none;
   display: block;
   font-family: "Anek Devanagari", sans-serif;
+  padding: 5px 0 0 5px;
 }
 
 .desktop-nav .submenu li a:hover {

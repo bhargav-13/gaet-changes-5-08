@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const apiUrl = "https://admin.gaet.edu.in/api/home";
+// const apiUrl = "https://admin.gaet.edu.in/api/home";
+const apiUrl = "https://spacekids.in/api/home";
 const apiKey = 123456;
 const branchId = 1;
 
