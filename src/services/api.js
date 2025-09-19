@@ -2,7 +2,8 @@ import axios from 'axios';
 
 // API configuration
 const API_CONFIG = {
-  baseURL: 'https://admin.gaet.edu.in/api',
+  // baseURL: 'https://admin.gaet.edu.in/api',
+  baseURL: 'https://spacekids.in/api',
   apiKey: '123456',
   branchId: 1,
 };

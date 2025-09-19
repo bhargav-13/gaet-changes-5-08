@@ -32,7 +32,8 @@ function Header() {
     useEffect(() => {
         axios
             .post(
-                "https://admin.gaet.edu.in/api/menu",
+                // "https://admin.gaet.edu.in/api/menu",
+                "https://spacekids.in/api/menu",
                 { branch_id: 1 },
                 { headers: { "x-api-key": "123456" } }
             )

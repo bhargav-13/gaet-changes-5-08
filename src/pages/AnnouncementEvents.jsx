@@ -49,7 +49,7 @@ function AnnouncementEvents() {
             <div className="row">
                 <div className="container d-flex flex-wrap align-items-start">
                     {/* Left Content */}
-                    <div className="col-12 col-md-4 left-content pt-md-4">
+                    <div className="col-12 col-md-5 left-content pt-md-5">
                         <div className="content">
                             <div className='content-area'>
                                 <h3 className='announcements-events'>Announcements & Events</h3>
@@ -71,11 +71,11 @@ function AnnouncementEvents() {
 
                     {/* Divider */}
                     <div className="d-none d-md-block col-md-1 text-center divider pt-3">
-                        <img src={events} alt="Events Divider" />
+                        <div className="vertical-line"></div>
                     </div>
 
                     {/* Slider */}
-                    <div className="col-12 col-md-7 images pt-md-4 pb-md-4">
+                    <div className="col-12 col-md-6 images pt-md-5 pb-md-5">
                         <div className="slider">
                             <Swiper
                                 modules={[Navigation, Autoplay, EffectFade]}
