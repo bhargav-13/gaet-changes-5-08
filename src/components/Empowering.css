@@ -725,9 +725,9 @@
 }
 
 @media screen and (max-width: 390px) {
-  .empowering-section ul.box-layout li.line-1 .block-1 {
-    height: 39%;
-  }
+  /* .empowering-section ul.box-layout li.line-1 .block-1 {
+    height: 39%; // comment by Ridham for Spacing issue
+  } */ 
 
   .empowering-section ul.box-layout li.line-2 .block-1 {
     width: 100%;
@@ -740,13 +740,13 @@
     overflow: hidden;
   }
 
-  .empowering-section ul.box-layout li.line-2 .block-2,
+  /* .empowering-section ul.box-layout li.line-2 .block-2,
   .empowering-section ul.box-layout li.line-3 .block-1,
   .empowering-section ul.box-layout li.line-4 .block-1,
   .empowering-section ul.box-layout li.line-5 .block-2,
   .empowering-section ul.box-layout li.line-6 .block-1 {
-    height: 39%;
-  }
+    height: 39%; // comment by Ridham for Spacing issue
+  } */
 
   .empowering-section ul.box-layout li.line-5 .block-1 {
     width: 100%;
@@ -821,7 +821,7 @@
 
 @media only screen and (max-width: 375px) {
   .empowering-section ul.box-layout li.line-5 .block-1 {
-    bottom: 41% !important;
+    /* bottom: 41% !important; // comment by Ridham for Spacing issue */
     height: 19%;
   }
 }
