@@ -857,6 +857,31 @@
 
 .empowering-section ul.box-layout li.line-2 .block-1,
 .empowering-section ul.box-layout li.line-5 .block-1 {
-  height: 15% !important; /* or your preferred value */
+  /* height: 15% !important; // comment by Ridham for Spacing issue */
   min-height: 48px;
+  display: flex;
+}
+
+/* iPad Mini Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 768px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .empowering-section ul.box-layout li.line-2 .block-1 {
+    height: 21%;
+  }
+}
+
+/* iPad Mini Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .empowering-section ul.box-layout li.line-2 .block-1 {
+    height: 21%;
+  }
 }
