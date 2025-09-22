@@ -1,13 +1,16 @@
-/* Enhanced animations for images and backgrounds */
+/* Enhanced animations for images and backgrounds - matching smooth style */
 .animated-image {
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transform: scale(1);
+  will-change: opacity, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
+/* Remove the blinking fade-out styles as they're no longer needed */
 .animated-image.fade-out {
-  opacity: 0;
-  transform: scale(0.95);
+  /* Removed blinking fade-out animation */
 }
 
 .animated-image.fade-in {
@@ -89,7 +92,7 @@
   }
 }
 
-/* Add subtle hover effects to image containers */
+/* Enhanced image transitions to match color box smoothness */
 .box-layout li .block-1 {
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -101,6 +104,7 @@
 
 .box-layout li .block-1:hover .animated-image {
   transform: scale(1.05);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Enhanced loading animation */

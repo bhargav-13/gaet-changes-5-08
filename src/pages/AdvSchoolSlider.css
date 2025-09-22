@@ -422,7 +422,7 @@
 }
 
 .school-slider-sections .swiper-button-next {
-  right: -9%;
+  right: 40%;
   top: auto;
   margin-right: 140px;
   bottom: 20%;
@@ -536,7 +536,7 @@
 
   .school-slider-sections .swiper-button-next {
     top: 76% !important;
-    right: -13%;
+    right: 35%;
   }
 
   .swiper-button-prev::after, .swiper-button-next::after{
@@ -558,7 +558,7 @@
 @media only screen and (min-width: 575px) and (max-width: 930px) {
   .school-slider-sections .swiper-button-next {
     top: 76% !important;
-    left: 96%;
+    left: 48%;
   }
 
   .school-slider-sections .swiper-button-prev {

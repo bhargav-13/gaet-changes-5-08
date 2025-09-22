@@ -134,8 +134,17 @@ function ContactPage() {
                 >
                   <h3>Our Office</h3>
                   {/* <p>{settingsData?.settings?.address}</p> */}
-                  <p>Yashodham High School Building, Yashodham, Goregaon(East),
-                    Mumbai - 400063</p>
+                  <p>
+                    <a 
+                      href="https://maps.google.com/?q=Yashodham High School Building, Yashodham, Goregaon(East), Mumbai - 400063"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--blue-color)', textDecoration: 'none' }}
+                    >
+                      Yashodham High School Building, Yashodham, Goregaon(East),
+                      Mumbai - 400063
+                    </a>
+                  </p>
                 </ScrollAnimation>
                 <ScrollAnimation
                   animateIn="fadeInUp"
@@ -192,18 +201,29 @@ function ContactPage() {
                       <h3>{school.name}</h3>
 
                       <p className="icon-line">
-                        <img src={Phone} alt="Phone" className="icon contact" />
-                        <span className="icon-line-span">{contactNumber}</span>
+                        <a href={`tel:${contactNumber}`} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: 'white', textDecoration: 'none' }}>
+                          <img src={Phone} alt="Phone" className="icon contact" style={{ cursor: 'pointer' }} />
+                          <span className="icon-line-span">{contactNumber}</span>
+                        </a>
                       </p>
 
                       <p className="icon-line">
-                        <img src={Mail} alt="Email" className="icon" />
-                        <span>{school.email}</span>
+                        <a href={`mailto:${school.email}`} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: 'white', textDecoration: 'none' }}>
+                          <img src={Mail} alt="Email" className="icon" style={{ cursor: 'pointer' }} />
+                          <span>{school.email}</span>
+                        </a>
                       </p>
 
                       <p className="icon-line">
-                        <img src={Map} alt="Map" className="icon map" />
-                        <span>{school.office}</span>
+                        <a 
+                          href={`https://maps.google.com/?q=${encodeURIComponent(school.office)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', color: 'white', textDecoration: 'none' }}
+                        >
+                          <img src={Map} alt="Map" className="icon map" style={{ cursor: 'pointer' }} />
+                          <span>{school.office}</span>
+                        </a>
                       </p>
                     </div>
                   </div>

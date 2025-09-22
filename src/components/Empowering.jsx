@@ -28,9 +28,7 @@ function Empowering() {
   const imageOptions = [imgOne, imgTwo, imgThree, imgFour, imgFive, imgSix];
   const [boxColors, setBoxColors] = useState(colorPool.slice(0, 4));
   const [boxImages, setBoxImages] = useState(imageOptions.slice(0, 6));
-  const [imageTransitions, setImageTransitions] = useState(
-    Array(6).fill(false)
-  );
+  // Removed imageTransitions state as we're not using fade-out animation anymore
   useEffect(() => {
     const getAboutUsData = async () => {
       try {
@@ -61,7 +59,7 @@ function Empowering() {
         ).slice(0, 3);
         return shuffle([carryOver, ...newColors]);
       });
-    }, 2500);
+    }, 4000); // Slowed down from 2500ms to 4000ms to match image timing
 
     return () => clearInterval(interval);
   }, [isLoaded]);
@@ -79,11 +77,7 @@ function Empowering() {
         ).slice(0, 5); // we need total 6
         return shuffle([carryOver, ...newImages]);
       });
-
-      // add transitions for fade effect
-      setImageTransitions(Array(6).fill(true));
-      setTimeout(() => setImageTransitions(Array(6).fill(false)), 300);
-    }, 3000);
+    }, 4000); // Slowed down from 3000ms to 4000ms
 
     return () => clearInterval(interval);
   }, [isLoaded]);
@@ -112,9 +106,7 @@ function Empowering() {
             <img
               src={boxImages[0]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[0] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
           <div
@@ -127,9 +119,7 @@ function Empowering() {
             <img
               src={boxImages[1]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[1] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
           <div
@@ -142,9 +132,7 @@ function Empowering() {
             <img
               src={boxImages[2]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[2] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
         </li>
@@ -153,9 +141,7 @@ function Empowering() {
             <img
               src={boxImages[3]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[3] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
         </li>
@@ -164,9 +150,7 @@ function Empowering() {
             <img
               src={boxImages[4]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[4] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
           <div
@@ -179,9 +163,7 @@ function Empowering() {
             <img
               src={boxImages[5]}
               alt="educational content"
-              className={`animated-image ${
-                imageTransitions[5] ? "fade-out" : "fade-in"
-              }`}
+              className="animated-image"
             />
           </div>
           <div
