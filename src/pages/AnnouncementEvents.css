@@ -130,11 +130,11 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
     .custom-nav {
         top: 99% !important;
         position: absolute !important;
-        gap: 14rem !important;
+        gap: 15.5rem !important;
     }
      .content {
         padding: 0rem;
