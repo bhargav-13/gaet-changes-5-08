@@ -422,8 +422,8 @@
 }
 
 .school-slider-sections .swiper-button-next {
-  right: 40%;
-  top: auto;
+  top: 75%;
+  right: 36%;
   margin-right: 140px;
   bottom: 20%;
   color: rgba(18, 64, 102, 1) !important;
