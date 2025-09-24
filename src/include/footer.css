@@ -1,3 +1,155 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .footer-area .container {
+    padding: 6rem 6rem 0rem 5rem !important;
+  }
+
+  .footer-area .inner-flex {
+    gap: 80px;
+  }
+
+  .footer-area .inner-flex .leftside,
+  .footer-area .inner-flex .rightside {
+    padding: 150px 0 180px 0;
+  }
+
+  .footer-area .inner-flex .leftside .logo {
+    width: 400px;
+  }
+
+  .footer-area .inner-flex .rightside h3 {
+    font-size: 24px !important;
+    margin: 0 0 20px 0;
+  }
+
+  .footer-area .inner-flex .rightside p,
+  .footer-area .inner-flex .rightside p a {
+    font-size: 24px !important;
+    line-height: 109%;
+  }
+
+  .footer-area .inner-flex .rightside ul.link li a {
+    font-size: 24px !important;
+    line-height: 153%;
+  }
+
+  .footer-area .inner-flex .rightside ul.social li {
+    margin-right: 100px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright {
+    margin-top: 120px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright p,
+  .footer-area .inner-flex .rightside .copyright a, 
+  .footer-email a {
+    font-size: 24px !important;
+  }
+
+  .footer-area .inner-flex .rightside .copyright a {
+    margin: 0px 0px 0px 50px;
+    font-size: 24px !important;
+  }
+
+  .footer-area .middlepart h3 {
+    font-size: 24px;
+    margin: 0 0 22px 0;
+  }
+
+  .footer-area .middlepart p {
+    font-size: 24px;
+    max-width: 31rem !important;
+    margin-top: 15px;
+  }
+
+  .footer-area::before,
+  .footer-area::after {
+    height: 100px;
+  }
+
+  .middlePart-separator {
+    height: 220px;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .footer-area .container {
+    padding: 5rem 5rem 0rem 4.5rem !important;
+  }
+
+  .footer-area .inner-flex {
+    gap: 70px;
+  }
+
+  .footer-area .inner-flex .leftside,
+  .footer-area .inner-flex .rightside {
+    padding: 130px 0 160px 0;
+  }
+
+  .footer-area .inner-flex .leftside .logo {
+    width: 400px;
+  }
+
+  .footer-area .inner-flex .rightside h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .footer-area .inner-flex .rightside p,
+  .footer-area .inner-flex .rightside p a {
+    font-size: 18px;
+    line-height: 109%;
+  }
+
+  .footer-area .inner-flex .rightside ul.link li a {
+    font-size: 18px;
+    line-height: 153%;
+  }
+
+  .footer-area .inner-flex .rightside ul.social li {
+    margin-right: 90px;
+  }
+
+  .footer-area .inner-flex .rightside ul.social li a {
+    width: 28px;
+    height: 34px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright {
+    margin-top: 110px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright p,
+  .footer-area .inner-flex .rightside .copyright a {
+    font-size: 18px;
+  }
+
+  .footer-area .inner-flex .rightside .copyright a {
+    margin: 0px 0px 0px 50px;
+  }
+
+  .footer-area .middlepart h3 {
+    font-size: 24px;
+    margin: 0 0 22px 0;
+  }
+
+  .footer-area .middlepart p {
+    font-size: 24px;
+    max-width: 31rem !important;
+    margin-top: 15px;
+  }
+
+  .footer-area::before,
+  .footer-area::after {
+    height: 90px;
+  }
+
+  .middlePart-separator {
+    height: 200px;
+  }
+}
+
 .footer-area {
     background: var(--blue-color);
     position: relative;
@@ -28,7 +180,7 @@
 }
 
 .footer-email a {
-    font-size: 18px !important;
+    font-size: 18px;
 }
 
 .footer-area .inner-flex {

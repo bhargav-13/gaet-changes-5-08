@@ -1,3 +1,90 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .chairman-section {
+    padding: 120px 0 160px 0;
+  }
+
+  .chairman-section .container {
+    max-width: 2000px;
+    padding: 0 150px;
+  }
+
+  .chairman-section .content-area {
+    padding: 60px 0 0 0;
+    min-height: 950px;
+  }
+
+  .chairman-section .content-area .message {
+    font-size: 68px;
+    max-width: 1045px;
+    line-height: 100%;
+  }
+
+  .chairman-section .content-area .name {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+  }
+
+  .chairman-section .content-area p {
+    font-size: 32px !important;
+    margin: 0 0 60px 0;
+  }
+
+  .chairman-section .content-area .btn-more {
+    font-size: 20px;
+    padding: 4px 27px;
+  }
+
+  .chairman-section .chairman-photo {
+    width: 55%;
+    bottom: -190px !important;
+    right: -120px !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .chairman-section {
+    padding: 100px 0 140px 0;
+  }
+
+  .chairman-section .container {
+    max-width: 1800px;
+    padding: 0 100px;
+  }
+
+  .chairman-section .content-area {
+    padding: 55px 0 0 0;
+    min-height: 850px;
+  }
+
+  .chairman-section .content-area .message {
+    font-size: 68px;
+    max-width: 1045px;
+    line-height: 100%;
+  }
+
+  .chairman-section .content-area .name {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+  }
+
+  .chairman-section .content-area p {
+    font-size: 24px;
+    margin: 0 0 60px 0;
+  }
+
+  .chairman-section .content-area .btn-more {
+    font-size: 20px;
+    padding: 4px 27px;
+  }
+
+  .chairman-section .chairman-photo {
+    width: 57%;
+    bottom: -140px;
+    right: -100px;
+  }
+}
+
 .chairman-section {
     padding: 80px 0 120px 0;
     overflow: hidden;

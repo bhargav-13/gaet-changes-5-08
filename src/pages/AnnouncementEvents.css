@@ -1,3 +1,84 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .content-area h3 {
+    font-size: 58px;
+    line-height: 1.2;
+  }
+
+  .content {
+    padding: 0px 0rem 0rem 4rem;
+  }
+
+  .subtitle {
+    font-size: 32px !important;
+    margin-top: 5rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .description {
+    font-size: 32px !important;
+    line-height: 1.5;
+  }
+
+  .vertical-line {
+    height: 606px !important;
+  }
+
+  .divider {
+    padding: 0 3rem;
+  }
+
+  .slide-image {
+    width: 70% !important;
+  }
+
+  .custom-prev,
+  .custom-next {
+    padding: 8px 14px;
+    font-size: 32px !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .content-area h3 {
+    font-size: 58px;
+    line-height: 1.2;
+  }
+
+  .content {
+    padding: 0px 0rem 0rem 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-top: 4.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .vertical-line {
+    height: 620px;
+  }
+
+  .divider {
+    padding: 0 2.5rem;
+  }
+
+  .slide-image {
+    width: 98.5%;
+  }
+
+  .custom-prev,
+  .custom-next {
+    padding: 8px 14px;
+    font-size: 18px;
+  }
+}
+
 * {
     margin: 0px;
     padding: 0px;

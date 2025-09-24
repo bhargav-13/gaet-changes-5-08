@@ -124,6 +124,79 @@
   animation: shimmer 1.5s infinite;
 }
 
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .empowering-section {
+    padding: 50px 0;
+  }
+
+  .empowering-section .content-block {
+    top: 100px;
+  }
+
+  .empowering-section .content-block h2 {
+    font-size: 68px;
+    margin: 0 0 50px 0;
+    line-height: 130%;
+  }
+
+  .empowering-section .content-block h2 span {
+    font-size: 68px;
+    line-height: 109%;
+  }
+
+  .empowering-section .content-block .btn-more {
+    font-size: 40px;
+  }
+
+  .empowering-section ul.box-layout {
+    min-height: 900px;
+    gap: 20px;
+  }
+
+  .empowering-section .cloud-img {
+    width: 420px;
+    left: 8%;
+    bottom: 55%;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .empowering-section {
+    padding: 40px 0;
+  }
+
+  .empowering-section .content-block {
+    top: 80px;
+  }
+
+  .empowering-section .content-block h2 {
+    font-size: 68px;
+    margin: 0 0 50px 0;
+    line-height: 130%;
+  }
+
+  .empowering-section .content-block h2 span {
+    font-size: 68px;
+    line-height: 109%;
+  }
+
+  .empowering-section .content-block .btn-more {
+    font-size: 40px;
+  }
+
+  .empowering-section ul.box-layout {
+    min-height: 800px;
+    gap: 18px;
+  }
+
+  .empowering-section .cloud-img {
+    width: 380px;
+    left: 9%;
+    bottom: 54%;
+  }
+}
+
 /* Rest of your existing CSS styles */
 .empowering-section {
   padding: 0px;
