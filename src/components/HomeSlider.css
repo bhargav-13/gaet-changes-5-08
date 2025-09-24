@@ -128,21 +128,19 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 1640px) {
-  .top-slider-area {
-    padding-top: 112px;
-  }
-
+/* For ultrawide screens */
+@media only screen and (min-width: 1641px) {
   .top-slider-area .swiper-slide .content-area {
-    padding: 0 50px;
+    padding-left: 120px; /* Adjust this as per design */
+    padding-right: 120px; /* optional for balance */
   }
 
-  .top-slider-area .swiper-slide .content-area h1 {
-    font-size: 58px;
-    line-height: 58px;
-    margin-bottom: 20px;
+  .top-slider-area .swiper-slide .content-area h1,
+  .top-slider-area .swiper-slide .content-area p {
+    max-width: 1200px; /* keeps text from stretching too wide */
   }
 }
+
 
 @media only screen and (max-width: 1024px) {
   .top-slider-area {

@@ -282,7 +282,29 @@
 }
 
 /* Medium Desktop */
-@media only screen and (max-width: 1640px) {
+@media only screen and (max-width: 3000px) {
+
+
+.footer-area .middlepart p {
+  max-width: 200px;   /* set width limit */
+  width: 100%;        /* let it shrink on smaller screens */
+  
+}
+
+.footer-area .inner-flex .rightside .time {
+
+    max-width: 250px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    word-break: break-word;
+    margin-top: 40px;
+  }
+
+  .footer-area .inner-flex .rightside {
+       margin-left: 800px;
+    }
 
     .footer-area .inner-flex .leftside,
     .footer-area .inner-flex .rightside {

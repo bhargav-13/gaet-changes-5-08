@@ -61,11 +61,11 @@
 }
 
 .chairman-section .chairman-photo img {
-    width: 100%;
+    width: 90%;
 }
 
 /* Medium Desktop */
-@media only screen and (max-width: 1640px) {
+@media only screen and (max-width: 1641px) {
     .chairman-section {
         padding: 50px 0;
     }
@@ -75,9 +75,11 @@
         max-width: 100%;
     }
 
-    .chairman-section .chairman-photo {
-        width: 700px;
-    }
+.chairman-section .chairman-photo img {
+  width: 600px !important;
+  height: auto;
+}
+
 
     .chairman-section .content-area {
         min-height: 560px;
