@@ -517,6 +517,13 @@
     width: 58.85%;
   }
 }
+
+@media only screen and (min-width: 1150px) and (max-width: 1500px) {
+    .school-slider-sections .swiper-button-next {
+    right: 40%;
+  }
+}
+
 @media only screen and (max-width: 1404px) {
     .school-block .content-area h3 {
         font-size: 38px;

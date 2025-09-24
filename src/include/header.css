@@ -668,7 +668,7 @@
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
-  padding: 8px 0 0 6px;
+  padding: 8px 6px 0 6px;
 }
 
 /* Show submenu on hover */

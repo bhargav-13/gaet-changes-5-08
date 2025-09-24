@@ -312,7 +312,7 @@
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width:425px) {
+@media only screen and (min-width: 200px) and (max-width:450px) {
   .school-list-area .container {
     padding: 1rem !important;
   }
