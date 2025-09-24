@@ -1,3 +1,29 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+
+  .our-school {
+    margin-left: 180px !important;
+    font-size: 43px !important;
+    padding-top: 4rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .school-slider-sections.hp,
+  .school-slider-sections {
+    padding: 60px 0 0 0 !important;
+  }
+
+  .our-school {
+    margin-left: 120px !important;
+    font-size: 43px !important;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
 @media only screen and (max-width: 1640px) {
   .school-slider-sections.hp,
   .school-slider-sections {

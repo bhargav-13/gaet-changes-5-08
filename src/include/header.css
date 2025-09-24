@@ -1,3 +1,210 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .main-header .container {
+    padding: 0 200px;
+  }
+
+  .main-header .logo,
+  .main-header.scrolled .white-logo,
+  .main-header.white-header .white-logo {
+    width: 250px;
+  }
+
+  .main-header .btn-contact,
+  .main-header .btn-admission {
+    font-size: 18px;
+    padding: 13px 35px 7px 35px;
+    line-height: 20px;
+  }
+
+  .main-header .btn-menu {
+    width: 28px;
+    height: 28px;
+    margin-left: 80px;
+  }
+
+  .main-header .btn-menu span {
+    height: 3px;
+  }
+
+  .full-menu-area .topbar .container {
+    padding: 0 200px;
+  }
+
+  .full-menu-area .topbar .logo {
+    width: 250px;
+  }
+
+  .full-menu-area .topbar .btn-contact,
+  .full-menu-area .topbar .btn-admission {
+    font-size: 18px;
+    padding: 13px 35px 7px 35px;
+  }
+
+  .full-menu-area .inner-flex .leftpart {
+    padding: 120px 200px 90px 200px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link {
+    font-size: 38px;
+    line-height: 64px;
+    margin-bottom: 15px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content {
+    padding-left: 80px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li {
+    margin-bottom: 20px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.link li {
+    margin-right: 40px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.link li a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.social li {
+    margin-right: 100px;
+  }
+
+  .desktop-nav {
+    gap: 40px;
+  }
+
+  .desktop-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .desktop-nav .submenu {
+    padding: 15px 0;
+  }
+
+  .desktop-nav .submenu li {
+    padding: 8px 25px;
+  }
+
+  .desktop-nav .submenu li a {
+    font-size: 16px;
+    padding: 5px 0 0 5px;
+  }
+
+  .desktop-nav .submenu li a:hover {
+    padding: 8px 6px 0 6px;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .main-header .container {
+    padding: 0 150px;
+  }
+
+  .main-header .logo,
+  .main-header.scrolled .white-logo,
+  .main-header.white-header .white-logo {
+    width: 250px;
+  }
+
+  .main-header .btn-contact,
+  .main-header .btn-admission {
+    font-size: 18px;
+    padding: 13px 35px 7px 35px;
+    line-height: 20px;
+  }
+
+  .main-header .btn-menu {
+    width: 26px;
+    height: 26px;
+    margin-left: 70px;
+  }
+
+  .full-menu-area .topbar .container {
+    padding: 0 150px;
+  }
+
+  .full-menu-area .topbar .logo {
+    width: 250px;
+  }
+
+  .full-menu-area .topbar .btn-contact,
+  .full-menu-area .topbar .btn-admission {
+    font-size: 18px;
+    padding: 13px 35px 7px 35px;
+  }
+
+  .full-menu-area .inner-flex .leftpart {
+    padding: 100px 150px 80px 150px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .nav-pills .nav-link {
+    font-size: 38px;
+    line-height: 64px;
+    margin-bottom: 15px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content {
+    padding-left: 70px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li {
+    margin-bottom: 20px;
+  }
+
+  .full-menu-area .inner-flex .leftpart .menu-area .tab-content ul.submenu li a {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.link li {
+    margin-right: 35px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.link li a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .full-menu-area .inner-flex .leftpart ul.social li {
+    margin-right: 90px;
+  }
+
+  .desktop-nav {
+    gap: 35px;
+  }
+
+  .desktop-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .desktop-nav .submenu {
+    padding: 12px 0;
+  }
+
+  .desktop-nav .submenu li {
+    padding: 7px 22px;
+  }
+
+  .desktop-nav .submenu li a {
+    font-size: 16px;
+    padding: 5px 0 0 5px;
+  }
+
+  .desktop-nav .submenu li a:hover {
+    padding: 8px 6px 0 6px;
+  }
+}
+
 .main-header {
   position: absolute;
   top: 0px;

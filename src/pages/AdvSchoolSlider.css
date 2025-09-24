@@ -1,3 +1,168 @@
+/* Large Desktop/27" Display Optimizations */
+@media only screen and (min-width: 2200px) {
+  .school-slider-sections h2 {
+    font-size: 68px;
+    line-height: 109%;
+    margin: 0px;
+  }
+
+  .school-slider-sections .container {
+    padding: 0 50px 0 25px !important;
+  }
+
+  .school-slider-sections .btn-more {
+    font-size: 28px;
+  }
+
+  .school-block {
+    height: 800px;
+  }
+
+  .school-block .content-area {
+    padding: 150px 180px 280px 180px;
+  }
+
+  .school-block .content-area h3 {
+    font-size: 58px;
+    line-height: 117%;
+  }
+
+  .school-block .content-area p {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    line-height: 117%;
+  }
+
+  .school-block .content-area .info {
+    font-size: 35px !important;
+    margin: 0 0 50px 0;
+  }
+
+  .school-block .content-area .btn-visit {
+    font-size: 24px;
+  }
+
+  .school-slider-sections .swiper-button-prev {
+    left: 6% !important;
+    top: 79% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+  }
+
+  .school-slider-sections, .school-slider-sections.hp {
+        padding: 30px 0 0 !important;
+    }
+
+  .school-slider-sections .swiper-button-next {
+    right: 44% !important;
+    top: 79% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 23px !important;
+  }
+
+  .school-image-wrapper {
+    height: 320px;
+  }
+
+  .school-overlay h3 {
+    font-size: 25px;
+  }
+
+  .school-info p {
+    font-size: 28px;
+  }
+
+  .purpose-icon {
+    height: 120px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 2199px) {
+  .school-slider-sections h2 {
+    font-size: 68px;
+    line-height: 109%;
+    margin: 0px;
+  }
+
+  .school-slider-sections .container {
+    padding: 0 150px 130px 150px;
+  }
+
+  .school-slider-sections .btn-more {
+    font-size: 28px;
+  }
+
+  .school-block {
+    height: 720px;
+  }
+
+  .school-block .content-area {
+    padding: 130px 150px 250px 150px;
+  }
+
+  .school-block .content-area h3 {
+    font-size: 58px;
+    line-height: 117%;
+  }
+
+  .school-block .content-area p {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    line-height: 117%;
+  }
+
+  .school-block .content-area .info {
+    font-size: 35px !important;
+    margin: 0 0 50px 0;
+  }
+
+  .school-block .content-area .btn-visit {
+    font-size: 24px;
+  }
+
+  .school-slider-sections .swiper-button-prev {
+    left: 8% !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+  }
+
+  .school-slider-sections .swiper-button-next {
+    right: 2% !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 23px !important;
+  }
+
+  .school-image-wrapper {
+    height: 300px;
+  }
+
+  .school-overlay h3 {
+    font-size: 25px;
+  }
+
+  .school-info p {
+    font-size: 28px;
+  }
+
+  .purpose-icon {
+    height: 110px;
+    margin-bottom: 2.5rem;
+  }
+}
+
 .school-slider-sections.hp {
   background: #ebebeb;
 }
